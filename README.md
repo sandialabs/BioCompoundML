@@ -28,9 +28,6 @@ BioCompoundML is tested to work under Python 2.7.
 * beautiful-soup==4.4.1
 * matplotlib==1.4.0
 
-## Deeper dive
-============
-
 
 ## License
 
