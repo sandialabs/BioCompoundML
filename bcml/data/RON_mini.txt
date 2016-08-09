@@ -1,5 +1,0 @@
-#Name	RON	PubChem
-1-Butene	98.8	7844
-1-Ethyl-3-Methylcyclopentane	57.6	19502
-1-Heptene	54.5	11610
-1-Hexene	76.4	11597

@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Welcome to BioCompoundML’s documentation! &mdash; BioCompoundML 1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="BioCompoundML 1a documentation" href="#" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-biocompoundml-s-documentation">
+<h1>Welcome to BioCompoundML&#8217;s documentation!<a class="headerlink" href="#welcome-to-biocompoundml-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>BioCompoundML provides a chemoinformatic tool for predicting chemical properties using machine learning.</p>
+</div>
+<div class="section" id="purpose">
+<h1>Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt>Quantitative Structure Property/Activity Relationships (QSPRs and QSARs) often attempt to determine as exactly as possible the exact value of a given chemical property. Tools for predicting these properties are incredibly useful, but are often limited in one of two regards:</dt>
+<dd><ol class="first last arabic simple">
+<li>They lack generality - they cannot be readily rebuilt for an arbitrary set of chemical properties.</li>
+<li>They can require highly sophisticated and expensive computation.</li>
+</ol>
+</dd>
+</dl>
+<p>If however, our question is discrete, for instance, binary classification above or below a certain threshold (e.g., melting point at room temperature), then the problem can be reframed as a machine learning classification problem and solved rather quickly.</p>
+<p>We came to this problem with a particular interest in mind, one we feel is common in cheminformatics. The rapid screening of a large number of compounds for multiple chemical properties can oftentimes be handled efficiently and effectively using a classification paradigm.</p>
+</div>
+<div class="section" id="common-biocompoundml-workflow">
+<h1>Common BioCompoundML Workflow<a class="headerlink" href="#common-biocompoundml-workflow" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="input-file">
+<h2>Input file<a class="headerlink" href="#input-file" title="Permalink to this headline">¶</a></h2>
+<p>BioCompoundML starts with the training of a model using random forest classification. As such it requires an initial training file. This file provides a list of compounds and with a measured value. This can take a variety of forms, however the easiest one uses a tab-delimited file with the name of the compound, a PubChem identifier and a measured value.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">#Name   RON     PubChem</span>
+<span class="mi">1</span><span class="o">-</span><span class="n">Butene</span>        <span class="mf">98.8</span>    <span class="mi">7844</span>
+<span class="mi">1</span><span class="o">-</span><span class="n">Ethyl</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">Methylcyclopentane</span>    <span class="mf">57.6</span>    <span class="mi">19502</span>
+<span class="mi">1</span><span class="o">-</span><span class="n">Heptene</span>       <span class="mf">54.5</span>    <span class="mi">11610</span>
+<span class="mi">1</span><span class="o">-</span><span class="n">Hexene</span>        <span class="mf">76.4</span>    <span class="mi">11597</span>
+<span class="mi">1</span><span class="o">-</span><span class="n">Isopropyl</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="n">methylcyclohexane</span> <span class="mf">67.3</span>    <span class="mi">7459</span>
+<span class="mi">1</span><span class="o">-</span><span class="n">Methyl</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">ethylcyclohexane</span>     <span class="mf">68.7</span>    <span class="mi">35411</span>
+</pre></div>
+</div>
+<p>There are a few important things to recognize. 1) The header line is essential and must start with #. 2) Name and PubChem are important and must be capitalized as they are here. 3) The format of the file is tab-delimited text. 4) You can output tab-delimited text from Excel, but do it with caution, export from MSOffice products can have unexpected effects.</p>
+<p>BioCompoundML uses the NCBI PubChem API heavily. There are ways of handling CAS numbers, but PubChem ID (CID) is the easiest and most direct. Providing CAS requires a separate call to NCBI to retrieve CIDs.</p>
+<p>The user must specify the name of the feature being trained, in the above case <code class="docutils literal"><span class="pre">RON</span></code>. If a split-value isn&#8217;t provided, then BioCompoundML splits on the median.</p>
+</div>
+<div class="section" id="feature-collection">
+<h2>Feature Collection<a class="headerlink" href="#feature-collection" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="user-provided-features">
+<h3>User-provided features<a class="headerlink" href="#user-provided-features" title="Permalink to this headline">¶</a></h3>
+<p>The next step in the workflow is to collect Cheminformatic features. There are a variety of these. One is to simply use &#8216;user&#8217; provided features. Below is an example of the original training file including OH Rate Constant.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">#Name   RON     PubChem OH_Rate_Constant</span>
+<span class="n">Methyl</span> <span class="n">acetate</span>  <span class="mi">120</span>     <span class="mi">6584</span>    <span class="mf">0.2598</span>
+<span class="n">O</span><span class="o">-</span><span class="n">Xylene</span>        <span class="mi">120</span>     <span class="mi">7237</span>    <span class="mf">6.5119</span>
+<span class="n">Ethyl</span> <span class="n">acetate</span>   <span class="mi">118</span>     <span class="mi">8857</span>    <span class="mf">1.7038</span>
+<span class="n">Ethyl</span> <span class="n">buanoate</span>  <span class="mf">115.4</span>   <span class="mi">7762</span>    <span class="mf">3.3339</span>
+<span class="n">Propylbenzene</span>   <span class="mi">111</span>     <span class="mi">7668</span>    <span class="mf">7.31</span>
+</pre></div>
+</div>
+<p>When additional columns are included in the training file and &#8216;user&#8217; is selected as a parameter (see <a class="reference internal" href="script.html"><span class="doc">Script documentation</span></a> for examples of the parameters available), this feature is added to the model. This is particularly useful when you have private or licensed values. It is important to remember that if you wish to use these features for prediction, you will need to provide them in both the training and testing datasets.</p>
+</div>
+<div class="section" id="pubchem-features">
+<h3>PubChem features<a class="headerlink" href="#pubchem-features" title="Permalink to this headline">¶</a></h3>
+<p>In addition to user-provided features, BioCompoundML also collects features directly from PubChem. These include computationally predicted/experimentally measured features, 881 SMILES fingerprints and Structural Data Files (SDFs).</p>
+<p>The choice of which of these features to collect are specified in the <code class="docutils literal"><span class="pre">--fingerprints</span></code>, <code class="docutils literal"><span class="pre">--experimental</span></code> and <code class="docutils literal"><span class="pre">--chemoinformatics</span></code> parameters for <code class="docutils literal"><span class="pre">bcml.py</span></code></p>
+<div class="section" id="fingerprints">
+<h4>Fingerprints<a class="headerlink" href="#fingerprints" title="Permalink to this headline">¶</a></h4>
+<p>Fingerprints directly collects a CACTVS string and converts this to 881 binary SMILES features (e.g., C &gt; 4 or C(-C)(-C)(=C)), a full list can be found at <a class="reference external" href="ftp://ftp.ncbi.nlm.nih.gov/pubchem/specifications/pubchem_fingerprints.txt">ftp://ftp.ncbi.nlm.nih.gov/pubchem/specifications/pubchem_fingerprints.txt</a></p>
+</div>
+<div class="section" id="experimental-and-computationally-predicted-features">
+<h4>Experimental and Computationally-Predicted features<a class="headerlink" href="#experimental-and-computationally-predicted-features" title="Permalink to this headline">¶</a></h4>
+<p>The experimental/estimated features that are used by the feature extraction package include experimentally measured properties (e.g., melting point, boiling point, vapor pressure); inferred structural features (e.g., rotatable bond count, heavy atom count); chemical properties (e.g., molecular weight, formal charge) and inferred chemical properties (e.g., XLogP3 – which estimates the Octanol-Water partitioning – a property directly related to hydrophobicity). The file <code class="docutils literal"><span class="pre">Chemoinformatics/feature_list.txt</span></code> contains the features that are collected from PubChem. Additional features can be added or removed from this file, depending on the importance of the features. The standard file ships with the following features selected</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Density</span>
+<span class="n">Vapor</span> <span class="n">Density</span>
+<span class="n">Boiling</span> <span class="n">Point</span>
+<span class="n">Hydrogen</span> <span class="n">Bond</span> <span class="n">Donor</span> <span class="n">Count</span>
+<span class="n">Rotatable</span> <span class="n">Bond</span> <span class="n">Count</span>
+<span class="n">XLogP3</span>
+<span class="n">Flash</span> <span class="n">Point</span>
+<span class="n">Formal</span> <span class="n">Charge</span>
+<span class="n">Undefined</span> <span class="n">Atom</span> <span class="n">Stereocenter</span> <span class="n">Count</span>
+<span class="n">Auto</span><span class="o">-</span><span class="n">Ignition</span>
+<span class="n">Molecular</span> <span class="n">Weight</span>
+<span class="n">Hydrogen</span> <span class="n">Bond</span> <span class="n">Acceptor</span> <span class="n">Count</span>
+<span class="n">XLogP3</span><span class="o">-</span><span class="n">AA</span>
+<span class="n">LogP</span>
+<span class="n">Defined</span> <span class="n">Atom</span> <span class="n">Stereocenter</span> <span class="n">Count</span>
+<span class="n">Complexity</span>
+<span class="n">Vapor</span> <span class="n">Pressure</span>
+<span class="n">Covalently</span><span class="o">-</span><span class="n">Bonded</span> <span class="n">Unit</span> <span class="n">Count</span>
+<span class="n">Isotope</span> <span class="n">Atom</span> <span class="n">Count</span>
+<span class="n">Undefined</span> <span class="n">Bond</span> <span class="n">Stereocenter</span> <span class="n">Count</span>
+<span class="n">Heavy</span> <span class="n">Atom</span> <span class="n">Count</span>
+<span class="n">Exact</span> <span class="n">Mass</span>
+<span class="n">Monoisotopic</span> <span class="n">Mass</span>
+<span class="n">Topological</span> <span class="n">Polar</span> <span class="n">Surface</span> <span class="n">Area</span>
+<span class="n">Melting</span> <span class="n">point</span>
+<span class="n">Defined</span> <span class="n">Bond</span> <span class="n">Stereocenter</span> <span class="n">Count</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="additional-chemoinformatic-features">
+<h4>Additional chemoinformatic features<a class="headerlink" href="#additional-chemoinformatic-features" title="Permalink to this headline">¶</a></h4>
+<p>Additionally, this package also has the capacity to retrieve substance data files (SDFs) from NCBI. These may be useful in downstream QSPR/QSAR feature extraction.BioCompoundML includes a copy of PaDEL-Discriptor, a molecular descriptor calculator, that takes as input an SDF file and provides thousands of individual QSPR and QSAR descriptors for each compound. By default, BioCompoundML calculates 1444 of these descriptors (1D/2D descriptors). This software is provided with its open source Apache 2.0 License.</p>
+</div>
+</div>
+</div>
+<div class="section" id="imputing-missing-data">
+<h2>Imputing Missing Data<a class="headerlink" href="#imputing-missing-data" title="Permalink to this headline">¶</a></h2>
+<p>Imputing missing values is achieved using a two-step approach. The first step is to perform K-Nearest Neighbors (KNN) imputation. This process takes a distance matrix and imputes missing values using the KNN. The distance matrix in this tool is calculated using the Jaccard Distance/Tanimoto Score, using the 881 NCBI fingerprint variables. This allows the distance matrix to be collected separately from value imputation. This matrix is used to identify the nearest neighbors. The default for BioCompoundML is k=5. The distance matrix is then used to assign a weight to each value for the nearest neighbors and return a weighted average, such that nearer neighbors (in this case compounds) are more heavily weighted. This approach is generalizable and has shown consistent success as an approach to missing data. In cases where features were too sparse to fully resolve using KNN, we used the mean value for the feature as a minimum information imputer.</p>
+</div>
+<div class="section" id="feature-reduction">
+<h2>Feature Reduction<a class="headerlink" href="#feature-reduction" title="Permalink to this headline">¶</a></h2>
+<p>The Boruta algorithm was chosen for selecting features for classification. This algorithm generates a set of shadow random features, duplicating and then shuffling the variables. The result of this is a set of Z-score distributions for each feature. Each original feature is compared to the maximum Z-score for the list of shadow features. Features that fail to score significantly better than distribution of shadow features (using standard t-tests) are then excluded from the model. This step can dramatically reduce the complexity of the model - eliminating needless and uninformative features (see <a class="reference external" href="https://github.com/danielhomola/boruta_py">https://github.com/danielhomola/boruta_py</a> for examples of this).</p>
+</div>
+<div class="section" id="random-forest-classification">
+<h2>Random Forest Classification<a class="headerlink" href="#random-forest-classification" title="Permalink to this headline">¶</a></h2>
+<p>The main function of BioCompoundML is to run the Random Forest Classifier. This function ties up the scikit-learn RandomForestClassifier.&nbsp;The default parameters are n_estimators=512, oob_score=True and n_jobs=-1, which specify that the number of estimators be high, the out of bag samples is used to estimate the general error and it is run on as many cpus as possible.</p>
+</div>
+<div class="section" id="cross-validation">
+<h2>Cross-Validation<a class="headerlink" href="#cross-validation" title="Permalink to this headline">¶</a></h2>
+<p>By default BioCompoundML runs 50% leave-out cross-validation 100 times. This allows the calculation of the mean and standard deviations for accuracy, precision, recall and Receiver Operator Characteristic Area Under the Curve.</p>
+</div>
+<div class="section" id="feature-weightings">
+<h2>Feature Weightings<a class="headerlink" href="#feature-weightings" title="Permalink to this headline">¶</a></h2>
+<p>BioCompoundML also weights individual features that were used to build the model. If Boruta was selected using <code class="docutils literal"><span class="pre">--selection</span></code>, this only includes the reduced features</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Complexity</span> <span class="mf">0.1778</span>
+<span class="n">XLogP3</span><span class="o">-</span><span class="n">AA</span> <span class="mf">0.1751</span>
+<span class="n">Rotatable</span> <span class="n">Bond</span> <span class="n">Count</span> <span class="mf">0.1317</span>
+<span class="n">Monoisotopic</span> <span class="n">Mass</span> <span class="mf">0.0771</span>
+<span class="n">Molecular</span> <span class="n">Weight</span> <span class="mf">0.0671</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing<a class="headerlink" href="#testing" title="Permalink to this headline">¶</a></h2>
+<p>Using the <code class="docutils literal"><span class="pre">--test</span></code> command, BioCompoundML, takes a second file after the <code class="docutils literal"><span class="pre">--test_input</span></code> parameter in nearly the same format as the training input (minus the training feature). If user input was provided for training, the same input will need to be provided in this file</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1">#Name   PubChem</span>
+<span class="n">isoamyl</span> <span class="n">acetate</span> <span class="mi">31276</span>
+<span class="n">myrcene</span> <span class="mi">31253</span>
+<span class="n">eucalyptol</span>      <span class="mi">2758</span>
+<span class="mi">3</span><span class="o">-</span><span class="n">carene</span>        <span class="mi">26049</span>
+</pre></div>
+</div>
+<p>The output looks this</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">isoamyl</span> <span class="n">acetate</span> <span class="p">[</span><span class="mf">0.033</span><span class="p">,</span> <span class="mf">0.967</span><span class="p">]</span>
+<span class="n">myrcene</span> <span class="p">[</span><span class="mf">0.201</span><span class="p">,</span> <span class="mf">0.799</span><span class="p">]</span>
+<span class="n">eucalyptol</span>      <span class="p">[</span><span class="mf">0.084</span><span class="p">,</span> <span class="mf">0.916</span><span class="p">]</span>
+<span class="mi">3</span><span class="o">-</span><span class="n">carene</span>        <span class="p">[</span><span class="mf">0.246</span><span class="p">,</span> <span class="mf">0.754</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This specifies the compound name, its probability of classification below the threshold and its probability of classification above the threshold.</p>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="#"><span class="doc">Welcome to BioCompoundML&#8217;s documentation!</span></a></li>
+<li><a class="reference internal" href="script.html"><span class="doc">Script documentation</span></a></li>
+<li><a class="reference internal" href="module.html"><span class="doc">Module documentation</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Welcome to BioCompoundML&#8217;s documentation!</a></li>
+<li><a class="reference internal" href="#purpose">Purpose</a></li>
+<li><a class="reference internal" href="#common-biocompoundml-workflow">Common BioCompoundML Workflow</a><ul>
+<li><a class="reference internal" href="#input-file">Input file</a></li>
+<li><a class="reference internal" href="#feature-collection">Feature Collection</a><ul>
+<li><a class="reference internal" href="#user-provided-features">User-provided features</a></li>
+<li><a class="reference internal" href="#pubchem-features">PubChem features</a><ul>
+<li><a class="reference internal" href="#fingerprints">Fingerprints</a></li>
+<li><a class="reference internal" href="#experimental-and-computationally-predicted-features">Experimental and Computationally-Predicted features</a></li>
+<li><a class="reference internal" href="#additional-chemoinformatic-features">Additional chemoinformatic features</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imputing-missing-data">Imputing Missing Data</a></li>
+<li><a class="reference internal" href="#feature-reduction">Feature Reduction</a></li>
+<li><a class="reference internal" href="#random-forest-classification">Random Forest Classification</a></li>
+<li><a class="reference internal" href="#cross-validation">Cross-Validation</a></li>
+<li><a class="reference internal" href="#feature-weightings">Feature Weightings</a></li>
+<li><a class="reference internal" href="#testing">Testing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Sandia National Laboratories.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/index.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

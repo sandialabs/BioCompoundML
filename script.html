@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Script documentation &mdash; BioCompoundML 1a documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="BioCompoundML 1a documentation" href="index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="script-documentation">
+<h1>Script documentation<a class="headerlink" href="#script-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>BioCompoundML&#8217;s primary script is</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">bcml</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<div class="section" id="input-training-file-input">
+<h2><code class="docutils literal"><span class="pre">--input</span></code>: Training File Input<a class="headerlink" href="#input-training-file-input" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="datain-saved-data-input">
+<h2><code class="docutils literal"><span class="pre">--datain</span></code>: Saved Data Input<a class="headerlink" href="#datain-saved-data-input" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="test-input-testing-file-input">
+<h2><code class="docutils literal"><span class="pre">--test_input</span></code>: Testing File Input<a class="headerlink" href="#test-input-testing-file-input" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="train-train-the-model">
+<h2><code class="docutils literal"><span class="pre">--train</span></code>: Train the model<a class="headerlink" href="#train-train-the-model" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="test-test-the-model">
+<h2><code class="docutils literal"><span class="pre">--test</span></code>: Test the model<a class="headerlink" href="#test-test-the-model" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="model-output-the-model-to-a-file">
+<h2><code class="docutils literal"><span class="pre">--model</span></code>: Output the model to a file<a class="headerlink" href="#model-output-the-model-to-a-file" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="dataout-output-all-data-structures">
+<h2><code class="docutils literal"><span class="pre">--dataout</span></code>: Output all data structures<a class="headerlink" href="#dataout-output-all-data-structures" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="pred-prediction-feature">
+<h2><code class="docutils literal"><span class="pre">--pred</span></code>: Prediction feature<a class="headerlink" href="#pred-prediction-feature" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="proxy-url-of-http-s-proxy">
+<h2><code class="docutils literal"><span class="pre">--proxy</span></code>: URL of http/s proxy<a class="headerlink" href="#proxy-url-of-http-s-proxy" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cluster-cluster-the-training-data">
+<h2><code class="docutils literal"><span class="pre">--cluster</span></code>: Cluster the training data<a class="headerlink" href="#cluster-cluster-the-training-data" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="split-value-threshold-for-classification-of-prediction-feature">
+<h2><code class="docutils literal"><span class="pre">--split_value</span></code>: Threshold for classification of prediction feature<a class="headerlink" href="#split-value-threshold-for-classification-of-prediction-feature" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="random-user-defined-random-seed">
+<h2><code class="docutils literal"><span class="pre">--random</span></code>: User defined random seed<a class="headerlink" href="#random-user-defined-random-seed" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="verbose-verbose-output">
+<h2><code class="docutils literal"><span class="pre">--verbose</span></code>: Verbose output<a class="headerlink" href="#verbose-verbose-output" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="experimental-extract-experimental-computed-features-from-pubchem">
+<h2><code class="docutils literal"><span class="pre">--experimental</span></code>: Extract experimental/computed features from PubChem<a class="headerlink" href="#experimental-extract-experimental-computed-features-from-pubchem" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fingerprint-extract-cactvs-fingerprints-from-pubchem">
+<h2><code class="docutils literal"><span class="pre">--fingerprint</span></code>: Extract CACTVS fingerprints from PubChem<a class="headerlink" href="#fingerprint-extract-cactvs-fingerprints-from-pubchem" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="chemofeatures-run-padel-descriptors">
+<h2><code class="docutils literal"><span class="pre">--chemofeatures</span></code>: Run PaDEL-Descriptors<a class="headerlink" href="#chemofeatures-run-padel-descriptors" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="user-user-features-are-provided-in-training-and-or-test-files">
+<h2><code class="docutils literal"><span class="pre">--user</span></code>: User features are provided in training and/or test files<a class="headerlink" href="#user-user-features-are-provided-in-training-and-or-test-files" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="distance-calculate-compound-vs-compound-distance-matrix">
+<h2><code class="docutils literal"><span class="pre">--distance</span></code>: Calculate compound vs. compound distance matrix<a class="headerlink" href="#distance-calculate-compound-vs-compound-distance-matrix" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="impute-impute-missing-data-using-k-nearest-neighbors-imputation">
+<h2><code class="docutils literal"><span class="pre">--impute</span></code>: Impute missing data using K Nearest Neighbors Imputation<a class="headerlink" href="#impute-impute-missing-data-using-k-nearest-neighbors-imputation" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="selection-run-boruta-feature-selection-to-reduce-uninformative-features">
+<h2><code class="docutils literal"><span class="pre">--selection</span></code>: Run Boruta Feature Selection to reduce uninformative features<a class="headerlink" href="#selection-run-boruta-feature-selection-to-reduce-uninformative-features" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cv-run-50-hold-out-cross-validation-100-times">
+<h2><code class="docutils literal"><span class="pre">--cv</span></code>: Run 50% hold-out Cross-Validation 100 times<a class="headerlink" href="#cv-run-50-hold-out-cross-validation-100-times" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="index.html"><span class="doc">Welcome to BioCompoundML&#8217;s documentation!</span></a></li>
+<li><a class="reference internal" href="#"><span class="doc">Script documentation</span></a></li>
+<li><a class="reference internal" href="module.html"><span class="doc">Module documentation</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Script documentation</a><ul>
+<li><a class="reference internal" href="#input-training-file-input"><code class="docutils literal"><span class="pre">--input</span></code>: Training File Input</a></li>
+<li><a class="reference internal" href="#datain-saved-data-input"><code class="docutils literal"><span class="pre">--datain</span></code>: Saved Data Input</a></li>
+<li><a class="reference internal" href="#test-input-testing-file-input"><code class="docutils literal"><span class="pre">--test_input</span></code>: Testing File Input</a></li>
+<li><a class="reference internal" href="#train-train-the-model"><code class="docutils literal"><span class="pre">--train</span></code>: Train the model</a></li>
+<li><a class="reference internal" href="#test-test-the-model"><code class="docutils literal"><span class="pre">--test</span></code>: Test the model</a></li>
+<li><a class="reference internal" href="#model-output-the-model-to-a-file"><code class="docutils literal"><span class="pre">--model</span></code>: Output the model to a file</a></li>
+<li><a class="reference internal" href="#dataout-output-all-data-structures"><code class="docutils literal"><span class="pre">--dataout</span></code>: Output all data structures</a></li>
+<li><a class="reference internal" href="#pred-prediction-feature"><code class="docutils literal"><span class="pre">--pred</span></code>: Prediction feature</a></li>
+<li><a class="reference internal" href="#proxy-url-of-http-s-proxy"><code class="docutils literal"><span class="pre">--proxy</span></code>: URL of http/s proxy</a></li>
+<li><a class="reference internal" href="#cluster-cluster-the-training-data"><code class="docutils literal"><span class="pre">--cluster</span></code>: Cluster the training data</a></li>
+<li><a class="reference internal" href="#split-value-threshold-for-classification-of-prediction-feature"><code class="docutils literal"><span class="pre">--split_value</span></code>: Threshold for classification of prediction feature</a></li>
+<li><a class="reference internal" href="#random-user-defined-random-seed"><code class="docutils literal"><span class="pre">--random</span></code>: User defined random seed</a></li>
+<li><a class="reference internal" href="#verbose-verbose-output"><code class="docutils literal"><span class="pre">--verbose</span></code>: Verbose output</a></li>
+<li><a class="reference internal" href="#experimental-extract-experimental-computed-features-from-pubchem"><code class="docutils literal"><span class="pre">--experimental</span></code>: Extract experimental/computed features from PubChem</a></li>
+<li><a class="reference internal" href="#fingerprint-extract-cactvs-fingerprints-from-pubchem"><code class="docutils literal"><span class="pre">--fingerprint</span></code>: Extract CACTVS fingerprints from PubChem</a></li>
+<li><a class="reference internal" href="#chemofeatures-run-padel-descriptors"><code class="docutils literal"><span class="pre">--chemofeatures</span></code>: Run PaDEL-Descriptors</a></li>
+<li><a class="reference internal" href="#user-user-features-are-provided-in-training-and-or-test-files"><code class="docutils literal"><span class="pre">--user</span></code>: User features are provided in training and/or test files</a></li>
+<li><a class="reference internal" href="#distance-calculate-compound-vs-compound-distance-matrix"><code class="docutils literal"><span class="pre">--distance</span></code>: Calculate compound vs. compound distance matrix</a></li>
+<li><a class="reference internal" href="#impute-impute-missing-data-using-k-nearest-neighbors-imputation"><code class="docutils literal"><span class="pre">--impute</span></code>: Impute missing data using K Nearest Neighbors Imputation</a></li>
+<li><a class="reference internal" href="#selection-run-boruta-feature-selection-to-reduce-uninformative-features"><code class="docutils literal"><span class="pre">--selection</span></code>: Run Boruta Feature Selection to reduce uninformative features</a></li>
+<li><a class="reference internal" href="#cv-run-50-hold-out-cross-validation-100-times"><code class="docutils literal"><span class="pre">--cv</span></code>: Run 50% hold-out Cross-Validation 100 times</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/script.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2016, Sandia National Laboratories.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="_sources/script.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
