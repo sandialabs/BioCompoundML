@@ -1,0 +1,22 @@
+bcml.Boruta.test package
+========================
+
+Submodules
+----------
+
+bcml.Boruta.test.unit_tests module
+----------------------------------
+
+.. automodule:: bcml.Boruta.test.unit_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Boruta.test
+    :members:
+    :undoc-members:
+    :show-inheritance:

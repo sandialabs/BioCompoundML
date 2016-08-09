@@ -1,0 +1,37 @@
+bcml package
+============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bcml.Analytics
+    bcml.Boruta
+    bcml.Chemoinformatics
+    bcml.Distance
+    bcml.KNNImpute
+    bcml.Parser
+    bcml.PubChemUtils
+    bcml.Train
+    bcml.tests
+
+Submodules
+----------
+
+bcml.bcml module
+----------------
+
+.. automodule:: bcml.bcml
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,37 @@
+bcml.Boruta package
+===================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bcml.Boruta.test
+
+Submodules
+----------
+
+bcml.Boruta.boruta_py module
+----------------------------
+
+.. automodule:: bcml.Boruta.boruta_py
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Boruta.setup module
+------------------------
+
+.. automodule:: bcml.Boruta.setup
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Boruta
+    :members:
+    :undoc-members:
+    :show-inheritance:

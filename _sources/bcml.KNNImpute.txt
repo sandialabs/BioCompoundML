@@ -1,0 +1,17 @@
+bcml.KNNImpute package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bcml.KNNImpute.knnimpute
+
+Module contents
+---------------
+
+.. automodule:: bcml.KNNImpute
+    :members:
+    :undoc-members:
+    :show-inheritance:

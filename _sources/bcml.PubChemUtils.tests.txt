@@ -1,0 +1,22 @@
+bcml.PubChemUtils.tests package
+===============================
+
+Submodules
+----------
+
+bcml.PubChemUtils.tests.pubchempy_utils_tests module
+----------------------------------------------------
+
+.. automodule:: bcml.PubChemUtils.tests.pubchempy_utils_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.PubChemUtils.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

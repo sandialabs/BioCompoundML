@@ -1,0 +1,22 @@
+bcml.Train package
+==================
+
+Submodules
+----------
+
+bcml.Train.train_model module
+-----------------------------
+
+.. automodule:: bcml.Train.train_model
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Train
+    :members:
+    :undoc-members:
+    :show-inheritance:
