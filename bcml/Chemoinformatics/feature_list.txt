@@ -1,0 +1,26 @@
+Density
+Vapor Density
+Boiling Point
+Hydrogen Bond Donor Count
+Rotatable Bond Count
+XLogP3
+Flash Point
+Formal Charge
+Undefined Atom Stereocenter Count
+Auto-Ignition
+Molecular Weight
+Hydrogen Bond Acceptor Count
+XLogP3-AA
+LogP
+Defined Atom Stereocenter Count
+Complexity
+Vapor Pressure
+Covalently-Bonded Unit Count
+Isotope Atom Count
+Undefined Bond Stereocenter Count
+Heavy Atom Count
+Exact Mass
+Monoisotopic Mass
+Topological Polar Surface Area
+Melting Point
+Defined Bond Stereocenter Count
