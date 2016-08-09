@@ -1,0 +1,29 @@
+bcml.Distance package
+=====================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bcml.Distance.tests
+
+Submodules
+----------
+
+bcml.Distance.distance module
+-----------------------------
+
+.. automodule:: bcml.Distance.distance
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Distance
+    :members:
+    :undoc-members:
+    :show-inheritance:

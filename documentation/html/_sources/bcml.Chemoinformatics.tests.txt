@@ -1,0 +1,46 @@
+bcml.Chemoinformatics.tests package
+===================================
+
+Submodules
+----------
+
+bcml.Chemoinformatics.tests.chemofeatures_tests module
+------------------------------------------------------
+
+.. automodule:: bcml.Chemoinformatics.tests.chemofeatures_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Chemoinformatics.tests.experimental_tests module
+-----------------------------------------------------
+
+.. automodule:: bcml.Chemoinformatics.tests.experimental_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Chemoinformatics.tests.fingerprint_tests module
+----------------------------------------------------
+
+.. automodule:: bcml.Chemoinformatics.tests.fingerprint_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Chemoinformatics.tests.user_tests module
+---------------------------------------------
+
+.. automodule:: bcml.Chemoinformatics.tests.user_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Chemoinformatics.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,53 @@
+bcml.Chemoinformatics package
+=============================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bcml.Chemoinformatics.tests
+
+Submodules
+----------
+
+bcml.Chemoinformatics.chemofeatures module
+------------------------------------------
+
+.. automodule:: bcml.Chemoinformatics.chemofeatures
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Chemoinformatics.experimental module
+-----------------------------------------
+
+.. automodule:: bcml.Chemoinformatics.experimental
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Chemoinformatics.fingerprints module
+-----------------------------------------
+
+.. automodule:: bcml.Chemoinformatics.fingerprints
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Chemoinformatics.user module
+---------------------------------
+
+.. automodule:: bcml.Chemoinformatics.user
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Chemoinformatics
+    :members:
+    :undoc-members:
+    :show-inheritance:

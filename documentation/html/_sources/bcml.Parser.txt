@@ -1,0 +1,46 @@
+bcml.Parser package
+===================
+
+Submodules
+----------
+
+bcml.Parser.build_testing module
+--------------------------------
+
+.. automodule:: bcml.Parser.build_testing
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Parser.build_training module
+---------------------------------
+
+.. automodule:: bcml.Parser.build_training
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Parser.read_testing module
+-------------------------------
+
+.. automodule:: bcml.Parser.read_testing
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Parser.read_training module
+--------------------------------
+
+.. automodule:: bcml.Parser.read_training
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Parser
+    :members:
+    :undoc-members:
+    :show-inheritance:

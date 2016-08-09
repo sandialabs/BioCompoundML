@@ -1,0 +1,22 @@
+bcml.tests package
+==================
+
+Submodules
+----------
+
+bcml.tests.bcml_tests module
+----------------------------
+
+.. automodule:: bcml.tests.bcml_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

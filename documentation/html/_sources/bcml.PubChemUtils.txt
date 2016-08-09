@@ -1,0 +1,29 @@
+bcml.PubChemUtils package
+=========================
+
+Subpackages
+-----------
+
+.. toctree::
+
+    bcml.PubChemUtils.tests
+
+Submodules
+----------
+
+bcml.PubChemUtils.pubchempy_utils module
+----------------------------------------
+
+.. automodule:: bcml.PubChemUtils.pubchempy_utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.PubChemUtils
+    :members:
+    :undoc-members:
+    :show-inheritance:

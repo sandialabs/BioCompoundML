@@ -1,0 +1,22 @@
+bcml.Distance.tests package
+===========================
+
+Submodules
+----------
+
+bcml.Distance.tests.distance_tests module
+-----------------------------------------
+
+.. automodule:: bcml.Distance.tests.distance_tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Distance.tests
+    :members:
+    :undoc-members:
+    :show-inheritance:

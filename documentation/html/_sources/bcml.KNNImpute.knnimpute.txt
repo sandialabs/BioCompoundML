@@ -1,0 +1,62 @@
+bcml.KNNImpute.knnimpute package
+================================
+
+Submodules
+----------
+
+bcml.KNNImpute.knnimpute.argpartition module
+--------------------------------------------
+
+.. automodule:: bcml.KNNImpute.knnimpute.argpartition
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.KNNImpute.knnimpute.common module
+--------------------------------------
+
+.. automodule:: bcml.KNNImpute.knnimpute.common
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.KNNImpute.knnimpute.few_observed_entries module
+----------------------------------------------------
+
+.. automodule:: bcml.KNNImpute.knnimpute.few_observed_entries
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.KNNImpute.knnimpute.normalized_distance module
+---------------------------------------------------
+
+.. automodule:: bcml.KNNImpute.knnimpute.normalized_distance
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.KNNImpute.knnimpute.optimistic module
+------------------------------------------
+
+.. automodule:: bcml.KNNImpute.knnimpute.optimistic
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.KNNImpute.knnimpute.reference module
+-----------------------------------------
+
+.. automodule:: bcml.KNNImpute.knnimpute.reference
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.KNNImpute.knnimpute
+    :members:
+    :undoc-members:
+    :show-inheritance:

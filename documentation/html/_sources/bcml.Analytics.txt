@@ -1,0 +1,30 @@
+bcml.Analytics package
+======================
+
+Submodules
+----------
+
+bcml.Analytics.cluster module
+-----------------------------
+
+.. automodule:: bcml.Analytics.cluster
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+bcml.Analytics.cross_validate module
+------------------------------------
+
+.. automodule:: bcml.Analytics.cross_validate
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: bcml.Analytics
+    :members:
+    :undoc-members:
+    :show-inheritance:
