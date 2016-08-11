@@ -151,5 +151,5 @@ Indices and tables
 
 * :doc:`index`
 * :doc:`script`
-* :doc:`module`
+* _modules: bcml.html
 
