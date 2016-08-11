@@ -59,7 +59,7 @@ PubChem features
 ^^^^^^^^^^^^^^^^
 In addition to user-provided features, BioCompoundML also collects features directly from PubChem. These include computationally predicted/experimentally measured features, 881 SMILES fingerprints and Structural Data Files (SDFs). 
 
-The choice of which of these features to collect are specified in the ``--fingerprints``, ``--experimental`` and ``--chemoinformatics`` parameters for ``bcml.py``
+The choice of which of these features to collect are specified in the ``--fingerprint``, ``--experimental`` and ``--chemoinformatics`` parameters for ``bcml.py``
 
 Fingerprints
 """"""""""""
