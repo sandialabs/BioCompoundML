@@ -33,10 +33,10 @@ class Update(object):
         total = dict()
         variable = dict()
         try:
-    		self.compound.iteritems
-    		dictitems = methodcaller('iteritems')
-		except AttributeError:
-    		dictitems = methodcaller('items')
+            self.compound.iteritems
+            dictitems = methodcaller('iteritems')
+        except AttributeError:
+            dictitems = methodcaller('items')
         for id, compound in self.compound.dictitems():
             userhash = compound['userhash']
             for key, value in userhash.iteritems():
