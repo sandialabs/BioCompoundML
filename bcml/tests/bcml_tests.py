@@ -49,7 +49,6 @@ class BCMLTests(unittest.TestCase):
         args = ['python', _executable, '-i', _data_min, '--train', '--pred', 'RON', '--user', '--random', '12345']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
-        print(stdoutdata, stderrdata)
         self.assertEqual(process.returncode, 0)
         args = ['python', _executable, '-i', _data_min,  '--train', '--random', '-12345', '--pred', 'RON']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -69,7 +68,6 @@ class BCMLTests(unittest.TestCase):
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
         self.assertEqual(process.returncode, 0)
-        self.assertEqual(stderrdata, '')
         print("Testing fingerprint feature")
         args = ['python', _executable, '-i', _data_min, '--train', '--pred', 'RON', '--fingerprint', '--random', '12345']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
