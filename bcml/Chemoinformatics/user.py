@@ -6,6 +6,12 @@ This module collects and processes user data
 from __future__ import print_function
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dict.iteritems()
+
 def verbose_print(verbose, line):
     if verbose:
         print(line)
@@ -32,12 +38,7 @@ class Update(object):
     def _variable_features(self):
         total = dict()
         variable = dict()
-        try:
-            self.compound.iteritems
-            dictitems = methodcaller('iteritems')
-        except AttributeError:
-            dictitems = methodcaller('items')
-        for id, compound in self.compound.dictitems():
+        for id, compound in dictitems(self.compound):
             userhash = compound['userhash']
             for key, value in userhash.iteritems():
                 try:
