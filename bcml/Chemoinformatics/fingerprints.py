@@ -1,11 +1,12 @@
 """
 This module processes fingerprint data from NCBI
 """
+from __future__ import print_function
 
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 class TestingUpdate(object):
