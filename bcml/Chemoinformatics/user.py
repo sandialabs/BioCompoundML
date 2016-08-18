@@ -11,7 +11,7 @@ def dictitems(dict):
     if sys.version_info[0]>=3:
         return dict.items()
     else:
-        return dict.iteritems()
+        return dictitems(dict)
 
 def verbose_print(verbose, line):
     if verbose:
@@ -20,9 +20,9 @@ def verbose_print(verbose, line):
 
 class TestingUpdate(object):
     def _update_compounds(self):
-        for id, compound in self.compound.copy().iteritems():
+        for id, compound in dictitems(self.compound.copy()):
             binhash = compound['userhash']
-            for key, value in binhash.copy().iteritems():
+            for key, value in dictitems(binhash.copy()):
                 if key not in self.features:
                     self.compound[id]['userhash'].pop(key, None)
 
@@ -57,9 +57,9 @@ class Update(object):
         verbose_print(self.verbose, print_string)
 
     def _update_compounds(self):
-        for id, compound in self.compound.copy().iteritems():
+        for id, compound in dictitems(self.compound.copy()):
             userhash = compound['userhash']
-            for key, value in userhash.copy().iteritems():
+            for key, value in dictitems(userhash.copy()):
                 if key not in self.variable:
                     self.compound[id]['userhash'].pop(key, None)
 
