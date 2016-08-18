@@ -3,9 +3,12 @@ This module collects and processes user data
 """
 
 
+from __future__ import print_function
+
+
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 class TestingUpdate(object):
