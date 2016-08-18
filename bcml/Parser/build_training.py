@@ -131,8 +131,7 @@ class Process(object):
         if split_value:
             self.predictors = _convert_predictor(predictor_values, split_value)
         else:
-            self.predictors = np.greater(predictor_values,
-                                         np.median(predictor_values)).astype(int)
+            self.predictors = _convert_predictor(predictor_values, np.median(predictor_values))
         self.rows = len(self.predictors)
         self.compounds, self.feature_names = _get_feature_names(compounds)
         self.columns = len(self.feature_names)
