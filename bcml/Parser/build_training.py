@@ -124,7 +124,7 @@ class Process(object):
         self.input = model_input
         compounds = []
         predictors = []
-        for i, (id, compound) in dictitems(enumerate(self.input.compound)):
+        for i, (id, compound) in enumerate(dictitems(self.input.compound)):
             compounds.append(self.input.compound[id])
             predictors.append(self.input.compound[id]['predictor'])
         predictor_values = np.array(map(float, predictors))
