@@ -274,12 +274,12 @@ class Collect(object):
                     #verbose_print(self.verbose, print_string)
                     concatenated_ids = ','.join(chunk_id)
                     uri = cactvs_uri(concatenated_ids)
-                    fps.extend(_url_factory(uri).split('\n'))
+                    fps.extend(_url_factory(uri).splitlines())
             else:
                 concatenated_ids = ','.join(ids)
                 verbose_print(self.verbose, 'Collecting all fingerprints')
                 uri = cactvs_uri(concatenated_ids)
-                fps = _url_factory(uri).split()
+                fps = _url_factory(uri).splitlines()
             for i, cactvs in enumerate(fps):
                 self.compound[ids[i]]['binhash'] = get_binhash(cactvs)
 
