@@ -21,6 +21,13 @@ _random = 12345
 _n_iter = 10
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
+
 class Object(object):
     pass
 
@@ -74,7 +81,7 @@ class ClusterTests(unittest.TestCase):
                                  '>= 1 any ring size 6': '0', 'C(-C)(=C)': '0'}}
         self.fingerprint_vector = list()
         self.key_list = list()
-        for (key, value) in input_data.iteritems():
+        for (key, value) in dictitems(input_data):
             self.fingerprint_vector.append(value)
             self.key_list.append(key)
         self.distance = ds.Distance(self.fingerprint_vector, self.key_list).distance

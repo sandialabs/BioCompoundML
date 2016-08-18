@@ -10,6 +10,13 @@ import unittest
 from Distance import distance as ds
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
+
 class DistanceTests(unittest.TestCase):
 
     def setUp(self):
@@ -72,7 +79,7 @@ class DistanceTests(unittest.TestCase):
                                 '>= 1 any ring size 6': '0', 'C(-C)(=C)': '1'}}
         self.fingerprint_vector = list()
         self.key_list = list()
-        for (key, value) in input_data.iteritems():
+        for (key, value) in dictitems(input_data):
             self.fingerprint_vector.append(value)
             self.key_list.append(key)
 

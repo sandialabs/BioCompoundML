@@ -22,6 +22,13 @@ from sklearn.preprocessing import Imputer
 _possible_features = ('experimentalhash', 'binhash', 'padelhash', 'userhash')
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
+
 def verbose_print(verbose, line):
     if verbose:
         print(line)
@@ -96,7 +103,7 @@ class Process(object):
         self.test = np.zeros((self.rows, self.columns,), dtype=np.float64)
         compounds = []
         self.test_names = []
-        for id, compound in self.input.compound.iteritems():
+        for id, compound in dictitems(self.input.compound):
             compounds.append(compound)
             self.test_names.append(id)
         (self.compounds, self.feature_names) = _get_feature_names(compounds)

@@ -39,6 +39,13 @@ class ArgumentExceptions(Exception):
         return repr(self.msg)
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
+
 def verbose_print(verbose, line):
     if verbose:
         print(line)
@@ -246,7 +253,7 @@ def collect_distance_matrix(collected_data):
     original_data.update()
     fingerprint_vector = list()
     key_list = list()
-    for i, (key, value) in enumerate(original_data.compound.iteritems()):
+    for i, (key, value) in dictitems(enumerate(original_data.compound)):
         fingerprint_vector.append(value['binhash'])
         key_list.append(key)
     distance = ds.Distance(fingerprint_vector, key_list).distance

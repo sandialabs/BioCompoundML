@@ -4,6 +4,12 @@ This module processes fingerprint data from NCBI
 from __future__ import print_function
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
 def verbose_print(verbose, line):
     if verbose:
         print(line)
@@ -11,9 +17,9 @@ def verbose_print(verbose, line):
 
 class TestingUpdate(object):
     def _update_compounds(self):
-        for id, compound in self.compound.copy().iteritems():
+        for id, compound in dictitems(self.compound.copy()):
             binhash = compound['binhash']
-            for key, value in binhash.copy().iteritems():
+            for key, value in dictitems(binhash.copy()):
                 if key not in self.features:
                     self.compound[id]['binhash'].pop(key, None)
 
@@ -30,9 +36,9 @@ class Update(object):
     def _variable_features(self):
         total = dict()
         variable = dict()
-        for id, compound in self.compound.iteritems():
+        for id, compound in dictitems(self.compound):
             binhash = compound['binhash']
-            for key, value in binhash.iteritems():
+            for key, value in dictitems(binhash):
                 if key not in total:
                     total[key] = value
                 elif value != total[key]:
@@ -44,9 +50,9 @@ class Update(object):
         verbose_print(self.verbose, print_string)
 
     def _update_compounds(self):
-        for id, compound in self.compound.copy().iteritems():
+        for id, compound in dictitems(self.compound.copy()):
             binhash = compound['binhash']
-            for key, value in binhash.copy().iteritems():
+            for key, value in dictitems(binhash.copy()):
                 if key not in self.variable:
                     self.compound[id]['binhash'].pop(key, None)
 

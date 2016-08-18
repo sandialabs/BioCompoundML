@@ -18,6 +18,12 @@ _testing_directory = _directory + "/db/testing/"
 _padel_descriptor = _directory + "/padel_descriptor.out"
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
 def verbose_print(verbose, line):
     if verbose:
         print(line)
@@ -40,7 +46,7 @@ class TestingUpdate(object):
 
     def update(self, padel=False):
         if padel is False:
-            [self.compound[k].pop('sdf') for k, v in self.compound.copy().iteritems()]
+            [self.compound[k].pop('sdf') for k, v in dictitems(self.compound.copy())]
         else:
             cid_list = self.compound.keys()
             for cid in cid_list:
@@ -48,7 +54,7 @@ class TestingUpdate(object):
                 if not os.path.isfile(filename) and 'sdf' in self.compound[cid].keys():
                     with open(filename, "w") as filebuffer:
                         filebuffer.write(self.compound[cid]['sdf'])
-            [self.compound[k].pop('sdf') for k, v in self.compound.copy().iteritems()]
+            [self.compound[k].pop('sdf') for k, v in dictitems(self.compound.copy())]
             call(["java", "-jar", _directory+"/PaDEL-Descriptor.jar", "-dir",
                  _testing_directory, "-2d", "-3d", "-file", _padel_descriptor,
                  "-threads", "-1"])
@@ -65,7 +71,7 @@ class TestingUpdate(object):
 class Update(object):
     def _update_compounds(self):
         '''Remove invariable features'''
-        for id, compound in self.compound.copy().iteritems():
+        for id, compound in dictitems(self.compound.copy()):
             for key in self.compound[id]['padelhash'].copy().keys():
                 if key not in self.variable:
                     self.compound[id]['padelhash'].pop(key, None)
@@ -104,7 +110,7 @@ class Update(object):
             dirpath = _db_directory
         if self.padel is False:
             '''Get rid of the sdf features'''
-            [self.compound[k].pop('sdf') for k, v in self.compound.copy().iteritems()]
+            [self.compound[k].pop('sdf') for k, v in dictitems(self.compound.copy())]
         else:
             '''PaDEL updating is more complicated than the other features, since
             it requires us to not only extract sdfs from PubChem, but to read them
@@ -115,7 +121,7 @@ class Update(object):
                 if not os.path.isfile(filename) and 'sdf' in self.compound[cid].keys():
                     with open(filename, "w") as filebuffer:
                         filebuffer.write(self.compound[cid]['sdf'])
-            [self.compound[k].pop('sdf') for k, v in self.compound.copy().iteritems()]
+            [self.compound[k].pop('sdf') for k, v in dictitems(self.compound.copy())]
             '''Specifies to run PaDEL-Descriptor, with max threads, using -2d and -3d
             descriptors'''
             call(["java", "-jar", _directory + "/PaDEL-Descriptor.jar", "-dir",

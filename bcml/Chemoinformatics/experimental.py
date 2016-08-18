@@ -10,6 +10,12 @@ _directory = os.path.dirname(_path)
 _features_list = _directory + '/feature_list.txt'
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
 def verbose_print(verbose, line):
     if verbose:
         print(line)
@@ -82,9 +88,9 @@ def _format(string):
 class TestingUpdate(object):
     def update(self):
         features = self.features
-        for id, compound in self.compound.copy().iteritems():
+        for id, compound in dictitems(self.compound.copy()):
             if 'xml' in compound.keys():
-                for key, value in compound['xml'].copy().iteritems():
+                for key, value in dictitems(compound['xml'].copy()):
                     if key in features:
                         self.compound[id]['xml'][key] = _format(value)
                     else:
@@ -107,9 +113,9 @@ class Update(object):
 
     def _update_compounds(self):
         '''Remove the invariable compounds from the feature set'''
-        for id, compound in self.compound.copy().iteritems():
+        for id, compound in dictitems(self.compound.copy()):
             binhash = compound['experimentalhash']
-            for key, value in binhash.copy().iteritems():
+            for key, value in dictitems(binhash.copy()):
                 if key not in self.variable:
                     self.compound[id]['experimentalhash'].pop(key, None)
 
@@ -119,9 +125,9 @@ class Update(object):
         features = _add_feature_list()
         self.total = {}
         self.variable = {}
-        for _id, compound in self.compound.copy().iteritems():
+        for _id, compound in dictitems(self.compound.copy()):
             if 'xml' in compound.keys():
-                for key, value in compound['xml'].copy().iteritems():
+                for key, value in dictitems(compound['xml'].copy()):
                     if key in features:
                         self.compound[_id]['xml'][key] = _format(value)
                         if key not in self.total:

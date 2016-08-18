@@ -22,6 +22,13 @@ from KNNImpute.knnimpute import (
 )
 
 
+def dictitems(dict):
+    if sys.version_info[0]>=3:
+        return dict.items()
+    else:
+        return dictitems(dict)
+
+
 def verbose_print(verbose, line):
     if verbose:
         print(line)
@@ -116,7 +123,7 @@ class Process(object):
         self.input = model_input
         compounds = []
         predictors = []
-        for i, (id, compound) in enumerate(self.input.compound.iteritems()):
+        for i, (id, compound) in dictitems(enumerate(self.input.compound)):
             compounds.append(self.input.compound[id])
             predictors.append(self.input.compound[id]['predictor'])
         predictor_values = np.array(map(float, predictors))
