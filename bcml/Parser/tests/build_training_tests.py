@@ -60,8 +60,17 @@ class BuildTrainingTests(unittest.TestCase):
         support = [False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False]
         self.assertTrue(list_check(support, train.feature_support.tolist()))
         self.assertEquals('Complexity', train.feature_names[0])
+        '''
+        Need an appropriate training set to test median split
+        test_data = Object()
+        test_data.compound = deepcopy(compound)
         train = bt.Process(test_data, split_value=False)
         train.feature_selection(seed=12345, verbose=True)
+        print(train.feature_support)
+        support = [False, False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False]
+        self.assertTrue(list_check(support, train.feature_support.tolist()))
+        self.assertEquals('Complexity', train.feature_names[0])
+        '''
 
 if __name__ == '__main__':
     unittest.main()
