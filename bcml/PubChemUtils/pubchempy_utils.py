@@ -7,7 +7,10 @@ except ImportError:
     # Fall back to Python 2's urllib2
     import urllib2
 import os
-from urllib.parse import urlparse
+try:
+	from urllib.parse import urlparse
+except ImportError:
+	from urlparse import urlparse
 from bs4 import BeautifulSoup
 from time import sleep
 
