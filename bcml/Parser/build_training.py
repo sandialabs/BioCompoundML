@@ -27,7 +27,7 @@ def dictitems(dict):
     if sys.version_info[0]>=3:
         return dict.items()
     else:
-        return dictitems(dict)
+        return dict.iteritems()
 
 
 def verbose_print(verbose, line):
@@ -128,7 +128,7 @@ class Process(object):
         for id, compound in dictitems(self.input.compound):
             compounds.append(self.input.compound[id])
             predictors.append(self.input.compound[id]['predictor'])
-        predictor_values = np.array(map(float, predictors))
+        predictor_values = np.array(predictors, '|S4').astype(np.float)
         if split_value:
             self.predictors = _convert_predictor(predictor_values, split_value)
         else:
