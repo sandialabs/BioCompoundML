@@ -25,10 +25,10 @@ def fit_and_score_CV(estimator, X, y, cv, n_folds=2, **params):
     '''Fit accuracy, precision, recall and Receiver Operator
     Characteristic'''
     ys = get_true_and_pred_CV(estimator, X, y, n_folds, cv, params)
-    cv_acc = map(lambda tp: accuracy_score(tp[0], tp[1]), ys)
-    cv_prec = map(lambda tp: precision_score(tp[0], tp[1]), ys)
-    cv_recall = map(lambda tp: recall_score(tp[0], tp[1]), ys)
-    cv_roc_auc = map(lambda tp: roc_auc_score(tp[0], tp[1]), ys)
+    cv_acc = np.fromiter(map(lambda tp: accuracy_score(tp[0], tp[1]), ys), np.float)
+    cv_prec = np.fromiter(map(lambda tp: precision_score(tp[0], tp[1]), ys), np.float)
+    cv_recall = np.fromiter(map(lambda tp: recall_score(tp[0], tp[1]), ys), np.float)
+    cv_roc_auc = np.fromiter(map(lambda tp: roc_auc_score(tp[0], tp[1]), ys), np.float)
     return(cv_acc, cv_prec, cv_recall, cv_roc_auc)
 
 
