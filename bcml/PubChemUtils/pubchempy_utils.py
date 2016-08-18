@@ -1,5 +1,6 @@
 from __future__ import print_function
 from collections import defaultdict
+from six.moves import xrange
 try:
     # For Python 3.0 and later
     import urllib.request as urllib2
