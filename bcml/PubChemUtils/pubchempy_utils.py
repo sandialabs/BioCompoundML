@@ -2,7 +2,7 @@ from __future__ import print_function
 from collections import defaultdict
 import urllib2
 import os
-from urlparse import urlparse
+from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 from time import sleep
 
