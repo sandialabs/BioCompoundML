@@ -143,7 +143,6 @@ class clustertools():
     def model_2_determine_test_data_similarity(self,model):
         clf_EE={}
         model_EE={}
-        print len(model)
         for i in range(len(model)):
             clf=EllipticEnvelope(contamination=0.01,support_fraction=1)
             clf_EE[i]=clf
