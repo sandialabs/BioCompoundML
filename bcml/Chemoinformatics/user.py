@@ -32,7 +32,12 @@ class Update(object):
     def _variable_features(self):
         total = dict()
         variable = dict()
-        for id, compound in self.compound.iteritems():
+        try:
+    		self.compound.iteritems
+    		dictitems = methodcaller('iteritems')
+		except AttributeError:
+    		dictitems = methodcaller('items')
+        for id, compound in self.compound.dictitems():
             userhash = compound['userhash']
             for key, value in userhash.iteritems():
                 try:
