@@ -70,7 +70,7 @@ class Process(object):
         print(self.compounds)
         print(self.feature_names)
         for index, value in np.ndenumerate(self.train):
-			print(index)
+            print(index)
             compound = self.compounds[index[0]]
             feature = self.feature_names[index[1]]
             if (feature in compound.keys()) and (compound[feature] is not "")\
