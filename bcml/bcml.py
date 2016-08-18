@@ -1,4 +1,5 @@
 '''Main class'''
+from __future__ import print_function
 import argparse
 from Parser import read_training as rt
 from Parser import read_testing as rtest
@@ -40,7 +41,7 @@ class ArgumentExceptions(Exception):
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 def parse_arguments():
@@ -363,7 +364,6 @@ def train_model(args, seed, proxy, pred):
                     with open(features_file, 'wb') as fid:
                         cPickle.dump(train, fid)
                 '''This is where the model is actually trained in the tm module'''
-                print train
                 model = tm.Train(train)
                 model.train_model()
                 trained_model.model = model
@@ -391,7 +391,6 @@ def train_model(args, seed, proxy, pred):
 
 
 def test_model(trained_model, args, seed=False, proxy=False, pred=False):
-    print trained_model.__dict__
     if trained_model is False:
         assert args.datain, "If the model hasn't been trained, input data\
                              must be specified"
@@ -440,10 +439,10 @@ def test_model(trained_model, args, seed=False, proxy=False, pred=False):
         testmatrix = np.array(testmatrix)
         predicted = cluster.cluster_testing(testmatrix)
         for pred in predicted:
-            print test.test_names[pred]
+            print(test.test_names[pred])
     prediction = trained_model.model.clf.predict_proba(test.test)
     for i, name in enumerate(test.test_names):
-        print name, prediction[i, ]
+        print(name, prediction[i, ])
 
 
 def define_pred(args):
