@@ -53,7 +53,7 @@ class PubChemPyUtilTests(unittest.TestCase):
 
     def test_add_sdf(self):
         """Ensure that SDFs can be added"""
-        self._collect.add_sdf(sdf=True, chunks=1)
+        self._collect.add_sdf(sdf=True, chunks=False)
         self.assertTrue('sdf' in self._collect.compound['7844'])
         self.assertEqual('7844', self._collect.compound['7844']['sdf'].split('\n')[0])
 

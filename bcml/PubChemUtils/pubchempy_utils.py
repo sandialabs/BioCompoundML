@@ -115,8 +115,8 @@ def stream_sdf(ids):
     '''
     concatenated_ids = ','.join(ids)
     uri = sdf_uri(concatenated_ids)
-    sdf_stream = _url_factory(uri)
-    sdfs = [data.lstrip() + '$$$$' for data in
+    sdf_stream = _url_factory(uri).decode().strip('$$$$')
+    sdfs = ["".join((data.lstrip(), '$$$$')) for data in
             sdf_stream.decode().split('$$$$') if data is not ""]
     return sdfs
 
