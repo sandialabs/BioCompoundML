@@ -2,6 +2,7 @@
 This module handles the clustering of compounds in the training set
 and also the processing of test molecules.
 '''
+from __future__ import print_function
 from scipy import stats
 import numpy as np
 from sklearn.decomposition import PCA, TruncatedSVD
@@ -100,7 +101,6 @@ class Clustering():
         for i in range(len(svd.model)):
             p = OCSVMmodel_t.predict(svd.model[i, :].reshape(1, -1))
             pred = OCSVMmodel_t.decision_function(svd.model[i, :].reshape(1, -1)).ravel()
-            print i, p, pred
             if (p == 1):
                 predicted.append(i)
         return predicted
