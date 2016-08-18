@@ -1,6 +1,11 @@
 from __future__ import print_function
 from collections import defaultdict
-import urllib2
+try:
+    # For Python 3.0 and later
+    import urllib.request as urllib2
+except ImportError:
+    # Fall back to Python 2's urllib2
+    import urllib2
 import os
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
