@@ -35,6 +35,7 @@ class BCMLTests(unittest.TestCase):
         args = ['python', _executable]
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
+        print(stdoutdata, stderrdata)
         self.assertEqual(process.returncode, 2)
         print("Testing read of incompatible modules")
         args = ['python', _executable, '-i data/null.txt', '--train', '--test']
