@@ -18,6 +18,7 @@ from Distance import distance as ds
 from urllib.parse import urlparse
 from PubChemUtils import pubchempy_utils as pcp
 from copy import deepcopy
+import sys
 import warnings
 
 _chunks = 10

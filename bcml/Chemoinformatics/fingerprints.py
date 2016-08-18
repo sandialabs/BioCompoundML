@@ -2,6 +2,7 @@
 This module processes fingerprint data from NCBI
 """
 from __future__ import print_function
+import sys
 
 
 def dictitems(dict):

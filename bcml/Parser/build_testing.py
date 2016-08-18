@@ -17,6 +17,8 @@ from KNNImpute.knnimpute import (
     knn_impute_optimistic,
 )
 from sklearn.preprocessing import Imputer
+import sys
+
 
 #_possible_features = ("binhash", "padelhash", "experimentalhash")
 _possible_features = ('experimentalhash', 'binhash', 'padelhash', 'userhash')

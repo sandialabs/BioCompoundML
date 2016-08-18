@@ -8,6 +8,8 @@ This contains the unit tests for the read_training module.
 from __future__ import print_function
 import unittest
 from Distance import distance as ds
+import sys
+
 
 
 def dictitems(dict):

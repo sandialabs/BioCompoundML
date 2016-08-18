@@ -7,6 +7,7 @@ from __future__ import print_function
 from tempfile import mkdtemp
 from subprocess import call
 import os
+import sys
 from shutil import rmtree
 
 
