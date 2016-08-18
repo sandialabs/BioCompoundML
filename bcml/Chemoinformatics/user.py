@@ -41,7 +41,7 @@ class Update(object):
         variable = dict()
         for id, compound in dictitems(self.compound):
             userhash = compound['userhash']
-            for key, value in userhash.iteritems():
+            for key, value in dictitems(userhash):
                 try:
                     val = float(value)
                     if key not in total:
