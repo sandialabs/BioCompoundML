@@ -1,3 +1,9 @@
+'''
+This is the workinng class for Chemofeature collection
+'''
+
+
+from __future__ import print_function
 from tempfile import mkdtemp
 from subprocess import call
 import os
@@ -14,7 +20,7 @@ _padel_descriptor = _directory + "/padel_descriptor.out"
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 class TestingUpdate(object):
