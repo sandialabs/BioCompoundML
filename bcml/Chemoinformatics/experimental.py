@@ -2,6 +2,7 @@
 This module parses experimental/computed data from NCBI
 """
 
+from __future__ import print_function
 import re
 import os
 _path = os.path.abspath(__file__)
@@ -11,7 +12,7 @@ _features_list = _directory + '/feature_list.txt'
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 def _add_feature_list():
