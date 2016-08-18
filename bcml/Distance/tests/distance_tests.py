@@ -5,6 +5,7 @@ This contains the unit tests for the read_training module.
 """
 
 
+from __future__ import print_function
 import unittest
 from Distance import distance as ds
 
@@ -13,7 +14,7 @@ class DistanceTests(unittest.TestCase):
 
     def setUp(self):
         """Create an instance of the read_training Read class"""
-        print "Initializing test"
+        print("Initializing test")
         input_data = {'19502': {'CC1CCC(C)CC1': '0', '[#1]-C=C-[#1]': '0',
                                 'C-C-C-C-C-C': '1', 'C-C-C-C-C-C(C)-C': '1',
                                 '>= 8 C': '1', 'C-C(C)-C-C-C': '1',
@@ -77,12 +78,12 @@ class DistanceTests(unittest.TestCase):
 
     def tearDown(self):
         """Delete data structure"""
-        print "Clearing out file"
+        print("Clearing out file")
         del self.fingerprint_vector
 
     def test_distance_functions(self):
         """Test the values associated with the test file"""
-        print "Run standard distance"
+        print("Run standard distance")
         distance = ds.Distance(self.fingerprint_vector, self.key_list)
         """Test jaccard distance between 0 and 1"""
         self.assertAlmostEqual(0.83636364, distance.distance[0, 1])

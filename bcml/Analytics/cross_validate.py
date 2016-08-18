@@ -1,3 +1,4 @@
+from __future__ import print_function
 from sklearn import cross_validation as cross_v
 from sklearn.metrics import roc_curve, accuracy_score, precision_score, recall_score, roc_auc_score
 import numpy as np
@@ -6,7 +7,7 @@ import matplotlib.pyplot as plt
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 def get_true_and_pred_CV(estimator, X, y, n_folds, cv, params):
@@ -67,7 +68,7 @@ class Analysis(object):
         self.roc = roc
 
     def feature_importances(self, feature_count=200):
-        print "Features sorted by their score:"
+        print("Features sorted by their score:")
         feats = []
         if hasattr(self.clf, 'feature_importances_'):
             feats = sorted(zip(map(lambda x: round(x, 4), self.clf.feature_importances_), self.model.features), reverse=True)

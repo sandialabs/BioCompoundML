@@ -1,3 +1,4 @@
+from __future__ import print_function
 from collections import defaultdict
 import urllib2
 import os
@@ -20,7 +21,7 @@ package
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 def _url_factory(uri):

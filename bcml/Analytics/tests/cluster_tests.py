@@ -5,6 +5,7 @@ This contains the unit tests for the cluster module.
 """
 
 
+from __future__ import print_function
 import unittest
 from Analytics import cluster as cl
 from Parser import build_training as bt
@@ -28,7 +29,7 @@ class ClusterTests(unittest.TestCase):
 
     def setUp(self):
         """Create an instance of the read_training Read class"""
-        print "Initializing test"
+        print("Initializing test")
         input_data = {'7844': {'CC1CCC(C)CC1': '0', '[#1]-C=C-[#1]': '0',
                                 'C-C-C-C-C-C': '1', 'C-C-C-C-C-C(C)-C': '1',
                                 '>= 8 C': '1', 'C-C(C)-C-C-C': '1',
@@ -92,18 +93,17 @@ class ClusterTests(unittest.TestCase):
 
     def tearDown(self):
         """Delete data structure"""
-        print "Clearing out file"
+        print("Clearing out file")
         del self.test_data
 
     def testCluster(self):
         np.random.seed(_random)
-        print "Testing Clustering"
+        print("Testing Clustering")
         cluster = cl.Clustering(self.test_data.compound, seed=_random)
         cluster.cluster_training(self.model)
         self.assertEqual(0.9375, cluster.p_feat_matrix[0][1])
         cluster.cluster_training(self.model, distance=self.distance)
         self.assertEqual(0.4, cluster.p_feat_matrix[0][1])
-        print cluster.__dict__
 
 
 if __name__ == '__main__':

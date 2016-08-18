@@ -11,6 +11,7 @@ Attributes:
     total structure of the set
 """
 
+from __future__ import print_function
 import numpy as np
 from KNNImpute.knnimpute import (
     knn_impute_optimistic,
@@ -23,7 +24,7 @@ _possible_features = ('experimentalhash', 'binhash', 'padelhash', 'userhash')
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 
 def _get_feature_names(compounds):
@@ -80,7 +81,6 @@ class Process(object):
         """
         for index, value in np.ndenumerate(self.test):
             column = index[1]
-            print self.test[index], self.impute[column]
             if (np.isnan(value) is True) or (np.isinf(value) is True) or (np.can_cast(value, np.float64) is False) or (np.can_cast(value, np.float32) is False):
                 self.test[index] = self.impute[column]'''
 

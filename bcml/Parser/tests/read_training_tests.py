@@ -5,6 +5,7 @@ This contains the unit tests for the read_training module.
 """
 
 
+from __future__ import print_function
 import unittest
 import os
 from Parser import read_training as rt
@@ -24,31 +25,31 @@ class ReadTrainingTests(unittest.TestCase):
 
     def setUp(self):
         """Create an instance of the read_training Read class"""
-        print "Initializing test"
+        print("Initializing test")
         self.read = rt.Read(_input_file, predictor=_pred, user=False, id_name=_id)
 
     def tearDown(self):
         """Delete data structure"""
-        print "Clearing out file"
+        print("Clearing out file")
         del self.read
 
     def test_training_compounds(self):
         """Test the values associated with the test file"""
-        print "Finding compound"
+        print("Finding compound")
         self.assertEqual(len(self.read.compounds), _count)
         test_compound = self.read.compounds[0]
-        print "Testing name"
+        print("Testing name")
         self.assertEqual(test_compound['Name'], _name)
-        print "Testing ID"
+        print("Testing ID")
         self.assertEqual(test_compound['PubChem'], _pubchem_id)
-        print "Testing RON"
+        print("Testing RON")
         self.assertEqual(test_compound['RON'], _RON)
-        print "Testing with User"
+        print("Testing with User")
         del self.read
         self.read = rt.Read(_input_file, predictor=_pred, user=True, id_name=_id)
         test_compound = self.read.compounds[0]
         self.assertTrue('userhash' in test_compound)
-        print "Testing with Predictor"
+        print("Testing with Predictor")
         self.assertFalse(_pred in test_compound['userhash'])
         self.assertEqual(self.read.predictors[0], _RON)
 

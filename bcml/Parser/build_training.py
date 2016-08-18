@@ -11,6 +11,7 @@ Attributes:
     total structure of the set
 """
 
+from __future__ import print_function
 import numpy as np
 import warnings
 from sklearn.preprocessing import Imputer
@@ -23,7 +24,7 @@ from KNNImpute.knnimpute import (
 
 def verbose_print(verbose, line):
     if verbose:
-        print line
+        print(line)
 
 _possible_features = ('experimentalhash', 'binhash', 'padelhash', 'userhash')
 
