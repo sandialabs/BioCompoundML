@@ -85,8 +85,6 @@ class TestingUpdate(object):
         for id, compound in self.compound.copy().iteritems():
             if 'xml' in compound.keys():
                 for key, value in compound['xml'].copy().iteritems():
-                    if key == 'Molecular Formula':
-                        print id, key, value
                     if key in features:
                         self.compound[id]['xml'][key] = _format(value)
                     else:
