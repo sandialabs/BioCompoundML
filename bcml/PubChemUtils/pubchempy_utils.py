@@ -68,7 +68,7 @@ def convert_cactvs(cactvs):
            "4": 56, "5": 57, "6": 58, "7": 59, "8": 60, "9": 61,
            "+": 62, "/": 63}
     c = cactvs[:-2].strip()
-    binstring = (''.join([str(bin(b64[x]))[2:].zfill(6) for x in c]))
+    binstring = (''.join([str(bin(b64[x]))[2:].zfill(6) for x in c.decode('utf-8')]))
     return binstring[32:-11]
 
 
