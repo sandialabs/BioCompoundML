@@ -36,13 +36,11 @@ class BCMLTests(unittest.TestCase):
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
         self.assertEqual(process.returncode, 2)
-        self.assertEqual(stdoutdata, '')
         print("Testing read of incompatible modules")
         args = ['python', _executable, '-i data/null.txt', '--train', '--test']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
         self.assertEqual(process.returncode, 2)
-        self.assertEqual(stdoutdata, '')
         args = ['python', _executable, '-i data/null.txt', '-d data/null.txt', '--pred', 'RON']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
