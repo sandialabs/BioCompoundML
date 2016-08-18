@@ -12,7 +12,7 @@ from Parser import build_training as bt
 from Parser import build_testing as btest
 from Train import train_model as tm
 from Analytics import cross_validate as cv
-import cPickle
+import pickle
 import numpy as np
 from Distance import distance as ds
 from urlparse import urlparse
@@ -184,12 +184,12 @@ def existing_training_model(args, seed):
     trained_model = Training()
     if args.datain.endswith('.cluster'):
         with open(args.datain, 'rb') as fid:
-            cluster = cPickle.load(fid)
+            cluster = picle.load(fid)
             trained_model.cluster = cluster
             trained_model.model = cluster.model
     elif args.datain.endswith('.model'):
         with open(args.datain, 'rb') as fid:
-            model = cPickle.load(fid)
+            model = pickle.load(fid)
             trained_model.model = model
         if args.cluster:
             cluster = cl.Clustering(model.training_data.compound, seed=args.random)
@@ -197,7 +197,7 @@ def existing_training_model(args, seed):
             trained_model.cluster = cluster
     elif args.datain.endswith('.features'):
         with open(args.datain, 'rb') as fid:
-            train = cPickle.load(fid)
+            train = pickle.load(fid)
             train = bt.Process(train, seed=seed)
             model = tm.Train(train)
             model.train_model()
@@ -362,7 +362,7 @@ def train_model(args, seed, proxy, pred):
                 if args.dataout:
                     features_file = args.dataout + ".features"
                     with open(features_file, 'wb') as fid:
-                        cPickle.dump(train, fid)
+                        pickle.dump(train, fid)
                 '''This is where the model is actually trained in the tm module'''
                 model = tm.Train(train)
                 model.train_model()
@@ -374,7 +374,7 @@ def train_model(args, seed, proxy, pred):
                 if args.dataout:
                     model_file = args.dataout + ".model"
                     with open(model_file, 'wb') as fid:
-                        cPickle.dump(model, fid)
+                        pickle.dump(model, fid)
                 if args.cv:
                     report_model_validation(model, args)
                 if args.cluster:
@@ -384,7 +384,7 @@ def train_model(args, seed, proxy, pred):
                     if args.dataout:
                         cluster_file = args.dataout + ".cluster"
                         with open(cluster_file, 'wb') as fid:
-                            cPickle.dump(cluster, fid)
+                            pickle.dump(cluster, fid)
     else:
         trained_model = False
     return trained_model
@@ -398,11 +398,11 @@ def test_model(trained_model, args, seed=False, proxy=False, pred=False):
         trained_model = False
         cluster = False
         with open(model_file, 'rb') as fid:
-            trained_model = cPickle.load(fid)
+            trained_model = pickle.load(fid)
         if args.cluster:
             cluster_file = args.datain + ".cluster"
             with open(cluster_file, 'rb') as fid:
-                cluster = cPickle.load(fid)
+                cluster = pickle.load(fid)
     else:
         if args.test_input:
             (user, experimental, chemofeatures, fingerprint) = check_features(args)
