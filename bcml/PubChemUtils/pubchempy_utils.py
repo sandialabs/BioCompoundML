@@ -67,7 +67,7 @@ def convert_cactvs(cactvs):
            "y": 50, "z": 51, "0": 52, "1": 53, "2": 54, "3": 55,
            "4": 56, "5": 57, "6": 58, "7": 59, "8": 60, "9": 61,
            "+": 62, "/": 63}
-    c = cactvs[:-2]
+    c = cactvs[:-2].strip()
     binstring = (''.join([str(bin(b64[x]))[2:].zfill(6) for x in c]))
     return binstring[32:-11]
 
