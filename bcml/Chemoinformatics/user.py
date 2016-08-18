@@ -11,7 +11,8 @@ def dictitems(dict):
     if sys.version_info[0]>=3:
         return dict.items()
     else:
-        return dictitems(dict)
+        return dict.iteritems()
+
 
 def verbose_print(verbose, line):
     if verbose:
