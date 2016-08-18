@@ -4,6 +4,7 @@ This module collects and processes user data
 
 
 from __future__ import print_function
+import sys
 
 
 def dictitems(dict):
