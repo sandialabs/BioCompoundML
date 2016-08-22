@@ -20,7 +20,7 @@ python setup.py install
 
 ### Dependencies
 -------------
-BioCompoundML is tested to work under Python 2.7.
+BioCompoundML is currently only tested to work under Python 2.6 and 2.7 - Python 3 support is being added. There will be inconsistencies in the tests between the Python 2 and Python 3, with certain tests failing. It is advised, at this point, to use Python 2.6 or 2.7.
 
 * numpy==1.10.4
 * scikit-learn==0.17.1
