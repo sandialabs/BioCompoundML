@@ -24,7 +24,7 @@ install:
 
   # Replace dep1 dep2 ... with your dependencies
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION scipy numpy scikit-learn matplotlib
-  - conda install --name test-environment beautiful-soup
+  - conda install --name test-environment beautiful-soup nose
   - source activate test-environment
   - python setup.py install
 script: 
