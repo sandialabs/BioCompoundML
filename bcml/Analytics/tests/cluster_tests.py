@@ -109,9 +109,9 @@ class ClusterTests(unittest.TestCase):
         print("Testing Clustering")
         cluster = cl.Clustering(self.test_data.compound, seed=_random)
         cluster.cluster_training(self.model)
-        self.assertEqual(0.9375, cluster.p_feat_matrix[0][1])
+        self.assertEqual(1.0, cluster.p_feat_matrix[0][1])
         cluster.cluster_training(self.model, distance=self.distance)
-        self.assertEqual(0.4, cluster.p_feat_matrix[0][1])
+        self.assertAlmostEqual(0.270, cluster.p_feat_matrix[0][1], 2)
 
 
 if __name__ == '__main__':
