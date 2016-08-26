@@ -62,10 +62,10 @@ class Analysis(object):
         print_line = ("\tReceiver Operator, AUC: %0.4f +/- %0.4f" % (np.mean(roc),
                                                                      np.std(roc) * 2))
         verbose_print(self.verbose, print_line)
-        self.acc = acc
-        self.prec = prec
-        self.recall = recall
-        self.roc = roc
+        self.acc = np.mean(acc)
+        self.prec = np.mean(prec)
+        self.recall = np.mean(recall)
+        self.roc = np.mean(roc)
 
     def feature_importances(self, feature_count=200):
         print("Features sorted by their score:")

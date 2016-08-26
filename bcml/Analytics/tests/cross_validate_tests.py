@@ -41,7 +41,6 @@ class CrossValidateTests(unittest.TestCase):
         np.random.seed(seed=_random)
         train = bt.Process(self.test_data, split_value=_split_value)
         X = train.train
-        print(X)
         imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
         imp.fit(X)
         t = imp.transform(X)
@@ -51,12 +50,12 @@ class CrossValidateTests(unittest.TestCase):
         print("Test cross_validate")
         cross = cv.Analysis(model, seed=_random, verbose=True)
         cross.cross_validate(n_iter=_n_iter)
-        self.assertEqual(0.5, cross.acc[0])
-        self.assertEqual(0.5, cross.prec[0])
-        self.assertEqual(1.0, cross.recall[0])
-        self.assertEqual(0.5, cross.roc[0])
+        self.assertEqual(0.95, cross.acc)
+        self.assertEqual(0.95, cross.prec)
+        self.assertEqual(1.0, cross.recall)
+        self.assertEqual(0.95, cross.roc)
         cross.feature_importances()
-        self.assertEqual(0.0684, cross.feats[0][0])
+        self.assertAlmostEqual(0.0586, cross.feats[0][0], 3)
 
 if __name__ == '__main__':
     unittest.main()
