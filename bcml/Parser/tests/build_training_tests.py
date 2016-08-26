@@ -10,7 +10,10 @@ import unittest
 from Parser import build_training as bt
 from copy import deepcopy
 import numpy as np
-from collections import OrderedDict
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
 
 """This file is pulled from the data directory"""
 _split_value = 70
