@@ -8,7 +8,10 @@ This contains the unit tests for the read_training module.
 from __future__ import print_function
 import unittest
 from Chemoinformatics import fingerprints as fp
-from collections import defaultdict, OrderedDict
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
 from copy import deepcopy
 
 

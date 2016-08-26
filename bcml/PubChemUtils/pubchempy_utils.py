@@ -1,5 +1,9 @@
 from __future__ import print_function
-from collections import OrderedDict, Callable, defaultdict
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
+from collections import Callable, defaultdict
 from six.moves import xrange
 try:
     # For Python 3.0 and later
