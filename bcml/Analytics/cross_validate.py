@@ -34,7 +34,7 @@ def fit_and_score_CV(estimator, X, y, cv, n_folds=2, **params):
 
 class Analysis(object):
     def __init__(self, model, seed=False, verbose=True):
-        np.random.seed(seed)
+        np.random.seed(seed=seed)
         self.n_samples = model.train.shape[0]
         self.clf = model.clf
         self.y = model.predictors

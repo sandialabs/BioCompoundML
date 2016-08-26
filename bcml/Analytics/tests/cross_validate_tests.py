@@ -38,9 +38,10 @@ class CrossValidateTests(unittest.TestCase):
         del self.test_data
 
     def testCrossValidate(self):
-        np.random.seed(_random)
+        np.random.seed(seed=_random)
         train = bt.Process(self.test_data, split_value=_split_value)
         X = train.train
+        print(X)
         imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
         imp.fit(X)
         t = imp.transform(X)

@@ -126,6 +126,7 @@ class Process(object):
         predictors = []
         
         for id, compound in dictitems(self.input.compound):
+            print(id)
             compounds.append(self.input.compound[id])
             predictors.append(self.input.compound[id]['predictor'])
         predictor_values = np.array(predictors, '|S4').astype(np.float)

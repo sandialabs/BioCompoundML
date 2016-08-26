@@ -57,12 +57,13 @@ class PubChemPyUtilTests(unittest.TestCase):
         self.assertTrue('sdf' in self._collect.compound['7844'])
         self.assertEqual('7844', self._collect.compound['7844']['sdf'].split('\n')[0])
 
-    '''def test_add_xml(self):
+    def test_add_xml(self):
         """Ensure that XMLs can be added"""
         self._collect.add_xml(xml=True)
         self.assertTrue('xml' in self._collect.compound['7844'])
         self.assertEqual(u'-6.47 deg C at 760 mm Hg', self._collect.compound['7844']['xml']['Boiling Point'])
 
+    '''
     def test_pubchem(self):
         """Ensure that features were extracted."""
         self._convert.pubchem(5090)
