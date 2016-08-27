@@ -24,7 +24,7 @@ install:
 
   # Replace dep1 dep2 ... with your dependencies
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION scipy numpy scikit-learn matplotlib
-  - conda install --name test-environment -c anaconda bottleneck=1.1.0
+  - conda install --name test-environment -c dougal bottleneck=0.8.0
   - if [[ "$TRAVIS_PYTHON_VERSION" == "2.6" ]]; then
       conda install --name test-environment beautiful-soup nose ordereddict;
     else
