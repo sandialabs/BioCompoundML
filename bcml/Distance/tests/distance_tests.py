@@ -9,6 +9,11 @@ from __future__ import print_function
 import unittest
 from Distance import distance as ds
 import sys
+from collections import defaultdict, Callable
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
 
 
 
@@ -79,9 +84,11 @@ class DistanceTests(unittest.TestCase):
                                 'C=C-C-C': '1', 'C-C-C-C-C-C-C-C': '0', 'C-C-C-C-C-C-C': '0',
                                 'C(-H)(=C)': '1', '>= 1 any ring size 5': '0',
                                 '>= 1 any ring size 6': '0', 'C(-C)(=C)': '1'}}
+        input_data = OrderedDict(sorted(input_data.items(), key=lambda t: t[0]))
         self.fingerprint_vector = list()
         self.key_list = list()
         for (key, value) in dictitems(input_data):
+            print(key)
             self.fingerprint_vector.append(value)
             self.key_list.append(key)
 

@@ -48,8 +48,8 @@ class TrainModelTests(unittest.TestCase):
         model.train_model()
         self.assertEqual(512, len(model.clf.estimators_))
         self.assertEqual(16, len(model.features))
-        self.assertAlmostEqual(0.33, model.clf.oob_score_, 2)
-        self.assertEqual(1., model.clf.oob_decision_function_[0][0])
+        self.assertAlmostEqual(0.333, model.clf.oob_score_, 2)
+        self.assertAlmostEqual(0.760, model.clf.oob_decision_function_[0][0], 2)
         '''preprocess_model hasn't been tested'''
 
 if __name__ == '__main__':

@@ -1,5 +1,9 @@
 from __future__ import print_function
-from collections import defaultdict
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
+from collections import Callable, defaultdict
 from six.moves import xrange
 try:
     # For Python 3.0 and later
@@ -14,6 +18,7 @@ except ImportError:
 	from urlparse import urlparse
 from bs4 import BeautifulSoup
 from time import sleep
+import copy
 
 
 _base = 'pubchem.ncbi.nlm.nih.gov'
@@ -26,6 +31,51 @@ _fp_file = os.path.abspath(os.path.join(_dir, 'fingerprints.txt'))
 This module extends the common functionality of the PubChemPy
 package
 '''
+class CompoundDict(OrderedDict):
+    '''
+    The compound dictionary is ordred and contains various levels of
+    dictionaries underneath, this is the reason for the complicated structure
+    '''
+    def __init__(self, default_factory=defaultdict, *a, **kw):
+        if (default_factory is not None and 
+            not isinstance(default_factory, Callable)):
+                raise TypeError('First argument must be callable')
+        OrderedDict.__init__(self, *a, **kw)
+        self.default_factory = default_factory
+
+    def __getitem__(self, key):
+        try:
+            return OrderedDict.__getitem__(self, key)
+        except KeyError:
+            return self.__missing__(key)
+
+    def __missing__(self, key):
+        if self.default_factory is None:
+            raise KeyError(key)
+        self[key] = value = self.default_factory()
+        return value
+
+    def __reduce__(self):
+        if self.default_factory is None:
+            args = tuple()
+        else:
+            args = self.default_factory
+        return type(self), args, None, None, self.items()
+
+    def copy(self):
+        return self.__copy__()
+
+    def __copy__(self):
+        return type(self)(self.default_factory, self)
+
+    def __deepcopy__(self, memo):
+        import copy
+        return type(self)(self.default_factory,
+                          copy.deepcopy(tuple(self.items())))
+
+    def __repr__(self):
+        return 'CompoundDict(%s, %s)' % (self.default_factory,
+                                         OrderedDict.__repr__(self))
 
 
 def verbose_print(verbose, line):
@@ -199,7 +249,7 @@ class Collect(object):
         self.id_name = id_name
         self.compounds = compounds
         self.pubchem_ids = [x[id_name] for x in compounds]
-        self.compound = defaultdict(dict)
+        self.compound = CompoundDict()
         self.proxy = proxy
         self.chunks = chunks
         self.verbose = verbose

@@ -21,6 +21,10 @@ from sklearn.ensemble import RandomForestClassifier
 from KNNImpute.knnimpute import (
     knn_impute_optimistic,
 )
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
 
 
 def dictitems(dict):
@@ -52,13 +56,13 @@ def _get_feature_names(compounds):
     """This function handles collecting the feature names"""
     feature_names = {}
     for compound in compounds:
-        for feature in _possible_features:
+        for feature in sorted(_possible_features):
             if feature in compound.keys():
-                keys = compound[feature].keys()
+                keys = sorted(compound[feature].keys())
                 for feat in keys:
                     feature_names[feat] = 1
                     compound[feat] = compound[feature][feat]
-    return (compounds, feature_names.keys())
+    return (compounds, sorted(feature_names.keys()))
 
 
 class Process(object):
@@ -90,7 +94,7 @@ class Process(object):
             imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
             imp.fit(X)
             self.train = imp.transform(X)
-        rf = RandomForestClassifier(n_jobs=-1, max_depth=5)
+        rf = RandomForestClassifier(n_jobs=-1, oob_score=True, max_depth=5)
         feat_selector = boruta_py.BorutaPy(rf, n_estimators='auto',
                                            verbose=verbose, seed=seed)
         feat_selector.fit(self.train, self.predictors)
@@ -124,7 +128,7 @@ class Process(object):
         self.input = model_input
         compounds = []
         predictors = []
-        
+        self.input.compound = OrderedDict(sorted(self.input.compound.items(), key=lambda t: t[0]))
         for id, compound in dictitems(self.input.compound):
             compounds.append(self.input.compound[id])
             predictors.append(self.input.compound[id]['predictor'])

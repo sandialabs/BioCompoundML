@@ -1,5 +1,5 @@
 import unittest
-from boruta import BorutaPy
+from Boruta import BorutaPy
 from sklearn.ensemble import RandomForestClassifier
 
 

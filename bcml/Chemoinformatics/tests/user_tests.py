@@ -8,7 +8,10 @@ This contains the unit tests for the read_training module.
 from __future__ import print_function
 import unittest
 from Chemoinformatics import user
-from collections import defaultdict
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
 from copy import deepcopy
 
 
@@ -21,8 +24,7 @@ class UserTest(unittest.TestCase):
     def setUp(self):
         """Create an instance of the Update class"""
         print("Initializing test")
-        compound = defaultdict(dict)
-        compound = {'19502': {'userhash': {'PubChem': '19502', 'Name': '1-Ethyl-3-Methylcyclopentane'}}, '7459': {'userhash': {'PubChem': '7459', 'Name': '1-Isopropyl-4-methylcyclohexane'}}, '8004': {'userhash': {'PubChem': '8004', 'Name': '1-Pentene'}}, '11597': {'userhash': {'PubChem': '11597', 'Name': '1-Hexene'}}, '107252': {'userhash': {'PubChem': '107252', 'Name': '1-Methyl-2-propylcyclohexane'}}, '11610': {'userhash': {'PubChem': '11610', 'Name': '1-Heptene'}}, '35411': {'userhash': {'PubChem': '35411', 'Name': '1-Methyl-1-ethylcyclohexane'}}, '136729': {'userhash': {'PubChem': '136729', 'Name': '1-Methyl-2-ethylcyclopentane'}}, '7844': {'userhash': {'PubChem': '7844', 'Name': '1-Butene'}}, '8125': {'userhash': {'PubChem': '8125', 'Name': '1-Octene'}}, '11549': {'userhash': {'PubChem': '11549', 'Name': '1,1-Dimethylcyclohexane'}}}
+        compound = OrderedDict({'19502': {'userhash': {'PubChem': '19502', 'Name': '1-Ethyl-3-Methylcyclopentane'}}, '7459': {'userhash': {'PubChem': '7459', 'Name': '1-Isopropyl-4-methylcyclohexane'}}, '8004': {'userhash': {'PubChem': '8004', 'Name': '1-Pentene'}}, '11597': {'userhash': {'PubChem': '11597', 'Name': '1-Hexene'}}, '107252': {'userhash': {'PubChem': '107252', 'Name': '1-Methyl-2-propylcyclohexane'}}, '11610': {'userhash': {'PubChem': '11610', 'Name': '1-Heptene'}}, '35411': {'userhash': {'PubChem': '35411', 'Name': '1-Methyl-1-ethylcyclohexane'}}, '136729': {'userhash': {'PubChem': '136729', 'Name': '1-Methyl-2-ethylcyclopentane'}}, '7844': {'userhash': {'PubChem': '7844', 'Name': '1-Butene'}}, '8125': {'userhash': {'PubChem': '8125', 'Name': '1-Octene'}}, '11549': {'userhash': {'PubChem': '11549', 'Name': '1,1-Dimethylcyclohexane'}}})
         self.test_data = Object()
         self.test_data.compound = deepcopy(compound)
         self.original = Object()

@@ -57,7 +57,8 @@ class PubChemPyUtilTests(unittest.TestCase):
         self.assertTrue('sdf' in self._collect.compound['7844'])
         self.assertEqual('7844', self._collect.compound['7844']['sdf'].split('\n')[0])
 
-    '''def test_add_xml(self):
+    '''
+    def test_add_xml(self):
         """Ensure that XMLs can be added"""
         self._collect.add_xml(xml=True)
         self.assertTrue('xml' in self._collect.compound['7844'])
