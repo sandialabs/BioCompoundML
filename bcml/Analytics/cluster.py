@@ -16,6 +16,8 @@ from sklearn.svm import OneClassSVM
 
 class Clustering():
     def __init__(self, compounds, output=False, seed=False):
+        np.random.seed(seed=seed)
+        self.seed = seed
         self.compounds = compounds
         self.count = 0
         self.count_1 = 0
@@ -24,7 +26,6 @@ class Clustering():
         if self.output is not False:
             self.figures = clusterfigures(self.compounds)
         self.testcompound = []
-        self.seed = seed
 
     def cluster_training(self, train, distance=False):
         '''
