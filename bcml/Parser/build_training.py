@@ -94,7 +94,7 @@ class Process(object):
             imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
             imp.fit(X)
             self.train = imp.transform(X)
-        rf = RandomForestClassifier(n_jobs=-1, max_depth=5)
+        rf = RandomForestClassifier(n_jobs=-1, oob_score=True, max_depth=5)
         feat_selector = boruta_py.BorutaPy(rf, n_estimators='auto',
                                            verbose=verbose, seed=seed)
         feat_selector.fit(self.train, self.predictors)

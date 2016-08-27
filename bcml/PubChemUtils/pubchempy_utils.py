@@ -69,8 +69,9 @@ class CompoundDict(OrderedDict):
         return type(self)(self.default_factory, self)
 
     def __deepcopy__(self, memo):
+        import copy
         return type(self)(self.default_factory,
-                          copy.deepcopy(self.items()))
+                          copy.deepcopy(tuple(self.items())))
 
     def __repr__(self):
         return 'CompoundDict(%s, %s)' % (self.default_factory,

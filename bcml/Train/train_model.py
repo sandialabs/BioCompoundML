@@ -27,12 +27,14 @@ class Train(object):
         handling this is to use the --impute option. This uses mean imputation, which
         is the least information imputer, imputation is done by feature
         '''
+        print(self.train)
         if np.any(np.isnan(self.train)):
             warnings.warn('RandomForestClassifier requires no missing data, features being imputed by mean')
             X = self.train
             imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
             imp.fit(X)
             self.train = imp.transform(X)
+        print(self.train)
         self.clf = RandomForestClassifier(n_estimators=512,
                                           oob_score=True, n_jobs=-1)
         self.predmodel = self.clf.fit(self.train, self.predictors)
