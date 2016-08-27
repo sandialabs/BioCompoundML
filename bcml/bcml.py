@@ -16,9 +16,9 @@ import pickle
 import numpy as np
 from Distance import distance as ds
 try:
-	from urllib.parse import urlparse
+    from urllib.parse import urlparse
 except ImportError:
-	from urlparse import urlparse
+    from urlparse import urlparse
 from PubChemUtils import pubchempy_utils as pcp
 from copy import deepcopy
 import sys
