@@ -11,7 +11,7 @@ License: BSD 3 clause
 from __future__ import print_function, division
 import numpy as np
 import scipy as sp
-#import bottleneck as bn
+import bottleneck as bn
 from sklearn.utils import check_X_y
 
 class BorutaPy(object):
@@ -492,8 +492,8 @@ class BorutaPy(object):
         """
         Replaces bottleneck's nanrankdata with scipy and numpy alternative.
         """
-        ranks = sp.stats.mstats.rankdata(np.ma.masked_invalid(X), axis=axis)
-        #ranks = bn.nanrankdata(X, axis=axis)
+        #ranks = sp.stats.mstats.rankdata(np.ma.masked_invalid(X), axis=axis)
+        ranks = bn.nanrankdata(X, axis=axis)
         ranks[ranks == 0] = np.nan
         return ranks
 

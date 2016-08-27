@@ -15,7 +15,10 @@ from Analytics import cross_validate as cv
 import pickle
 import numpy as np
 from Distance import distance as ds
-from urllib.parse import urlparse
+try:
+	from urllib.parse import urlparse
+except ImportError:
+	from urlparse import urlparse
 from PubChemUtils import pubchempy_utils as pcp
 from copy import deepcopy
 import sys
