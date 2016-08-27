@@ -88,7 +88,6 @@ class DistanceTests(unittest.TestCase):
         self.fingerprint_vector = list()
         self.key_list = list()
         for (key, value) in dictitems(input_data):
-            print(key)
             self.fingerprint_vector.append(value)
             self.key_list.append(key)
 

@@ -15,6 +15,7 @@ _dir = os.path.dirname(__file__)
 _executable = os.path.abspath(os.path.join(_dir, os.pardir, 'bcml.py'))
 _data_min = os.path.abspath(os.path.join(_dir, 'data', 'RON_min.txt'))
 _data_mini = os.path.abspath(os.path.join(_dir, 'data', 'RON_mini.txt'))
+_data_full = os.path.abspath(os.path.join(_dir, 'data', 'RON.txt'))
 
 
 class BCMLTests(unittest.TestCase):
@@ -72,7 +73,6 @@ class BCMLTests(unittest.TestCase):
         args = ['python', _executable, '-i', _data_min, '--train', '--pred', 'RON', '--fingerprint', '--random', '12345']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
-	print(stdoutdata, stderrdata)
         self.assertEqual(process.returncode, 0)
         print("Testing experimental feature")
         args = ['python', _executable, '-i', _data_min, '--train', '--pred', 'RON', '--verbose', '--experimental', '--random', '12345', '--split_value', '85.0']
@@ -100,13 +100,12 @@ class BCMLTests(unittest.TestCase):
         stdoutdata, stderrdata = process.communicate()
         self.assertEqual(process.returncode, 0)
         print("Testing feature selection")
-        args = ['python', _executable, '-i', _data_min, '--train', '--pred', 'RON', '--fingerprint', '--experimental', '--random', '12345', '--selection', '--split_value', '94.4']
+        args = ['python', _executable, '-i', _data_full, '--train', '--pred', 'RON', '--fingerprint', '--experimental', '--random', '12345', '--selection', '--split_value', '94.4']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
-        print(stdoutdata, stderrdata)
         self.assertEqual(process.returncode, 0)
         print("Testing Cross Validation")
-        args = ['python', _executable, '-i', _data_min, '--train', '--pred', 'RON', '--experimental', '--split_value', '94.4', '--random', '12345', '--impute', '--cv']
+        args = ['python', _executable, '-i', _data_full, '--train', '--pred', 'RON', '--fingerprint', '--experimental', '--split_value', '94.4', '--random', '12345', '--impute', '--cv']
         process = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdoutdata, stderrdata = process.communicate()
         self.assertEqual(process.returncode, 0)
