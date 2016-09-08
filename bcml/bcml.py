@@ -44,7 +44,7 @@ class ArgumentExceptions(Exception):
 
 
 def dictitems(dict):
-    if sys.version_info[0]>=3:
+    if sys.version_info[0] >= 3:
         return dict.items()
     else:
         return dict.iteritems()
@@ -57,8 +57,8 @@ def verbose_print(verbose, line):
 
 def parse_arguments():
     '''
-    The point of this program is to apply machine learning to a set of chemicals
-    with know properties Default API (training)
+    The point of this program is to apply machine learning to a set of
+    chemicals with know properties Default API (training)
     Usage:
     python train_model.py --input training.txt --basic --model model.pkl
     python train_model.py --input properties.txt --user --model model.pkl
@@ -67,25 +67,26 @@ def parse_arguments():
     :params train If True then run in training mode
     :params test If True then run in testing model_file
     :params m/model The output name of the model
-    :params d/datain The name of the input data file (either .model or .features)
+    :params d/datain The name of the input datafile: either .model or .features
     from prior runs
-    :params o/dataout The name of the saved pkl files. These will be appended with
-    .model and .features
+    :params o/dataout The name of the saved pkl files. These will be appended
+    with .model and .features
     :params p/pred The name of the parameter in the input file that is trained,
     which allows other features to be provided in this file
     :params x/proxy The http for the proxy, if one is used
     :params cluster Cluster the training data
     :params cluster_testing Filter test compounds based on training clusters
-    :params s/split_value Split the data into classes based on the provided value
+    :params s/split_value Split the data in classes based on the provided value
     :params r/random User provided random seed for numpy randomization
     :params v/verbose Specify the level of output
-    :params e/experimental If True then extract experimental features from PubChem
-    :params f/fingerprint If True then extract fingerprint features from PubChem
-    :params c/chemofeatures If True then extract sdfs from PubChem and descriptors
-    from Padel-Descriptor
+    :params e/experimental If True then extract experimental PubChem features
+    :params f/fingerprint If True then extract fingerprint PubChem features
+    :params c/chemofeatures If True then extract sdfs from PubChem and
+    descriptors from Padel-Descriptor
     :params u/user If True then extract additional features from input file
     :returns The parsed arguments
-    It is important to know that there is a hierarcy of processing (e.g., training):
+    It is important to know that there is a hierarcy of processing
+    (e.g., training):
                                   |
                               input_file
                                   |
@@ -117,39 +118,54 @@ def parse_arguments():
                                                     |
                                                  cluster
     '''
-    parser = argparse.ArgumentParser(description="This program trains, evaluates and\
-                                     tests a Random Forest Classifer using a list of\
-                                     chemicals and a measured property.")
-    group_input = parser.add_mutually_exclusive_group(required=True)
-    group_input.add_argument('-i', '--input', help='Input file', type=str)
-    group_input.add_argument('-d', '--datain', help="Data input file", type=str)
-    parser.add_argument('-t', '--test_input', help="Data input for test", type=str)
+    parser = argparse.ArgumentParser(description="This program trains,\
+                                     evaluates and tests a Random \
+                                     Forest Classifer using list of chemicals\
+                                     and a measured property.")
+    grp_input = parser.add_mutually_exclusive_group(required=True)
+    grp_input.add_argument('-i', '--input', help='Input file', type=str)
+    grp_input.add_argument('-d', '--datain', help="Data input file", type=str)
+    parser.add_argument('-t', '--test_input', help="Data input for test",
+                        type=str)
     parser.add_argument('--train', help="Train the model", action="store_true")
     parser.add_argument('--test', help="Test the model", action="store_true")
     parser.add_argument('-m', '--model', help="Model output file", type=str)
     parser.add_argument('-o', '--dataout', help="Data output file", type=str)
     parser.add_argument('--pred', help="Prediction variable", type=str)
     parser.add_argument('-x', '--proxy', help="Proxy", type=str)
-    parser.add_argument('--cluster', help="Run clustering", action="store_true")
-    parser.add_argument('-s', '--split_value', help="Value to split training data, if\
-                        not specified median value of data is used", type=float)
+    parser.add_argument('--cluster', help="Run clustering",
+                        action="store_true")
+    parser.add_argument('-s', '--split_value', help="Value to split training \
+                        data, if not specified median value of data is used",
+                        type=float)
     parser.add_argument('--random', help="Seed for randomization", type=int)
-    parser.add_argument('-v', '--verbose', help="Level of output", action="store_true")
-    parser.add_argument('-e', '--experimental', help="Extract experimental features",
+    parser.add_argument('-v', '--verbose', help="Level of output",
                         action="store_true")
-    parser.add_argument('-f', '--fingerprint', help="Extract fingerprint features",
+    parser.add_argument('-e', '--experimental',
+                        help="Extract experimental features",
                         action="store_true")
-    parser.add_argument('-c', '--chemofeatures', help="Extract PaDEL-Descriptors",
+    parser.add_argument('-f', '--fingerprint',
+                        help="Extract fingerprint features",
                         action="store_true")
-    parser.add_argument('-u', '--user', help="Extract user-provided features from input\
-                        file", action="store_true")
+    parser.add_argument('-c', '--chemofeatures',
+                        help="Extract PaDEL-Descriptors",
+                        action="store_true")
+    parser.add_argument('-u', '--user',
+                        help="Extract user-provided features from input file",
+                        action="store_true")
     parser.add_argument('--distance', help="Create a distance matrix of data",
                         action="store_true")
-    parser.add_argument('--impute', help="Impute missing values using K-NN imputation",
+    parser.add_argument('--impute',
+                        help="Impute missing values using K-NN imputation",
                         action="store_true")
-    parser.add_argument('--selection', help="Run Boruta Feature Selection to reduce\
+    parser.add_argument('--selection',
+                        help="Run Boruta Feature Selection to reduce\
                         uncharacterizing features", action="store_true")
-    parser.add_argument('--cv', help="Cross-Validate the model using 50\% hold-out data",
+    parser.add_argument('--cv',
+                        help="Cross-Validate model using 50\% hold-out data",
+                        action="store_true")
+    parser.add_argument('--weight',
+                        help="Insert sample weights",
                         action="store_true")
     return parser.parse_args()
 
@@ -158,8 +174,8 @@ def define_random_seed(args):
     '''Define random seed'''
     if args.random:
         '''
-        Users may add a random seed. This helps reproducibility in parts of the machine learning
-        that require reandomization
+        Users may add a random seed. This helps reproducibility in parts of
+        the machine learning that require reandomization
         :param seed: int provided in the program arguments
         '''
         assert args.random > 0, "Random seed must be a positive integer"
@@ -195,7 +211,7 @@ def existing_training_model(args, seed):
     trained_model = Training()
     if args.datain.endswith('.cluster'):
         with open(args.datain, 'rb') as fid:
-            cluster = picle.load(fid)
+            cluster = pickle.load(fid)
             trained_model.cluster = cluster
             trained_model.model = cluster.model
     elif args.datain.endswith('.model'):
@@ -203,7 +219,8 @@ def existing_training_model(args, seed):
             model = pickle.load(fid)
             trained_model.model = model
         if args.cluster:
-            cluster = cl.Clustering(model.training_data.compound, seed=args.random)
+            cluster = cl.Clustering(model.training_data.compound,
+                                    seed=args.random)
             cluster.cluster_training(model)
             trained_model.cluster = cluster
     elif args.datain.endswith('.features'):
@@ -235,16 +252,17 @@ def check_features(args):
     return [user, experimental, chemofeatures, fingerprint]
 
 
-def add_pubchem_features(compounds, args, user=False, proxy=False, fingerprint=False,
-                         experimental=False, chemofeatures=False,
-                         id_name='PubChem', chunks=False):
+def add_pubchem_features(compounds, args, user=False, proxy=False,
+                         fingerprint=False, experimental=False,
+                         chemofeatures=False, id_name='PubChem', chunks=False):
     '''This function loads the pubchem features and downloads the data'''
     predictors = False
     if compounds.predictors:
         predictors = compounds.predictors
-    collected_data = pcp.Collect(compounds.compounds, fingerprint=fingerprint, xml=experimental,
-                                 sdf=chemofeatures, proxy=args.proxy, user=user,
-                                 id_name=id_name, chunks=chunks, try_count=_try_count,
+    collected_data = pcp.Collect(compounds.compounds, fingerprint=fingerprint,
+                                 xml=experimental, sdf=chemofeatures,
+                                 proxy=args.proxy, user=user, id_name=id_name,
+                                 chunks=chunks, try_count=_try_count,
                                  verbose=args.verbose, predictors=predictors)
     return collected_data
 
@@ -478,7 +496,8 @@ def check_arguments(args):
     if not (args.train or args.test):
         parser.error('No action requested, add --train or --test')
     if (args.test) and not (args.test_input):
-        parser.error("If testing, must specify test data, use -t/--test_input <<DATAFILE>>")
+        parser.error("If testing, must specify test data, use -t/--test_input\
+                     <<DATAFILE>>")
 
 
 def main():
