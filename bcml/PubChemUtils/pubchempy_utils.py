@@ -13,12 +13,11 @@ except ImportError:
     import urllib2
 import os
 try:
-	from urllib.parse import urlparse
+    from urllib.parse import urlparse
 except ImportError:
-	from urlparse import urlparse
+    from urlparse import urlparse
 from bs4 import BeautifulSoup
 from time import sleep
-import copy
 
 
 _base = 'pubchem.ncbi.nlm.nih.gov'
@@ -31,13 +30,15 @@ _fp_file = os.path.abspath(os.path.join(_dir, 'fingerprints.txt'))
 This module extends the common functionality of the PubChemPy
 package
 '''
+
+
 class CompoundDict(OrderedDict):
     '''
     The compound dictionary is ordred and contains various levels of
     dictionaries underneath, this is the reason for the complicated structure
     '''
     def __init__(self, default_factory=defaultdict, *a, **kw):
-        if (default_factory is not None and 
+        if (default_factory is not None and
             not isinstance(default_factory, Callable)):
                 raise TypeError('First argument must be callable')
         OrderedDict.__init__(self, *a, **kw)

@@ -356,20 +356,21 @@ def train_model(args, seed, proxy, pred):
             verbose_print(args.verbose, "Reading training set")
             (user, experimental, chemofeatures, fingerprint) = check_features(args)
             if (args.distance is True) or (args.cluster is True) or (args.impute is True):
-                '''These functions all require a distance matrix, which is best collected
-                using the fingerprint data'''
+                '''These functions all require a distance matrix, which is best
+                collected using the fingerprint data'''
                 fingerprint = True
             training = rt.Read(args.input, pred, user=user, id_name=_id)
-            '''This block of code generally works on feature collection and parsing,
-            including the removal of fully redundant features. The difference between
-            remove_static=True and False is whether or not to get rid of fully redundant
-            features. Since the distance matrix is the same, regardless, it is run using
-            original data'''
+            '''This block of code generally works on feature collection and
+            parsing, including the removal of fully redundant features. The
+            difference between remove_static=True and False is whether or not
+            to get rid of fully redundant features. Since the distance matrix
+            is the same, regardless, it is run using original data'''
             training_data = add_pubchem_features(training, args, user=user,
-                                                 proxy=proxy, fingerprint=fingerprint,
+                                                 proxy=proxy,
+                                                 fingerprint=fingerprint,
                                                  experimental=experimental,
-                                                 chemofeatures=chemofeatures, id_name=_id,
-                                                 chunks=_chunks)
+                                                 chemofeatures=chemofeatures,
+                                                 id_name=_id, chunks=_chunks)
             if (args.cluster is True) or (args.distance is True) or (args.impute is True):
                 verbose_print(args.verbose, "Creating distance matrix")
                 '''Collect distance matrix using the original dataset'''
