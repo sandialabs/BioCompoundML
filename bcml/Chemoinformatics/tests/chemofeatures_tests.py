@@ -46,7 +46,7 @@ class ChemoFeaturesTest(unittest.TestCase):
         self.assertTrue('MATS3v' in self.test_data.compound['7844']['padelhash'])
         self.assertAlmostEquals(-0.05263157, float(self.test_data.compound['7844']['padelhash']['MATS3v']))
         variable_length = len(self.test_data.compound['7844']['padelhash'].keys())
-        self.assertEquals(variable_length, 843)
+        self.assertEquals(variable_length, 841)
         self.original = cf.Update(self.original, remove_static=False, verbose=True)
         self.original.update()
         total_length = len(self.original.compound['7844']['padelhash'].keys())

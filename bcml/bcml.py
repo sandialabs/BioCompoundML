@@ -283,28 +283,36 @@ def collect_distance_matrix(collected_data):
 
 
 def extract_features(collected_data, args, user=False, fingerprint=False,
-                     experimental=False, chemofeatures=False, remove_static=True):
+                     experimental=False, chemofeatures=False,
+                     remove_static=True):
     '''This function collects and extracts features from the raw user and
     PubChem data'''
     if fingerprint is True:
         '''This part of the code converts the CACTVS fingerprints into features
-        it also removes the fully redundant features, which for many chemical properties
-        may be a large portion'''
-        collected_data = fp.Update(collected_data, remove_static=remove_static, verbose=args.verbose)
+        it also removes the fully redundant features, which for many chemical
+        properties may be a large portion'''
+        collected_data = fp.Update(collected_data, remove_static=remove_static,
+                                   verbose=args.verbose)
         collected_data.update()
     if user is True:
         '''This part of the code extracts the user defined features'''
-        collected_data = usr.Update(collected_data, remove_static=remove_static, verbose=args.verbose)
+        collected_data = usr.Update(collected_data,
+                                    remove_static=remove_static,
+                                    verbose=args.verbose)
         collected_data.update()
     if experimental is True:
-        '''This part of the code extracts PubChem experimental and computed features from
-        the PubChem xml files'''
-        collected_data = exp.Update(collected_data, remove_static=remove_static, verbose=args.verbose)
+        '''This part of the code extracts PubChem experimental and computed
+        features from the PubChem xml files'''
+        collected_data = exp.Update(collected_data,
+                                    remove_static=remove_static,
+                                    verbose=args.verbose)
         collected_data.update()
     if chemofeatures is True:
-        '''This code runs PaDEL-Descriptor and extracts relevant 2-D and 3-D chemical
-        descriptors'''
-        collected_data = cf.Update(collected_data, remove_static=remove_static, verbose=args.verbose)
+        '''This code runs PaDEL-Descriptor and extracts relevant 2-D
+        and 3-D chemical descriptors'''
+        collected_data = cf.Update(collected_data,
+                                   remove_static=remove_static,
+                                   verbose=args.verbose)
         collected_data.update(padel=True)
     return collected_data
 
@@ -328,14 +336,16 @@ def train_model(args, seed, proxy, pred):
         '''
         verbose_print(args.verbose, "Training model")
         if args.datain:
-            warnings.warning("WARNING: The pickle datatype is inherently insecure.\
-                             A quick question: do you trust the source of your model?\
-                             Pickle files can contain corrupt code and executable\
-                             commands. They can take over your computer and install\
-                             malicious code on your computer or server. Use caution!\
-                             Your best bet is to train your own models and\
-                             run those! Use --datain at your own risk")
-            continue_program = raw_input("Press [Y/y] if you chose to continue")
+            warnings.warning("WARNING: The pickle datatype is inherently\
+                             insecure. A quick question: do you trust the\
+                             source of your model? Pickle files can contain\
+                             corrupt code and executable commands.\
+                             They can take over your computer and install\
+                             malicious code on your computer or server. Use\
+                             caution! Your best bet is to train your own\
+                             models and run those! Use --datain at your own\
+                             risk")
+            continue_program = raw_input("Press [Y/y] if you want to continue")
             if continue_program in ['Y', 'y']:
                 trained_model = existing_training_model(args, seed)
             else:
@@ -443,9 +453,11 @@ def test_model(trained_model, args, seed=False, proxy=False, pred=False):
                 fingerprint = True
             verbose_print(args.verbose, "Adding PubChem Features")
             testing_data = add_pubchem_features(testing, args, user=user,
-                                                proxy=proxy, fingerprint=fingerprint,
+                                                proxy=proxy,
+                                                fingerprint=fingerprint,
                                                 experimental=experimental,
-                                                chemofeatures=chemofeatures, id_name=_id,
+                                                chemofeatures=chemofeatures,
+                                                id_name=_id,
                                                 chunks=_chunks)
             distance = collect_distance_matrix(testing_data)
             verbose_print(args.verbose, "Extracting features")
@@ -458,7 +470,8 @@ def test_model(trained_model, args, seed=False, proxy=False, pred=False):
                                  trained_model.model.train)
             test.impute_values(distance)
     if trained_model.cluster or args.cluster:
-        verbose_print(args.verbose, "Rejecting based on clustering of training")
+        verbose_print(args.verbose,
+                      "Rejecting based on clustering of training")
         cluster = trained_model.cluster
         testmatrix = []
         testcompounds = []
