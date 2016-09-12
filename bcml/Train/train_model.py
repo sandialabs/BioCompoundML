@@ -23,21 +23,25 @@ class Train(object):
 
     def train_model(self):
         '''This is standard model training'''
-        '''For RandomForestClassifier to work their must be no nan values, one way of
-        handling this is to use the --impute option. This uses mean imputation, which
-        is the least information imputer, imputation is done by feature
+        '''For RandomForestClassifier to work their must be no nan values, one
+        way of handling this is to use the --impute option. This uses mean
+        imputation, which is the least information imputer, imputation is done
+        by feature
         '''
         if np.any(np.isnan(self.train)):
-            warnings.warn('RandomForestClassifier requires no missing data, features being imputed by mean')
+            warnings.warn('RandomForestClassifier requires no missing data,\
+                           features being imputed by mean')
             X = self.train
             imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
             imp.fit(X)
             self.train = imp.transform(X)
         self.clf = RandomForestClassifier(n_estimators=512,
                                           oob_score=True, n_jobs=-1)
-        self.predmodel = self.clf.fit(self.train, self.predictors)
+        self.predmodel = self.clf.fit(X=self.train, y=self.predictors,
+                                      sample_weight=self.weights)
 
     def __init__(self, train):
         self.train = train.train
         self.predictors = train.predictors
         self.features = train.feature_names
+        self.weights = train.weights

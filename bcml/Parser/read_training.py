@@ -19,6 +19,7 @@ class Read(object):
         header = {}
         compounds = []
         predictors = []
+        weights = []
         predictor = False
         with open(self.input_file) as fb:
             line = fb.readline()
@@ -40,16 +41,24 @@ class Read(object):
                 for count, item in enumerate(larray):
                     if header[count] == self.predictor:
                         predictor = item
+                    elif self.weights is True and header[count] == 'Weight':
+                        weight = float(item.rstrip())
                     elif self.user is True:
                         compound['userhash'][header[count]] = item.rstrip()
                     compound[header[count]] = item
                 compounds.append(compound)
                 predictors.append(predictor)
-        return (compounds, predictors)
+                if self.weights:
+                    weights.append(weight)
+                else:
+                    weights.append(1.0)
+        return (compounds, predictors, weights)
 
-    def __init__(self, input_file, predictor=False, user=False, id_name=False):
+    def __init__(self, input_file, predictor=False, user=False, id_name=False,
+                 weights=False):
         self.input_file = input_file
         self.predictor = predictor
         self.user = user
         self.id_name = id_name
-        (self.compounds, self.predictors) = self._read_file()
+        self.weights = weights
+        (self.compounds, self.predictors, self.weights) = self._read_file()

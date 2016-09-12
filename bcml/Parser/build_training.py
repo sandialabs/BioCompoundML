@@ -28,7 +28,7 @@ except ImportError:
 
 
 def dictitems(dict):
-    if sys.version_info[0]>=3:
+    if sys.version_info[0] >= 3:
         return dict.items()
     else:
         return dict.iteritems()
@@ -89,7 +89,8 @@ class Process(object):
         before feature_selection, or the following function runs mean
         imputation prior to running Boruta'''
         if np.any(np.isnan(self.train)):
-            warnings.warn('RandomForestClassifier requires no missing data, features being imputed by mean')
+            warnings.warn('RandomForestClassifier requires no missing data,\
+                           features being imputed by mean')
             X = self.train
             imp = Imputer(missing_values='NaN', strategy='mean', axis=0)
             imp.fit(X)
@@ -120,23 +121,29 @@ class Process(object):
         imp.fit(X)
         self.train = imp.transform(X)
 
-
-    def __init__(self, model_input, split_value=False):
+    def __init__(self, model_input, split_value=False, verbose=False):
         """This initialization function handles the heavy
         work of loading the features and processing the
         compounds"""
         self.input = model_input
         compounds = []
         predictors = []
+        weights = []
         self.input.compound = OrderedDict(sorted(self.input.compound.items(), key=lambda t: t[0]))
         for id, compound in dictitems(self.input.compound):
             compounds.append(self.input.compound[id])
             predictors.append(self.input.compound[id]['predictor'])
+            weights.append(self.input.compound[id]['weight'])
         predictor_values = np.array(predictors, '|S4').astype(np.float)
+        weight_values = np.array(weights, '|S4').astype(np.float)
+        self.weights = weight_values
         if split_value:
             self.predictors = _convert_predictor(predictor_values, split_value)
         else:
-            self.predictors = _convert_predictor(predictor_values, np.median(predictor_values))
+            print_line = "Splitting at " + str(np.median(predictor_values))
+            verbose_print(verbose, print_line)
+            self.predictors = _convert_predictor(predictor_values,
+                                                 np.median(predictor_values))
         self.rows = len(self.predictors)
         self.compounds, self.feature_names = _get_feature_names(compounds)
         self.columns = len(self.feature_names)

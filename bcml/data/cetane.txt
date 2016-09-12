@@ -1,0 +1,324 @@
+#Name	PubChem	Cetane	Weight
+4-vinyl-1-cyclohexene	7499	40	0.185
+ethyl benzene	7500	4	0.185
+isobutyl oleate	6436359	60	0.064
+diphenylmethane	7580	11	0.185
+glycerol triacetate	5541	5	1
+1,2-diphenylethane	7647	1	0.208
+methyl butanoate	12180	6.4	0.208
+n-propylbenzene	7668	16	0.185
+palmitoleyl alcohol	5367661	46	0.064
+n-butylbenzene	7705	12	1
+2-ethyl-1-hexanol	7720	23.4	1
+3-octanol	11527	25.1	1
+hexyl caprate	82635	64	0.185
+1,1-diethoxy ethane	7765	40	0.227
+dibutyl fumarate	5271570	23	0.208
+dibutyl maleate	5271569	28	0.227
+dimethyl adipate	12329	5	0.185
+dibutyl adipate	7784	81	0.185
+butyl laurate	61015	73	0.185
+3,7-dimethyl-1-octanol	7792	29.3	1
+.-citronellol	8842	25.6	1
+ethyl laurate	7800	73	0.185
+1,4-dimethylbenzene	7809	-4	0.185
+3-octanone	246728	36	1
+methyl caproate	7824	23.9	1
+methyl heptanoate	7826	34.2	1
+2,4,4-trimethyl-1-pentene	7868	10	0.227
+2-methylpentane	7892	34.5	1
+1-methoxy-2 propanol	7900	19	0.185
+2,6-dimethylheptene	14069	51	0.185
+n-hexylbenzene	14109	26	0.227
+n-heptylbenzene	14115	34.67	0.227
+2,4-dimethylpentane	7907	28.7	1
+1,3-dimethylbenzene	7929	-1	0.185
+dimethyl malonate	7943	15	0.185
+1,3,5-trimethylbenzene	7947	8	0.185
+methylcyclohexane	7962	23.3	1
+toluene	1140	-0.6	0.185
+cyclohexanone	7967	10	0.227
+n-nonylbenzene	14126	50	0.227
+butyl butanoate	7983	17.8	1
+dihexyl azelate	7985	99	0.185
+n-pentane	8003	30	0.185
+2-methoxyethanol	8019	13	0.227
+dimethoxymethane	8020	44.67	0.227
+isobutyl palmitate	66967	84	0.064
+butyl myristate	8047	69.4	0.208
+ethyl decanoate	8048	51.2	0.208
+diethyl sebacate	8049	47	0.185
+methyl decanoate	8050	52.275	1
+2-heptanone	8051	30	1
+n-hexane	8058	48.95	1
+1,2-dimethoxyethane	8071	94	0.227
+cyclohexane	8078	15.05	0.208
+cyclohexene	8079	57	0.185
+butyl palmitate	8090	87	0.185
+methyl octanoate	8091	33.6	0.208
+2-ethoxyethyl acetate	8095	40	0.185
+1-hexanol	8103	23.3	0.208
+propyl oleate	5356106	72	0.185
+ethyl stearate	8122	76.8	0.208
+ethyl oleate	5363269	72	0.185
+n-octane	356	58.2	1
+1-octene	8125	49	1
+2-octene	8126	43	0.185
+1-heptanol	8129	29	1
+2-butoxyethanol	8133	41	0.185
+methyl laurate	8139	66.5	1
+n-nonane	8141	60.9	1
+1-octanol	957	33.7	1
+2-methoxyethyl ether	8150	122.67	0.227
+isopropyl stearate	8162	97	0.064
+isopropyl oleate	5356108	87	0.064
+1-dodecene	8183	56.8	1
+decyl acetate	8167	62	0.185
+1-decanol	8174	50.3	0.208
+triethylene glycol monomethyl ether	8178	80.7	1
+2-ethoxyethyl ether	8179	123	0.227
+methyl palmitate	8181	85.9	1
+n-dodecane	8182	73.45	1
+1-undecanol	8184	53.2	0.208
+triethyleneglycol dimethyl ether	8189	120	0.227
+1-dodecanol	8193	63.6	0.208
+methyl stearate	8201	95.6	1
+methyl oleate	5364509	58.57	1
+methyl linoleate	5284421	41.05	1
+dodecyl acetate	8205	77	0.185
+1-tetradecanol	8209	80.8	0.208
+oleic acid	445639	46	0.064
+1-octadecene	8217	90	0.227
+1-octadecanol	8221	81	0.064
+n-undecane	14257	79	0.185
+methyl palmitoleate	643801	51	0.064
+methyl arachidate	14259	100	0.064
+methyl erucate	5364423	74.2	1
+1-tetradecene	14260	80.9	0.227
+dimethyl ether	8254	66.5	0.227
+tetralin	8404	8.9	1
+dibutyl malonate	136925	21	0.208
+ethyl linolenate	5367460	27	0.064
+n-eicosane	8222	110	0.227
+triolein	5497163	45	0.064
+dioctyl sebacate	31218	70	0.185
+n-dodecylbenzene	31237	68	0.227
+diethyl butanedioate	31249	21	0.208
+dioctyl adipate	31271	89	0.185
+butyl stearate	31278	86.5	0.064
+ethyl myristate	31283	66.9	0.208
+methyl myristate	31284	69.85	0.208
+1-nonene	31285	51	0.227
+octanal	454	80.5	1
+n-decane	15600	66.35	1
+.-pinene	14896	22	1
+dimethyl phthalate	8554	19	0.185
+2,2,4,6,6-pentamethylheptane	26058	9	0.227
+sec-butylbenzene	8680	6	0.185
+dodecyl laurate	84113	85	0.185
+dibutyl succinate	8830	13	0.4
+propyl pentanoate	67328	20.7	1
+diethyl adipate	8844	15	0.185
+1,3-diethylbenzene	8864	5	0.185
+butyl oleate	5354342	102	0.185
+n-heptane	8900	53.575	1
+isopropyl palmitate	8907	83	0.064
+n-hexyl acetate	8908	33.8	1
+dibutyl ether	8909	95.5	0.227
+1-nonanol	8914	46.2	0.208
+oleyl alcohol	5284499	51	0.064
+propyl myristate	84338	71	0.185
+trilinolenin	5462874	23	0.064
+n-tetradecylbenzene	15086	72	0.227
+cis-2-heptene	643836	44	0.185
+cis-3-octene	5362722	38.1	1
+trans-3-octene	638228	34	1
+2,2,6,6,8,8-hexamethyl-4-methylene-nonane	56846471	5	0.227
+2-methyloctadecane	15264	104.4	1
+2,2-dimethyloctane	85150	59	0.227
+octyl myristate	85351	71	0.185
+1-butylnaphthalene	15414	6	0.227
+4,5-diethyloctane	519254	20	0.227
+rose oxide	27866	30	1
+1,9-Decadiene	15439	41	1
+decyl caprate	74247	81	0.185
+ethylcyclohexane	15504	35.8	1
+n-butylcyclohexane	15506	47.8	1
+2-ethylhexyl palmitate	62851	107	0.185
+2,5-dimethylundecane	28452	58	0.227
+5-butylnonane	300476	53	0.227
+dimethyl azelate	15612	24	0.185
+1,3,5-trimethylcyclohexane	35364	30.5	1
+2-methylheptadecane	15265	91	1
+methyl elaidate	5280590	57.2	1
+hexyl oleate	88466	102	0.185
+dodecyl myristate	74881	74	0.185
+2,6-dimethyloctane	16319	51.7	1
+butyl levulinate	16331	14.4	1
+pentyl pentanoate	62433	28.2	1
+n-octylbenzene	16607	37.5	0.227
+2-ethylhexyl stearate	13132266	116	0.064
+propyl palmitate	75232	83	0.185
+isopropyl decanoate	16833	46.6	0.208
+tripropylene glycol monomethyl ether	25054	81.3	1
+methyl linolelaidate	5362793	43	1
+dibutoxymethane	17379	74	0.227
+2-ethylhexyl oleate	6438028	88	0.064
+4-phenyldodecane	17631	42	0.227
+methyl petroselinate	5362717	58.6	1
+7,8-dimethyltetradecane	530303	40	0.227
+methyl 4(Z),7(Z),10(Z),13(Z),16(Z),19(Z)-docosahexaenoate	6442386	24.4	1
+cyclopentane	9253	6.1	1
+2-(1,1-dimethylethyl)-naphthalene	17889	3	0.227
+2-octylnaphthalene	520388	18	0.227
+2-methyl-2-phenylpentadecane	520412	39	0.227
+dibutyl azelate	18016	83	0.185
+cyclooctane	9266	22.3	1
+methyl linolenate	5319706	37	1
+butyl decanoate	35408	54.6	0.208
+propyl decanoate	121739	52.9	0.208
+octyl oleate	94441	131	0.185
+decanoic acid	2969	48	0.185
+hexyl laurate	94454	74	0.185
+1,3,5-triisopropyl cyclohexane	4583934	25.3	1
+dipropylene glycol monomethyl ether	66984	43.9	1
+2,2,5-trimethylhexane	19041	24	0.227
+propyl stearate	77190	91	0.064
+decyl laurate	119003	84	0.185
+1-hexadecanol	2682	68	0.064
+propyl laurate	77255	71	0.185
+decyl oleate	5363234	134	0.185
+propyl linoleate	53645533	42.5	0.064
+farnesane (2,6,10-trimethyldodecane)	19773	58.55	1
+decyl myristate	170588	72	0.185
+hexyl myristate	170623	72	0.185
+hexyl palmitate	162505	87	0.185
+decyl palmitate	98603	91	0.185
+2,2,4,4,6,8,8-heptamethylnonane	20414	14.65	1
+3-cyclohexylhexane	20283	36	0.227
+n-butyldecalin	145243	31	0.227
+sec-butyldecalin	145244	34	0.227
+tert-butyldecalin	141340	24	0.227
+2-phenyltetradecane	20642	49	0.227
+2-phenylundecane	20656	51	0.227
+linolenic acid	5280934	20	0.064
+2,2,3-trimethylbutane	10044	12.9	1
+1,2,4,5-tetramethylbenzene	10263	1	0.185
+7,8-diethyltetradecane	530299	67	0.227
+linoleyl alcohol	5365682	44	0.064
+linolenyl alcohol	6436081	41	0.064
+1-butoxy-2-propanol	21210	36.1	1
+octyl laurate	79185	84	0.185
+trilinolein	5322095	32	0.064
+trilaurin	10851	100	0.064
+n-pentylbenzene	10864	8.5	0.227
+ethyl pentanoate	10882	18.6	1
+ethyl levulinate	10883	5	1
+2,2,4-trimethylpentane	10907	18.04	1
+diisoamylether	10989	96.3	1
+ethyl linoleate	5282184	44.4	0.208
+n-hexadecane	11006	100.5	1
+octyl valerate	79545	49	0.185
+tristearin	11146	85	0.064
+tripalmitin	11147	89	0.064
+trimyristin	11148	100	0.064
+2,3-dimethylpentane	11260	22	1
+stearic acid	5281	62	0.064
+Perhydro-phenanthrene	21971	38.8	1
+2,6-dimethylnaphthalene	11387	-7	0.185
+butyl octanoate	11517	39.6	0.208
+4-methyl-1-cyclohexene	11572	52	0.185
+butyl pentanoate	61137	23.5	1
+2-methylhexane	11582	43.5	1
+2-methylheptane	11594	49.8	1
+1-hexene	11597	25.8	1
+1-heptene	11610	32	1
+n-octadecane	11635	106.3	0.227
+tributyrin	6050	-5	0.185
+diethyl ether	3283	140	0.227
+linoleic acid	5280450	31	0.064
+5-butyldodecane	529854	45	0.227
+3-ethylpentane	12048	34.1	1
+diethyl azelate	12204	47	0.185
+methyl pentanoate	12206	13.3	1
+diethyl succinate	12329	15	0.185
+diisobutylether	12346	59.7	1
+1-heptyne	12350	22	1
+ethyl palmitate	12366	93	0.064
+2-nonanol	12367	39.6	1
+n-tridecane	12388	89.5	0.227
+n-tetradecane	12389	85.1	1
+n-pentadecane	12391	96.5	0.227
+hexadecyl acetate	12393	86	0.185
+1-hexadecene	12395	75.9	1
+n-heptadecane	12398	105	0.227
+n-nonadecane	12401	110	0.227
+tetradecyl acetate	12531	81	0.185
+ethanol	702	7	0.227
+isobutyl stearate	12588	99	0.064
+methanol	887	3.33	0.227
+methyl sorbate	5323650	6	1
+dipentyl ether	12743	120.5	0.227
+n-propanol	1031	12	0.227
+n-butanol	263	12	1
+1-pentanol	6276	18.2	0.208
+benzene	241	14.3	0.208
+1,3,5-triisopropylbenzene	12860	2.8	1
+n-propane	6334	-20	0.227
+t-butanol	6386	17	0.227
+2,2-dimethylbutane	6403	24.4	1
+methyl ricinoleate	5354133	37.4	1
+2-phenyloctane	276115	33	0.227
+isobutanol	6560	8.5	1
+2-butanol	6568	8.5	1
+.-pinene	6654	25	1
+hexadecyl laurate	88709	88	0.185
+1-undecene	13190	65.5	0.227
+octadecyl acetate	69968	90	0.185
+dihexyl phthalate	6786	48	0.185
+dibutyl phthalate	3026	38	0.185
+1-decene	13381	49.1	1
+1-methylnaphthalene	7002	0	0.208
+cis-decalin	7044	40.5	1
+naphthalene	931	22	0.185
+2-methylnaphthalene	7055	6	0.185
+bicyclohexyl	7094	50.2	0.227
+biphenyl	7095	21	0.227
+1,2-dimethylbenzene	7237	8.3	0.208
+1,2,4-trimethylbenzene	7247	8.9	1
+diethyl oxalate	7268	21	0.185
+3-methylpentane	7282	30	0.208
+methylcyclopentane	7296	17.2	1
+tert-butyl benzene	7366	0	0.185
+isopropyl benzene	7406	7	0.185
+m-diisopropylbenzene	7450	-3	0.208
+1-methyl-4-isopropylbenzene	7463	4	0.185
+bisabolene	3033866	32.2	1
+isopentanol	31260	18.4	1
+hexylmethyl ether	78484	99.8	1
+methyl-9-decenoate	1778877	38.3	1
+methyl gamma-linolenate	6439889	29.2	1
+methyl alpha-linolenate	5319706	22.7	1
+methyl-5(Z)8(z)11(Z)14(Z)-eicosatetraenoate	6421258	29.6	1
+methyl gondoate	6438470	73.2	1
+3-ethyldecane	529827	48	0.227
+4-propyldecane	529908	39	0.227
+7-butyltridecane	530347	70	0.227
+8-propylpentadecane	530278	48	0.227
+5,6-dibutyldecane	529909	30	0.227
+8-propylpentadecane	530278	48	0.227
+9,10-dimethyloctadecane	530173	60	0.227
+7-hexylpentadecane	91342400	83	0.227
+9,10-dipropyloctadecane	530183	47	0.227
+9-heptylheptadecane	528546	88	0.227
+n-propyldecalin	145229	45	0.227
+n-octyldecalin	141998	31	0.227
+2-cyclohexyl- tetradecane	15715	57	0.227
+5-cyclohexyleicosane	311971	66	0.227
+2,6,7-trimethyl-2,6-tridecadiene	102247765	24	0.227
+n-propyltetralin	297000	8	0.227
+7-phenyltridecane	16980	41	0.227
+5-phenyleicosane	16983	39	0.227
+diethoxybutane	77225	97	0.185
+decyl valerate	79553	61	0.185
+dodecyl valerate	545395	67	0.185

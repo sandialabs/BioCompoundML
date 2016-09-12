@@ -10,25 +10,30 @@ def verbose_print(verbose, line):
         print(line)
 
 
-def get_true_and_pred_CV(estimator, X, y, n_folds, cv, params):
+def get_true_and_pred_CV(estimator, X, y, n_folds, cv, weights, params):
     '''Get the true positives and predicted values'''
     ys = []
     for train_idx, valid_idx in cv:
         clf = estimator
-        clf.fit(X[train_idx], y[train_idx])
+        clf.fit(X=X[train_idx], y=y[train_idx],
+                sample_weight=weights[train_idx])
         cur_pred = clf.predict(X[valid_idx])
         ys.append((y[valid_idx], cur_pred))
     return ys
 
 
-def fit_and_score_CV(estimator, X, y, cv, n_folds=2, **params):
+def fit_and_score_CV(estimator, X, y, cv, weights, n_folds=9, **params):
     '''Fit accuracy, precision, recall and Receiver Operator
     Characteristic'''
-    ys = get_true_and_pred_CV(estimator, X, y, n_folds, cv, params)
-    cv_acc = np.fromiter(map(lambda tp: accuracy_score(tp[0], tp[1]), ys), np.float)
-    cv_prec = np.fromiter(map(lambda tp: precision_score(tp[0], tp[1]), ys), np.float)
-    cv_recall = np.fromiter(map(lambda tp: recall_score(tp[0], tp[1]), ys), np.float)
-    cv_roc_auc = np.fromiter(map(lambda tp: roc_auc_score(tp[0], tp[1]), ys), np.float)
+    ys = get_true_and_pred_CV(estimator, X, y, n_folds, cv, weights, params)
+    cv_acc = np.fromiter(map(lambda tp: accuracy_score(tp[0], tp[1]), ys),
+                         np.float)
+    cv_prec = np.fromiter(map(lambda tp: precision_score(tp[0], tp[1]), ys),
+                          np.float)
+    cv_recall = np.fromiter(map(lambda tp: recall_score(tp[0], tp[1]), ys),
+                            np.float)
+    cv_roc_auc = np.fromiter(map(lambda tp: roc_auc_score(tp[0], tp[1]), ys),
+                             np.float)
     return(cv_acc, cv_prec, cv_recall, cv_roc_auc)
 
 
@@ -37,6 +42,7 @@ class Analysis(object):
         np.random.seed(seed=seed)
         self.n_samples = model.train.shape[0]
         self.clf = model.clf
+        self.weights = model.weights
         self.y = model.predictors
         self.train = model.train
         self.model = model
@@ -45,9 +51,9 @@ class Analysis(object):
     def cross_validate(self, n_iter=100):
         '''Actually run the cross validation'''
         cv = cross_v.StratifiedShuffleSplit(self.y, n_iter=n_iter,
-                                            test_size=0.5, random_state=0)
+                                            test_size=0.1, random_state=0)
         (acc, prec, recall, roc) = fit_and_score_CV(self.clf, self.train,
-                                                    self.y, cv)
+                                                    self.y, cv, self.weights)
         print_line = "For " + str(n_iter) + " resamples at 50%"
         verbose_print(self.verbose, print_line)
         print_line = ("\tAccuracy: %0.4f +/- %0.4f" % (np.mean(acc),
@@ -59,8 +65,9 @@ class Analysis(object):
         print_line = ("\tRecall: %0.4f +/- %0.4f" % (np.mean(recall),
                                                      np.std(recall) * 2))
         verbose_print(self.verbose, print_line)
-        print_line = ("\tReceiver Operator, AUC: %0.4f +/- %0.4f" % (np.mean(roc),
-                                                                     np.std(roc) * 2))
+        print_line = ("\tReceiver Operator, AUC: %0.4f +/- %0.4f" %
+                      (np.mean(roc),
+                       np.std(roc) * 2))
         verbose_print(self.verbose, print_line)
         self.acc = np.mean(acc)
         self.prec = np.mean(prec)

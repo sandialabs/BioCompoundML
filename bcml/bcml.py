@@ -259,11 +259,14 @@ def add_pubchem_features(compounds, args, user=False, proxy=False,
     predictors = False
     if compounds.predictors:
         predictors = compounds.predictors
+    if compounds.weights:
+        weights = compounds.weights
     collected_data = pcp.Collect(compounds.compounds, fingerprint=fingerprint,
                                  xml=experimental, sdf=chemofeatures,
                                  proxy=args.proxy, user=user, id_name=id_name,
                                  chunks=chunks, try_count=_try_count,
-                                 verbose=args.verbose, predictors=predictors)
+                                 verbose=args.verbose, predictors=predictors,
+                                 weights=weights)
     return collected_data
 
 
@@ -359,7 +362,8 @@ def train_model(args, seed, proxy, pred):
                 '''These functions all require a distance matrix, which is best
                 collected using the fingerprint data'''
                 fingerprint = True
-            training = rt.Read(args.input, pred, user=user, id_name=_id)
+            training = rt.Read(args.input, pred, user=user, id_name=_id,
+                               weights=args.weight)
             '''This block of code generally works on feature collection and
             parsing, including the removal of fully redundant features. The
             difference between remove_static=True and False is whether or not
@@ -387,7 +391,8 @@ def train_model(args, seed, proxy, pred):
             is to break the value at the median
             '''
             if training_data.compound:
-                train = bt.Process(training_data, split_value=args.split_value)
+                train = bt.Process(training_data, split_value=args.split_value,
+                                   verbose=args.verbose)
                 if args.impute is True:
                     train.impute_values(distance=distance,
                                         verbose=args.verbose)

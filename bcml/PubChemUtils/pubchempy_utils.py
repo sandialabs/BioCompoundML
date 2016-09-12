@@ -246,7 +246,7 @@ class Collect(object):
     def __init__(self, compounds, fingerprint=False,
                  xml=False, sdf=False, proxy=False, user=False,
                  id_name='PubChem', chunks=False, try_count=3, verbose=False,
-                 predictors=False):
+                 predictors=False, weights=False):
         self.id_name = id_name
         self.compounds = compounds
         self.pubchem_ids = [x[id_name] for x in compounds]
@@ -257,6 +257,9 @@ class Collect(object):
         if predictors is not False:
             for count, _id in enumerate(self.pubchem_ids):
                 self.compound[_id]['predictor'] = predictors[count]
+        if weights is not False:
+            for count, _id in enumerate(self.pubchem_ids):
+                self.compound[_id]['weight'] = weights[count]
         if proxy:
             self.set_proxy()
         self.user = user
