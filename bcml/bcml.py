@@ -170,6 +170,9 @@ def parse_arguments():
     parser.add_argument('--smiles',
                         help="Use SMILES rather than CID",
                         action="store_true")
+    parser.add_argument('--private',
+                        help="To use private, add private SDFs to the Chemoinfomatics\/data\/training and Chemoinformatics/data/testing folders",
+                        action="store_true")
     return parser.parse_args()
 
 
@@ -319,7 +322,7 @@ def extract_features(collected_data, args, user=False, fingerprint=False,
         collected_data = cf.Update(collected_data,
                                    remove_static=remove_static,
                                    verbose=args.verbose)
-        collected_data.update(padel=True)
+        collected_data.update(padel=True, private=args.private)
     return collected_data
 
 

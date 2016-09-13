@@ -13,17 +13,18 @@ from shutil import rmtree
 
 _path = os.path.abspath(__file__)
 _directory = os.path.dirname(_path)
-_fp_file = _directory + '/fingerprints.txt'
-_db_directory = _directory + "/db/training/"
-_testing_directory = _directory + "/db/testing/"
-_padel_descriptor = _directory + "/padel_descriptor.out"
+_fp_file = os.path.join(_directory, '/fingerprints.txt')
+_db_directory = os.path.join(_directory, "db", "training")
+_testing_directory = os.path.join(_directory, "db", "testing")
+_padel_descriptor = os.path.join(_directory, "padel_descriptor.out")
 
 
 def dictitems(dict):
-    if sys.version_info[0]>=3:
+    if sys.version_info[0] >= 3:
         return dict.items()
     else:
         return dict.iteritems()
+
 
 def verbose_print(verbose, line):
     if verbose:
