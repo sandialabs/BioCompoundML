@@ -359,7 +359,6 @@ class Collect(object):
                 fps = _url_factory(uri).splitlines()
             for i, cactvs in enumerate(fps):
                 self.compound[ids[i]]['binhash'] = get_binhash(cactvs)
-        print(self.compound)
 
     def add_sdf(self, sdf=False, chunks=False):
         """This function collects NCBI sdfs and stores them for use
