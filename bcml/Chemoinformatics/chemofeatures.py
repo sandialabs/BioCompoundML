@@ -14,7 +14,7 @@ from shutil import rmtree
 _path = os.path.abspath(__file__)
 _directory = os.path.dirname(_path)
 _fp_file = _directory + '/fingerprints.txt'
-_db_directory = _directory + "/db/pubchem"
+_db_directory = _directory + "/db/training/"
 _testing_directory = _directory + "/db/testing/"
 _padel_descriptor = _directory + "/padel_descriptor.out"
 
@@ -105,7 +105,8 @@ class Update(object):
         verbose_print(self.verbose, print_string)
 
     def _variable_compounds(self):
-        if self.clean is True:  # Create a temporary directory for .sdfs
+        if self.clean is True and self.private is False:
+            # Create a temporary directory for .sdfs
             dirpath = mkdtemp()
         else:
             dirpath = _db_directory
@@ -133,9 +134,10 @@ class Update(object):
             rmtree(dirpath)  # Clean .sdfs from filesystem
             os.remove(_padel_descriptor)  # Clean _descriptors from filesystem
 
-    def update(self, padel=True, clean=True):
+    def update(self, padel=True, clean=True, private=False):
         self.padel = padel  # Run PaDEL-Descriptor
         self.clean = clean  # Clean working directory
+        self.private = private
         self._variable_compounds()
         if self.remove is True:
             self._update_compounds()

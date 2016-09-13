@@ -1,0 +1,6 @@
+#Name	PubChem	RON
+Test	c1ccccc1	15
+Test2	CNNC	18
+Test3	OC(=O)C(CO)N	45
+Test4	CC(=O)O	33
+Test5	C1CCNC1	88

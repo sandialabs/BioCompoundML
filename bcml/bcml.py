@@ -167,6 +167,9 @@ def parse_arguments():
     parser.add_argument('--weight',
                         help="Insert sample weights",
                         action="store_true")
+    parser.add_argument('--smiles',
+                        help="Use SMILES rather than CID",
+                        action="store_true")
     return parser.parse_args()
 
 
@@ -266,7 +269,7 @@ def add_pubchem_features(compounds, args, user=False, proxy=False,
                                  proxy=args.proxy, user=user, id_name=id_name,
                                  chunks=chunks, try_count=_try_count,
                                  verbose=args.verbose, predictors=predictors,
-                                 weights=weights)
+                                 weights=weights, smiles=args.smiles)
     return collected_data
 
 

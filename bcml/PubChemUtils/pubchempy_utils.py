@@ -160,6 +160,21 @@ def cactvs_uri(ids):
     return uri
 
 
+def smiles_uri(ids):
+    _id = str(ids)
+    uri = '/rest/pug/compound/smiles/' + _id + '/cids/TXT'
+    return uri
+
+
+def get_smiles(_id):
+    '''
+    This function retreives the CID for a SMILES from PubChem
+    '''
+    uri = smiles_uri(_id)
+    cid = _url_factory(uri)
+    return cid
+
+
 def stream_sdf(ids):
     '''
     This function allows bulk streaming of SDF into a data structure
@@ -246,7 +261,7 @@ class Collect(object):
     def __init__(self, compounds, fingerprint=False,
                  xml=False, sdf=False, proxy=False, user=False,
                  id_name='PubChem', chunks=False, try_count=3, verbose=False,
-                 predictors=False, weights=False):
+                 predictors=False, weights=False, smiles=False):
         self.id_name = id_name
         self.compounds = compounds
         self.pubchem_ids = [x[id_name] for x in compounds]
@@ -254,14 +269,22 @@ class Collect(object):
         self.proxy = proxy
         self.chunks = chunks
         self.verbose = verbose
+        self.smiles = smiles
+        if proxy:
+            self.set_proxy()
+        if smiles is not False:
+            id_list = []
+            for count, _id in enumerate(self.pubchem_ids):
+                cid = get_smiles(_id)
+                id_list.append(cid)
+                self.compounds[count][id_name] = cid
+            self.pubchem_ids = id_list
         if predictors is not False:
             for count, _id in enumerate(self.pubchem_ids):
                 self.compound[_id]['predictor'] = predictors[count]
         if weights is not False:
             for count, _id in enumerate(self.pubchem_ids):
                 self.compound[_id]['weight'] = weights[count]
-        if proxy:
-            self.set_proxy()
         self.user = user
         if user:
             self.add_user()
@@ -336,6 +359,7 @@ class Collect(object):
                 fps = _url_factory(uri).splitlines()
             for i, cactvs in enumerate(fps):
                 self.compound[ids[i]]['binhash'] = get_binhash(cactvs)
+        print(self.compound)
 
     def add_sdf(self, sdf=False, chunks=False):
         """This function collects NCBI sdfs and stores them for use
