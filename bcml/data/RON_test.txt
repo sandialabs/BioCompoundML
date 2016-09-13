@@ -1,0 +1,18 @@
+#Name	PubChem
+isobutyl acetate	8038
+isoamyl acetate	31276
+myrcene	31253
+eucalyptol	2758
+3-carene	26049
+1,2-propanediol	1030
+linalool	6549
+isopropyl acetate	7915
+butyl acetate	31272
+acetone	180
+Limonene	22311
+2-methyl-3-buten-2-ol	8257
+ocimene	5281553
+2,3-butanediol	19001
+Pinene	6654
+methyl benzoate	7150
+3,7-dimethyl-1-octanol	7792

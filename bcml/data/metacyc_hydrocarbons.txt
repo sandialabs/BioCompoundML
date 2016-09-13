@@ -1,0 +1,1979 @@
+#Name	PubChem
+(+)-(1R,2R)-1,2-diphenylethane-1,2-diol	853019
+(+)-(3S,4R)-cis-3,4-dihydroxy-3,4-dihydrofluorene	441319
+(+)-(alphaR,betaS)-guaiacylglycerol-beta-guaiacyl ether	13117025
+(+)-2-carene	78249
+(+)-3-carene	443156
+(+)-5-epi-aristolochene	5460659
+(+)-5-oxo-1,2-campholide	439864
+(+)-6a-hydroxymaackiain	9543463
+(+)-7-iso-jasmonate	7251182
+(+)-alpha-cadinene	12306048
+(+)-alpha-muurolene	12306047
+(+)-alpha-pinene	82227
+(+)-alpha-santalene	94164
+(+)-alpha-santalol	5281531
+(+)-alpha-terpineol	442501
+(+)-beta-cadinene	10657
+(+)-beta-caryophyllene	20831623
+(+)-beta-pinene	10290825
+(+)-bisdechlorogeodin	6857342
+(+)-bornane-2,5-dione	6971264
+(+)-camphene	92221
+(+)-camphor	159055
+(+)-catechin	9064
+(+)-cis-3,4-dihydrophenanthrene-3,4-diol	440351
+(+)-cis-abscisic aldehyde	5282224
+(+)-cis-isopulegone	443529
+(+)-cis-sabinol	94147
+(+)-columbianetin	150888
+(+)-copalol	10401988
+(+)-costunolide	5281437
+(+)-delta-amorphene	12306059
+(+)-delta-cadinene	441005
+(+)-dihydrocarveol	89755
+(+)-dihydrocarvone	22227
+(+)-dihydrokaempferol	122850
+(+)-epi-alpha-bisabolol	1201551
+(+)-epi-beta-santalene	10534
+(+)-epicubenol	11831045
+(+)-exo-5-hydroxycamphor	447414
+(+)-gamma-amorphene	12313019
+(+)-gamma-cadinene	6432404
+(+)-gamma-muurolene	12313020
+(+)-germacrene A	9548705
+(+)-germacrene D	6436582
+(+)-isodihydrocarveol	443165
+(+)-isodihydrocarvone	443167
+(+)-isomenthol	45056
+(+)-isomenthone	70962
+(+)-isopimara-7,15-diene	13969536
+(+)-isopimara-8,15-diene	443469
+(+)-larreatricin	14213223
+(+)-maackiain	161298
+(+)-marmesin	334704
+(+)-menthofuran	442478
+(+)-menthone	443159
+(+)-muconolactone	20846022
+(+)-neodihydrocarveol	443164
+(+)-neoisodihydrocarveol	443166
+(+)-neoisomenthol	19244
+(+)-neomenthol	439263
+(+)-pinoresinol	73399
+(+)-pisatin	101689
+(+)-pulegone	442495
+(+)-sabinene	10887971
+(+)-sabinone	439592
+(+)-thujan-3-one	249286
+(+)-thujopsene	11401461
+(+)-trans-carveol	443178
+(+)-valencene	9855795
+(+/-)-trans-acenaphthene-1,2-diol	440245
+(-)-(4S)-alpha-terpineol	443162
+(-)-(alphaR,betaR)-guaiacylglycerol-beta-guaiacyl ether	13117027
+(-)-2-carene	6430755
+(-)-3-carene	442461
+(-)-9beta-pimara-7,15-diene	10355909
+(-)-alpha-bisabolol	442343
+(-)-alpha-cedrene	6431015
+(-)-alpha-gurjunene	15560276
+(-)-alpha-isocomene	188113
+(-)-alpha-pinene	440968
+(-)-beta-caryophyllene	5281515
+(-)-beta-phellandrene	443161
+(-)-beta-pinene	440967
+(-)-bisdechlorogeodin	6857341
+(-)-borneol	6850744
+(-)-camphene	440966
+(-)-camphor	444294
+(-)-cis-carveol	330573
+(-)-cyperene	12308843
+(-)-dehydrodiconiferyl aldehyde	21582569
+(-)-dihydrocarveol	443163
+(-)-dihydrocarvone	443183
+(-)-dihydrokaempferol	9838882
+(-)-endo-alpha-bergamotene	6429303
+(-)-endo-fenchol	6973643
+(-)-ent-copalol	637851
+(-)-epicatechin	72276
+(-)-epicatechin-3-O-gallate	107905
+(-)-epigallocatechin 3-gallate	65064
+(-)-exo-alpha-bergamotene	6429302
+(-)-gallocatechin gallate	199472
+(-)-gamma-cadinene	92313
+(-)-geosmin	29746
+(-)-germacrene D	5317570
+(-)-glycinol	129648
+(-)-isodihydrocarveol	443180
+(-)-isodihydrocarvone	443181
+(-)-isopiperitenone	439733
+(-)-jasmonate	7251181
+(-)-lactol	10316468
+(-)-maackiain	91510
+(-)-maackiain-3-O-glucoside	442827
+(-)-matairesinol	119205
+(-)-medicarpin	336327
+(-)-menthol	16666
+(-)-menthone	26447
+(-)-menthyl O-beta-D-glucoside	5459767
+(-)-microperfuranone	10563682
+(-)-neodihydrocarveol	443184
+(-)-neoisodihydrocarveol	443179
+(-)-patchoulol	442384
+(-)-phaseollidin	119268
+(-)-phaseollin	91572
+(-)-secoisolariciresinol	65373
+(-)-solanapyrone A	119326
+(-)-trans-carveol	94221
+(-)-trans-isopiperitenol	439410
+(-)-vestitol	177149
+(11E)-tetradecen-1-yl acetate	5367650
+(11E)-tetradecenol	1712011
+(11S)-11-hydroperoxylinoleate	21158498
+(11Z)-tetradecen-1-yl acetate	5367692
+(11Z)-tetradecenol	1712010
+(12S)-HPETE	21158474
+(13E)-(15S)-11-alpha,15-dihydroxy-9-oxoprost-13-enoate	11865410
+(13E)-labda-7,13-dien-15-ol	11392157
+(15S)-HPETE	21158477
+(15Z)-tetracos-15-enal	5283385
+(15Z)-tetracosenoate	5461001
+(1E)-4-oxobut-1-ene-1,2,4-tricarboxylate	21158452
+(1R)-trans-chrysanthemate	6951071
+(1R,2R,4S)-limonene-1,2-diol	11217495
+(1R,2S)-homoisocitrate	5459812
+(1R,4S)-1-hydroxymenth-8-en-2-one	443522
+(1S,2R)-3-methylcyclohexa-3,5-diene-1,2-diol	7059435
+(1S,2S,4R)-limonene-1,2-diol	441246
+(20R,22R)-dihydroxycholesterol	6453841
+(20S)-17,20-dihydroxypregn-4-en-3-one	440368
+(20S)-ginsenoside Rg3	9918693
+(20S)-ginsenoside Rh2	119307
+(20S,22S,25S)-22,25-epoxyfurost-5-ene-3-beta,26-diol	440453
+(22R)-hydroxycholesterol	167685
+(22R,23R)-28-homobrassinolide	11038340
+(22R,23R)-28-homocastasterone	16681673
+(22alpha)-hydroxy-campesterol	11133505
+(24R)-cholest-5-ene-3beta,24-diol	10135759
+(24R,241R)-fucosterol epoxide	440161
+(24S)-24-hydroxycholesterol	121948
+(25R)-cholest-5-ene-3beta,26-diol	123976
+(25S)-5-beta-spirostan-3-beta-ol	219836
+(25S)-5beta-spirostan-3beta-ol 3-O-beta-D- glucoside	440454
+(2E)-2-hydroxypenta-2,4-dienoate	54675827
+(2E)-hexadecenal	5280541
+(2E)-hexadecenoate	19743055
+(2E,4E,6E)-2,6-dimethylocta-2,4,6-trienedial	16129452
+(2E,4E,6E,8E,10E)-docosapenta-2,4,6,8,10-enoate	23001748
+(2E,6E)-farnesal	5280598
+(2E,6E)-farnesoate	21895630
+(2E,6E)-farnesol	445070
+(2R)-2,3-dihydroxy-3-methylbutanoate	23615351
+(2R)-homocitrate	20849228
+(2R,3S)-2-methylisocitrate	23615311
+(2R,3S)-3-isopropylmalate	6857402
+(2R,4S)-2-methyl-2,3,3,4-tetrahydroxytetrahydrofuran	448719
+(2S)-2-isopropylmalate	6419726
+(2S)-flavan-4-ol	253959
+(2S)-flavanone	439652
+(2S)-liquiritigenin	114829
+(2S)-naringenin	439246
+(2S,3S)-2-methylcitrate	5461152
+(2S,4S)-2-methyl-2,4-dihydroxydihydrofuran-3-one	10240835
+(2S,5S)-hexanediol	6950288
+(2Z)-2-hydroxypenta-2,4-dienoate	54713710
+(2Z,4E)-2-hydroxy-6-oxonona-2,4-diene-1,9-dioate	54689772
+(2Z,4E)-2-hydroxyhexa-2,4-dienedioate	54711929
+(3-methylbenzyl)succinate	3528011
+(3-phenoxyphenyl)methanol	26295
+(3E)-3-nonenal	5283336
+(3E)-4,8-dimethylnona-1,3,7-triene	6427110
+(3E)-4-(2-carboxyphenyl)-2-oxobut-3-enoate	16730035
+(3E)-hexadecenoate	22378169
+(3E,5E)-7-hydroxy-6-methylhepta-3,5-dien-2-one	5281928
+(3R)-3-isopropenyl-6-oxoheptanoate	443188
+(3R)-linalool	443158
+(3R)-vestitone	439310
+(3R,4S)-tetrahydrodaidzein	9838028
+(3R,6E)-nerolidol	11241545
+(3S)-2,3-epoxy-2,3-dihydrosqualene	5459811
+(3S)-3-isopropenyl-6-oxoheptanoate	443172
+(3S)-linalool	67179
+(3S,4R)-3,4-dihydroxycyclohexa-1,5-diene-1,4-dicarboxylate	9543092
+(3S,6E)-nerolidol	5281525
+(3S,6R)-6-isopropenyl-3-methyloxepan-2-one	443169
+(3S,6S)-6-isopropenyl-3-methyloxepan-2-one	443187
+(3Z)-3-nonenal	6431042
+(3Z)-hex-3-en-1-yl acetate	5363388
+(3Z,6Z)-nonadienal	5352808
+(4-hydroxyphenyl)acetaldehyde	440113
+(4E,6E)-1-(4-hydroxyphenyl)-7-phenylhepta-4,6-dien-3-one	641618
+(4R)-(-)-ipsdienol	181296
+(4R)-limonene	440917
+(4R)-perillyl alcohol	11788398
+(4R)-perillyl aldehyde	1548901
+(4R,7R)-4-isopropenyl-7-methyloxepan-2-one	443168
+(4R,7S)-7-isopropyl-4-methyloxepan-2-one	11116489
+(4S)-(+)-ipsdienol	92301
+(4S)-limonene	439250
+(4S)-perillyl alcohol	369312
+(4S,5S)-4,5-dihydroxy-2,6-dioxohexanoate	21145092
+(4S,6S)-cis-carveol	443177
+(4S,7R)-4-isopropenyl-7-methyloxepan-2-one	443182
+(4S,7R)-7-isopropyl-4-methyloxepan-2-one	11126704
+(5R)-6-hydroxy-5-isopropenyl-2-methylhexanoate	443174
+(5Z,9E,14Z)-(8xi,11R,12S)-11,12-epoxy-8-hydroxyicosa-5,9,14-trienoate	21158465
+(6E)-8-hydroxygeraniol	5363397
+(6E)-8-hydroxylinalool	5280678
+(6E)-8-oxogeraniol	11412603
+(6R)-dehydrovomifoliol	688494
+(6S,9R)-vomifoliol	5280462
+(6aR,11aR)-3,9-dihydroxypterocarpan	162933
+(6alphaS,11alphaS)-2-dimethylallyl-3,6alpha,9-trihydroxypterocarpan	10617107
+(6alphaS,11alphaS)-4-dimethylallyl-3,6alpha,9-trihydroxypterocarpan	11954192
+(7R)-trans-hinokiresinol	6438674
+(7S)-cis-hinokiresinol	5281830
+(7S)-trans-hinokiresinol	12310493
+(8E,10E)-dodeca-8,10-dienol	1787910
+(8R)-HPETE	21158605
+(8S,9S,10S)-8,10-dimethyl-1-octalin	16667386
+(9Z)-tetradecenol	5364712
+(9Z,11E)-tetradeca-9,11-dien-1-yl acetate	6441057
+(E) gamma-bisabolene	5352437
+(E)-2,4-dihydroxycinnamate	54708747
+(E)-2-(methoxycarbonylmethyl)butenedioate	21158529
+(E)-2-epi-beta-caryophyllene	6429274
+(E)-2-hexenal	5281168
+(E)-2-hexenol	5318042
+(E)-2-pentenal	5364752
+(E)-2-pentenol	5364920
+(E)-3-(methoxycarbonyl)pent-2-enedioate	23615417
+(E)-alpha-bisabolene	5315468
+(E)-beta-farnesene	5281517
+(E)-beta-ocimene	5281553
+(E)-dec-3-en-2-one	5363233
+(E)-non-3-en-2-one	5317045
+(E,E)-alpha-farnesene	5281516
+(E,E)-geranyllinalool	5365872
+(E,E)-germacrene B	5281519
+(R)-1,2-epoxypropane	146261
+(R)-10-Hydroxystearate	5459807
+(R)-2,3-dihydroxy-3-methylpentanoate	21145376
+(R)-2-benzylsuccinate	6944015
+(R)-2-hydroxy-4-methylpentanoate	92779
+(R)-2-hydroxybutanoate	6994379
+(R)-2-hydroxyglutarate	5460200
+(R)-2-hydroxyisocaproate	6951542
+(R)-2-hydroxystearate	21145040
+(R)-3,3-dimethylmalate	21145004
+(R)-3-((R)-3-hydroxybutanoyloxy)-butanoate	9548723
+(R)-3-(4-hydroxyphenyl)lactate	9548632
+(R)-3-hydroxy-3-methyl-2-oxopentanoate	20846131
+(R)-3-hydroxybutanoate	6971058
+(R)-4-hydroxymandelate	5460030
+(R)-acetoin	439314
+(R)-benzoin	640038
+(R)-cembrene A	10061805
+(R)-citramalate	5460281
+(R)-lactaldehyde	439350
+(R)-lactate	5460179
+(R)-malate	5459794
+(R)-mandelate	5460269
+(R)-mevalonate	5288798
+(R)-pantoate	5289105
+(R)-pantolactone	439368
+(R)-phenyllactate	5461132
+(R)-propane-1,2-diol	259994
+(R,R)-2,3-butanediol	225936
+(R,S)-2,3-butanediol	220010
+(S)-1,2-epoxypropane	146262
+(S)-1-phenylethanol	443135
+(S)-2-aceto-2-hydroxybutanoate	21145135
+(S)-2-acetolactate	13999770
+(S)-2-hydroxybutanoate	6971087
+(S)-2-hydroxyglutarate	5460355
+(S)-2-hydroxystearate	21145041
+(S)-2-phenyloxirane	114946
+(S)-3-hydroxy-isobutanoate	20848931
+(S)-3-hydroxybutanoate	6971271
+(S)-3-methyl-2-oxopentanoate	6857401
+(S)-4-hydroxymandelate	5460397
+(S)-acetoin	447765
+(S)-beta-bisabolene	10104370
+(S)-citramalate	5460279
+(S)-dihydrodaidzein	11492597
+(S)-equol	91469
+(S)-lactaldehyde	439231
+(S)-lactate	5460161
+(S)-malate	5459792
+(S)-mandelate	5460348
+(S)-propane-1,2-diol	439846
+(S)-pyrethrolone	11789781
+(S)-sakuranetin	73571
+(S,S)-2,3-butanediol	439888
+(Z) gamma-bisabolene	3033866
+(Z)-2-methyl-5-isopropylhexa-2,5-dienal	5280680
+(Z)-3-hexanal	643941
+(Z)-9-tricosene	5365075
+(Z)-beta-ocimene	5320250
+(Z)-but-2-enal	643950
+(Z)-but-2-enol	643789
+(Z,E)-alpha-farnesene	5362889
+1,1'-dihydroxy-1,1',2,2'-tetrahydrolycopene	14502754
+1,1'-dihydroxy-neurosporene	16061307
+1,1-kestotetraose	166775
+1,16-hexadecane-diol	82184
+1,18-octadecane-diol	520529
+1,2,3,4,6-pentagalloylglucose	65238
+1,2,3,5-tetrahydroxybenzene	12
+1,2,3,6-tetrakis-O-galloyl-beta-D-glucose	73178
+1,2,4-benzenetriol	10787
+1,2,6-trikis-O-galloyl-beta-D-glucose	440308
+1,2-benzoquinone	11421
+1,2-di-O-sinapoyl-beta-D-glucose	5280665
+1,2-dibutyrin	10177014
+1,2-dihydrosantonin	439802
+1,2-dihydroxy-6-methylcyclohexa-3,5-dienecarboxylate	21145165
+1,2-dioleoylglycerol	9543716
+1,2-dipalmitoylglycerol	644078
+1,3,5-trimethoxybenzene	69301
+1,3,6,8-naphthalenetetrol	440202
+1,3,8-naphthalenetriol	22482602
+1,3-propanediol	10442
+1,4-benzoquinone	4650
+1,4-butanediol	8064
+1,4-dihydroxy-2-naphthoate	54706667
+1,4-naphthoquinone	8530
+1,5-anhydro-D-fructose	126517
+1,5-anhydro-D-glucitol	64960
+1,5-anhydro-D-mannitol	445184
+1,6,6-trimethyl-2,7-dioxobicyclo-(3,2,2)nonan-3-one	440456
+1,8-cineole	2758
+1-18:3-2-16:0-monogalactosyldiacylglycerol	6475758
+1-18:3-2-18:3-monogalactosyldiacylglycerol	21582567
+1-O,6-O-digalloyl-beta-D-glucose	440221
+1-O-(4-coumaroyl)-beta-D-glucose	14158117
+1-O-caffeoyl-beta-D-glucose	5281761
+1-O-galloyl-beta-D-glucose	124021
+1-O-methylsalicylate	4133
+1-O-sinapoyl-beta-D-glucose	5280406
+1-deoxy-D-xylulose	9548569
+1-docosanol	12620
+1-dodecanol	8193
+1-dotriacontanol	96117
+1-ethyl-4-hydroxybenzene	31242
+1-heptadecene	23217
+1-heptanol	8129
+1-hexacosanol	68171
+1-hexadecanol	2682
+1-hexanol	8103
+1-hydroxy-2-naphthoate	54675865
+1-hydroxy-4-oxahomoadamantan-5-one	3239817
+1-hydroxyneurosporene	9915740
+1-indanol	22819
+1-kestotriose	440080
+1-naphthaldehyde	6195
+1-naphthoate	5049265
+1-naphthol	7005
+1-naphthol glucoside	7573796
+1-nonadecene	29075
+1-octacosanol	68406
+1-octadecanol	8221
+1-octanol	957
+1-oleoyl-2-palmitoyl-glycerol	5283471
+1-palmitoyl-sn-glycerol	3084463
+1-pentadecanol	12397
+1-pentadecene	25913
+1-pentan-3-one	7288
+1-phenylpropane-1,2-dione	11363
+1-stearoyl-2-palmitoyl-glycerol	3246945
+1-stearoyl-sn-glycerol	15560610
+1-tetracosanol	10472
+1-tetradecanol	8209
+1-tetratriacontanol	185639
+1-triacontanol	68972
+10-deacetyl-2-debenzoylbaccatin III	443489
+10-deacetylbaccatin III	154272
+10-deoxymethynolide	5282031
+10-desacetyltaxuyunnanin C	5460449
+10-epi-gamma-eudesmol	5317072
+10-hydroxydecanoate	6991989
+10-oxodecanoate	19734156
+10-trans, 12-cis-octadecanoate	5282800
+10beta-hydroxytaxa-4(20),11-dien-5alpha-yl acetate	443488
+11-cis-retinal	5280490
+11-cis-retinol	5280382
+11-cis-retinyl palmitate	5280596
+11-deoxycorticosterone	6166
+11-desoxycortisol	440707
+11alpha-hydroxyprogesterone	440105
+12-alpha-hydroxy-3 oxochola-4,6-dienoate	20848947
+12-hydroxylaurate	9548810
+13-apo-beta-carotenone	5363697
+13-beta-D-glucosyloxydocosanoate	9548583
+13-cis-retinal	6436079
+13-cis-retinol	9904001
+13-epi manoyl oxide	18529657
+13-epi-manool	10891602
+13-hydroxydocosanoate	16019973
+13S-vitexifolin A	636732
+14'-apo-beta-carotenal	5280992
+14-demethyllanosterol	443212
+14-hydroxylanosterol	22298935
+15-cis-phytoene	9963391
+16-alpha-hydroxyprogesterone	540627
+16-alpha-hydroxysteroid	439393
+16-beta-hydroxysteroid	439889
+16-dehydroprogesterone	101964
+16-hydroxypalmitate	7058075
+16-oxosteroid	439618
+17-alpha-hydroxypregnenolone	91451
+17-alpha-hydroxyprogesterone	6238
+17-beta-hydroxyandrostan-3-one	11302
+17beta-estradiol	5757
+18-hydroxycorticosterone	11222
+19-hydroxyandrostenedione	252379
+19-hydroxytestosterone	150968
+19-oxo-testosterone	12850019
+19-oxoandrostenedione	92854
+1D-chiro-inositol	892
+1E,8Z,11Z,14Z-heptadecatetraene	5319559
+1E,8Z-heptadecadiene	5352844
+2',3',4'-O-methyl-rhamnosyl tetracyclic spinosyn pseudoaglycone	11767113
+2',3,4,4',6'-pentahydroxychalcone	5461154
+2',4'-dihydroxyacetophenone	440082
+2',4,4',6'-tetrahydroxychalcone	5280960
+2',7-dihydroxy-4',5'-dimethoxyisoflavone	5316763
+2'-O-methylisoliquiritigenin	5319688
+2'-deoxyribose	10786
+2'-hydroxydaidzein	5280520
+2,2',3,3'-tetrahydroxybiphenyl	177063
+2,2',3-trihydroxybiphenyl	569
+2,2'-dihydroxybiphenyl	15731
+2,2'-dioxospirilloxanthin	5366509
+2,22,25-trideoxyecdysone	15942885
+2,3',4,6-tetrahydroxybenzophenone	440991
+2,3,5-trihydroxytoluene	13026
+2,3-dihydrogossypetin	4478475
+2,3-dihydroxy-p-cumate	54675852
+2,3-dihydroxy-trans-cinnamate	54724355
+2,3-dihydroxybenzoate	54675818
+2,3-dimethyl-6-geranylgeranyl-1,4-benzoquinol	5327035
+2,3-dioxo-L-gulonate	21145097
+2,3-trans-proanthocyanidin	146798
+2,4',5,7-tetrahydroxyisoflavanone	443902
+2,4',7-trihydroxyisoflavanone	11459958
+2,4,5-trihydroxytoluene	70758
+2,4,6-octatrienoate	20267671
+2,4,6-trihydroxybenzophenone	77093
+2,4,6-trioxoheptanoate	9543053
+2,4-dihydroxybenzoate	54712708
+2,4-dihydroxyhept-2-enedioate	54724344
+2,5-bis-hydroxymethylfuran	74663
+2,5-didehydro-D-gluconate	9548631
+2,5-dioxopentanoate	21872870
+2,5-hexanedione	8035
+2,6-dioxo-6-phenylhexa-3-enoate	23615309
+2,6-dioxo-6-phenylhexanoate	21145055
+2-(3,5-dihydroxyphenyl)-2-oxoacetate	54690921
+2-(4-hydroxyphenyl)-2-oxoacetate	54720982
+2-(alpha-D-glucopyranosyl)-sn-glycerol	10106330
+2-(dihydroxymethyl)furan	6394751
+2-benzyl-2-hydroxybutanedioate	22915920
+2-butyne-1,4-diol	8066
+2-cis,4-trans-xanthoxin	5282222
+2-cis,6-trans-farnesol	1549108
+2-cis-abscisate	7251168
+2-coumarate	54693535
+2-dehydro-3-deoxy-D-arabinonate	6419711
+2-dehydro-3-deoxy-L-arabinonate	6857400
+2-dehydro-3-deoxy-L-fuconate	9548669
+2-dehydro-D-glucopyranose	439803
+2-dehydropantoate	16755619
+2-dehydropantolactone	39
+2-deoxy-5-dehydro-D-gluconate	6857389
+2-deoxy-D-glucose	9062
+2-deoxy-L-scyllo-inosose	10583108
+2-deoxyecdysone	13939876
+2-deoxyribonolactone	161815
+2-ethylhexan-1-ol	7720
+2-formylbenzoate	5082939
+2-furoate	5460151
+2-hexaprenyl-3-methyl-6-methoxy-1,4-benzoquinone	5280827
+2-hexaprenyl-6-methoxy-1,4-benzoquinone	5280826
+2-hexaprenyl-6-methoxyphenol	5280825
+2-hydroxy-1,4-benzoquinone	23529530
+2-hydroxy-1-phenyl-1-propanone	101121
+2-hydroxy-3-oxoadipate	21145045
+2-hydroxy-3-oxosuccinate	18942842
+2-hydroxy-4-oxobutane-1,2,4-tricarboxylate	23615207
+2-hydroxy-6-(2-hydroxyphenoxy)-6-oxo-cis,cis-hexa-2,4-dienoate	54675846
+2-hydroxy-6-oxo-6-(2-hydroxyphenyl)-hexa-2,4-dienoate	54707973
+2-hydroxy-6-oxo-7-methyl-octa-2,4-dienoate	54675856
+2-hydroxy-6-oxohepta-2,4-dienoate	54724589
+2-hydroxyadipate	21126110
+2-hydroxybiphenyl	7017
+2-hydroxychalcone	5367146
+2-hydroxychromene-2-carboxylate	9543183
+2-hydroxycyclohexan-1-one	10785
+2-hydroxydocosanoate	22361325
+2-hydroxyformononetin	5280551
+2-hydroxyhepta-2,4-dienedioate	54715389
+2-hydroxyhexadecanal	18987871
+2-hydroxymalonate	44
+2-hydroxymethyl-4-oxobutanoate	21145077
+2-hydroxymyristate	22292715
+2-hydroxyphenylacetate	6933325
+2-hydroxytetracosanoate	21707971
+2-hydroxytridecanoate	19793105
+2-isopropylmaleate	21954611
+2-isopropylphenol	6943
+2-keto-3-deoxy-D-glycero-D-galacto-nononate	23241229
+2-keto-4-hydroxypimelate	23615324
+2-keto-D-gluconate	6857381
+2-keto-L-gulonate	7059386
+2-maleylacetate	9543165
+2-methoxy-6-(all-trans-nonaprenyl)phenol	5372355
+2-methoxy-6-(all-trans-octaprenyl)phenol	5280834
+2-methyl-6-geranylgeranyl-1,4-benzoquinol	14759579
+2-methylbut-3-en-2-ol	8257
+2-methylbutanal	7284
+2-methylbutanol	8723
+2-methyleneglutarate	21703573
+2-methylisoborneol	16913
+2-methylpentadecanal	14029652
+2-methylphenol	335
+2-naphthoate	4398214
+2-naphthol	8663
+2-naphthol glucoside	111141
+2-nonaprenyl-3-methyl-6-methoxy-1,4-benzoquinone	6450214
+2-octaprenylphenol	5280832
+2-oleoylglycerol	5319879
+2-oxo-3-phenylpropanoate	4592697
+2-oxo-4-carboxypent-4-enoate	21145131
+2-oxo-4-phenylbutanoate	21707672
+2-oxoadipate	23615192
+2-oxobut-3-enanoate	9543327
+2-oxobutanoate	3593277
+2-oxoglutarate	164533
+2-oxohept-3-enedioate	5460000
+2-oxohexanoate	6419709
+2-oxopent-4-enoate	9543147
+2-oxopimelate	20287221
+2-oxospirilloxanthin	16061269
+2-oxostearate	5459883
+2-oxosuberate	21122671
+2-oxovalerate	5460364
+2-palmitoylglycerol	123409
+2-pentadecanone	61303
+2-phenylethanol	6054
+2-phenylethyl 6-O-beta-D-xylopyranosyl-beta-D-glucopyranoside	131129
+2-phenylethyl beta-D-glucopyranoside	11044282
+2-propylphenol	12570
+2-protocatechuoylphloroglucinolcarboxylate	54675870
+2-succinylbenzoate	5459922
+2-trans,4-trans-xanthoxin	6504642
+2-trans-abscisate	6925664
+2-tridecanone	11622
+2-undecanone	8163
+20-hydroxy-3-oxopregn-4-en-21-al	440224
+20-hydroxy-leukotriene B4	23615494
+20-hydroxyecdysone	21362
+20alpha-hydroxycortisol	256288
+24,25-dihydrolanosterol	6708537
+24-ethylidenelophenol	5281933
+24-methylenelophenol	5283640
+2D-5-O-methyl-2,3,5/4,6-pentahydroxycyclohexanone	11953802
+3',4',5'-trimethylmyricetin	5481248
+3',4'-dimethylquercetin	5487855
+3'-hydroxyechinenone	6386523
+3'-ketosucrose	440773
+3,3',4',5'-tetramethylmyricetin	11417464
+3,3'-dimethylquercetin	5316900
+3,4'-dimethylkaempferol	5352001
+3,4,3',4'-tetradehydroisozeaxanthin	10875440
+3,4-didehydrorhodopin	16061249
+3,4-dihydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione	440483
+3,4-dihydroxymandelate	6950180
+3,4-dihydroxyphenylacetaldehyde	119219
+3,4-dihydroxyphenylacetate	5460350
+3,4-dihydroxyphenylglycol	6951097
+3,4-dihydroxyphenylpyruvate	21124401
+3,5-cyclohexadiene-1,2-diol-1-carboxylate	9543121
+3,5-dihydroxyanisole	71648
+3,5-dihydroxybiphenyl	604248
+3,5-dimethoxyphenol	10383
+3,5-dimethoxytoluene	77844
+3,6,7,3',4'-pentamethylquercetagetin	5320351
+3,6,7,3'-tetramethylquercetagetin	5281608
+3,6,7,4'-tetramethylquercetagetin	5315263
+3,6,7-trimethylquercetagetin	5280699
+3,6-diketocamphane	6971265
+3,7,12-trioxo-5beta-cholanate	11869222
+3,7,3',4'-tetramethylquercetin	5352005
+3,7,3'-trimethylmyricetin	21676154
+3,7,3'-trimethylquercetagetin	189065
+3,7,4'-trimethylquercetagetin	442621
+3,7,4'-trimethylquercetin	5280682
+3,7-dimethylquercetagetin	148856
+3,7-dimethylquercetin	5280417
+3,9-dihydroxypterocarp-6a-en	442667
+3-(2,3-dihydroxyphenyl)propanoate	9543123
+3-(3-hydroxyphenyl)propanoate	6931501
+3-(5,6-dihydroxycyclohexa-1,3-dien-1-yl)propanoate	9543127
+3-(all-trans-octaprenyl)benzene-1,2-diol	5280833
+3-2-carboxyphenylcatechol	54675873
+3-O-methylgallate	54707974
+3-O-methylkaempferol	5280862
+3-[(3aS,4S,7aS)-7a-methyl-1,5-dioxo-octahydro-1H-inden-4-yl]propanoate	15944652
+3-alpha-hydroxy-5-beta-androstane-17-one	5880
+3-alpha-mycarosylerythronolide B	441108
+3-beta-D-galactosyl-sn-glycerol	16048618
+3-beta-hydroxy-5-beta-pregnane-20-one	228491
+3-carboxy-cis,cis-muconate	9543176
+3-dehydro-4-methylzymosterol	22298939
+3-dehydroecdysone	5460083
+3-dehydroquinate	5460271
+3-dehydroshikimate	5460360
+3-deoxy-D-glycero-2,5-hexodiulosonate	5460345
+3-deoxy-D-manno-octulosonate	5460395
+3-ethylcatechol	70278
+3-ethylmalate	21145023
+3-fumarylpyruvate	6857354
+3-hydroxy-2-methyl-3-phytyl-2,3-dihydronaphthoquinone	5280540
+3-hydroxy-3-methyl-2-oxobutanoate	6419735
+3-hydroxy-3-methylglutarate	5459993
+3-hydroxy-3-phenylpropanoate	22328018
+3-hydroxy-4-ketotorulene	10144442
+3-hydroxy-5-oxohexanoate	9543231
+3-hydroxy-9,10-secoandrosta-1,3,5(10)-triene-9,17-dione	14372344
+3-hydroxy-9-apo-delta-caroten-9-one	11344809
+3-hydroxy-beta-ionone	5363700
+3-hydroxy-isobutanoate	11966314
+3-hydroxy-trans-cinnamate	54694258
+3-hydroxybenzoate	54675842
+3-hydroxybenzyl alcohol	102
+3-hydroxycyclohexanone	439950
+3-hydroxyechinenone	10120578
+3-hydroxyisovalerate	6950804
+3-hydroxylubimin	21675004
+3-hydroxyphenylacetate	6950813
+3-hydroxypropanoate	5459847
+3-hydroxypropionaldehyde	75049
+3-hydroxytyrosol	82755
+3-isopropylcatechol	16498
+3-keto-beta-D-galactose	440653
+3-methoxy-4',5-dihydroxy-trans-stilbene	5473050
+3-methoxy-4-hydroxy-5-all-trans-hexaprenylbenzoate	54692918
+3-methoxy-4-hydroxyphenylglycol	688030
+3-methoxy-4-hydroxyphenyllactate	160637
+3-methoxy-4-hydroxyphenylpyruvate	14124
+3-methoxy-5-hydroxytoluene	76674
+3-methoxyphenol	9007
+3-methyl-2-butenal	61020
+3-methyl-2-oxobutanoate	5204641
+3-methyl-4-cis-hydroxy-2-butenal	12487266
+3-methyl-4-trans-hydroxy-2-butenal	22841439
+3-methyl-6-methoxy-2-octaprenyl-1,4-benzoquinone	5280836
+3-methyl-cis,cis-muconate	9543108
+3-methylbenzaldehyde	12105
+3-methylbenzyl alcohol	11476
+3-methylbutanal	11552
+3-methylbutanol	31260
+3-methylcatechol	340
+3-methylphenol	342
+3-octaprenyl-4-hydroxybenzoate	54685638
+3-oxalomalate	5459790
+3-oxo-24-ethyl-cholest-4-ene	5484202
+3-oxo-24-ethyl-cholest-5-ene	9801811
+3-oxo-3-phenylpropanoate	9543196
+3-oxo-5beta-cholan-24-oate	9548901
+3-oxo-dodecanoate	5460320
+3-oxo-palmitate	17804645
+3-oxoadipate	5459800
+3-oxoadipate enol lactone	23615198
+3-oxocholest-4-en-26-ol	15108350
+3-oxodecanoate	22078585
+3-oxohexanoate	11966264
+3-oxooctanoate	17804644
+3-oxopropanoate	9543142
+3-phenylpropanoate	4740700
+3-propylcatechol	3014143
+3S,3'S-astaxanthin	5368397
+3alpha,12alpha-dihydroxy-7-oxo-5beta-cholan-24-oate	9548790
+3alpha,7alpha,12beta-trihydroxy-5beta-cholan-24-oate	9548607
+3alpha,7alpha-dihydroxy-12-oxo-5beta-cholan-24-oate	9548900
+3beta-hydroxy-4beta-methyl-5alpha-cholest-7-ene-4alpha-carboxylate	21145105
+4,4'-diapolycopenedial	11102033
+4,4'-dihydroxy-3,3'-dimethoxystilbene	5280698
+4,4-dimethyl-5alpha-cholest-7-en-3beta-ol	5460076
+4,4-dimethyl-5alpha-cholesta-8-en-3-beta-ol	23427666
+4,4-dimethylzymosterol	165609
+4,5-O,O-dimethylthujaplicatin	641789
+4,5-dihydro-5,5-dimethyl-4-(3-oxobutyl)furan-2(3H)-one	138243
+4,5-dihydroxyphthalate	54675838
+4,5-dioxopentanoate	18179178
+4,5alpha-dihydrocortisone	440054
+4,5beta-dihydrocortisone	65554
+4,8,12-trimethyl-1,3,7,11-tridecatetraene	6443227
+4-(beta-D-glucosyloxy)benzoate	6857424
+4-carboxybenzaldehyde	4289537
+4-carboxybenzyl alcohol	7009454
+4-coumarate	54708745
+4-coumaryl alcohol	5280535
+4-ethylguaiacol	62465
+4-fumaryl-acetoacetate	5459934
+4-hydroperoxyoctadeca-t-2-nonenal	6435432
+4-hydroxy-2-butynal	439778
+4-hydroxy-2-nonenal	5283344
+4-hydroxy-2-oxoglutarate	5459960
+4-hydroxy-2-oxopentanoate	9543038
+4-hydroxyacetophenone	7469
+4-hydroxybenzalacetone	796857
+4-hydroxybenzaldehyde	126
+4-hydroxybenzoate	135
+4-hydroxybenzoyl-acetate	22006196
+4-hydroxybenzyl alcohol	125
+4-hydroxybutanoate	3037032
+4-hydroxybutyraldehyde	93093
+4-hydroxycoumarin	54682930
+4-hydroxyhexan-3-one	95609
+4-hydroxymandelate	5460261
+4-hydroxyphenylacetate	4693933
+4-hydroxyphenylbutan-2-one	21648
+4-hydroxyphenylpyruvate	6971070
+4-ketotorulene	10230932
+4-maleyl-acetoacetate	5460066
+4-methoxybenzoate	3783514
+4-methyl-2-oxopentanoate	3527278
+4-methylbenzaldehyde	7725
+4-methylbenzyl alcohol	11505
+4-methylcatechol	9958
+4-methylmuconolactone	9543112
+4-methylpentanal	129
+4-methylphenol	2879
+4-methylsalicylate	54675829
+4-methylumbelliferone	5280567
+4-methylumbelliferyl acetate	366
+4-methylumbelliferyl glucoside	2733779
+4-oxahomoadamantan-5-one	556727
+4-oxocyclohexanecarboxylate	5460131
+4-toluenecarboxylate	154342
+4-tyrosol	10393
+4-vinylguaiacol	332
+4-vinylphenol	62453
+4alpha-formyl-5alpha-cholesta-8,24-dien-3beta-ol	22298941
+4alpha-hydroxymethyl-5alpha-cholesta-8,24-dien-3beta-ol	22298940
+4alpha-methyl-5alpha-cholest-7-en-3-one	440345
+4alpha-methyl-5alpha-cholest-7-en-3beta-ol	160482
+4alpha-methyl-5alpha-ergosta-8,24-dien-3beta-ol	193524
+4alpha-methyl-zymosterol	22212495
+4beta-hydroxymethyl-4alpha-methyl-5alpha-cholest-7-en-3beta-ol	5459806
+5,6-alpha-epoxy-5-alpha-cholestan-3-beta-ol	227037
+5,6-beta-epoxy-5-beta-cholestan-3-beta-ol	108109
+5,6-epoxy-3-hydroxy-9-apo-beta-caroten-9-one	5371267
+5,7-dihydroxy-2-methylchromone	5375252
+5-O-methylthujaplicatin	11406596
+5-alpha-androstan-3alpha,17beta-diol	15818
+5-alpha-androstan-3beta,17beta-diol	242332
+5-alpha-cholan-3-alpha,7-alpha,12-alpha,24 tetrol	5284054
+5-alpha-dihydrotestosterone	10635
+5-alpha-ergosta-7, 22-diene-3-beta,5-diol	5280675
+5-alpha-pregnane-3,20-dione	92810
+5-androstene-3,17-dione	160531
+5-beta-androstane-3,17-dione	440114
+5-beta-pregnan-3,20 dione	92745
+5-beta-scymnol	165531
+5-carboxy-2-oxohept-3-enedioate	23615323
+5-carboxymethyl-2-hydroxymuconate	54711925
+5-dehydro-4-deoxy-D-glucarate	5288442
+5-dehydro-4-deoxy-D-glucuronate	9548606
+5-dehydro-D-fructose	99513
+5-formylfuran-2-carboxylate	7020643
+5-hexenoate	6999915
+5-hydroxy-coniferaldehyde	5282094
+5-hydroxy-coniferyl-alcohol	5282095
+5-hydroxyadamantan-2-one	64184
+5-hydroxymethylfurfural	237332
+5-hydroxypentanoate	5459830
+5-hydroxyxanthotoxin	5385192
+5-methylsalicylate	54706644
+5-oxohexanoate	6419736
+5-oxooctanal	12538121
+5-valerolactone	10953
+5alpha-androstane-3,17-dione	222865
+5alpha-cholesta-7,24-dien-3beta-ol	5459827
+5alpha-cholesta-8,24-dien-3-one	22298942
+5alpha-cholestan-3-one	92128
+5beta-cholestan-3-one	92132
+5beta-cholestane-3alpha,7alpha,12alpha-triol	160520
+5beta-cholestane-3alpha,7alpha-diol	3080603
+6,7,4'-trihydroxyisoflavone	5284649
+6-O-galloylglucose	5317463
+6-acetyl-D-glucose	439780
+6-beta-hydroxylithocholate	21158657
+6-decylubiquinol	11954189
+6-decylubiquinone	2971
+6-demethylsterigmatocystin	5280620
+6-deoxyerythronolide B	121904
+6-endo-hydroxycineole	439906
+6-gingerol	442793
+6-hydroxyflavone	72279
+6-hydroxyhexan-6-olide	439955
+6-hydroxyhexanoate	5460267
+6-hydroxymellein	172675
+6-kestotriose	9914062
+6-methoxy-2-all-trans-octaprenyl-1,4-benzoquinone	5280835
+6-methoxymellein	83412
+6-methylsalicylate	54693536
+6-oxocineole	112203
+6-oxohexanoate	5460210
+6-tuliposide A	21119819
+6F-alpha-D-galactosylsucrose	440140
+6G-di-beta-D-fructofuranosylsucrose	21578906
+6G-kestotriose	14282017
+6beta-Hydroxyestradiol-17beta	440168
+7(8)-dihydrojusticidin B	11760310
+7,2'-dihydroxy-4'-methoxyisoflavan	182259
+7,3'-dimethylquercetin	5320945
+7,4'-dimethylkaempferol	5378823
+7,4'-dimethylquercetin	5320287
+7,8,4'-trihydroxyflavone	688853
+7,8-dimethoxy-flavone	689014
+7-O-methylluteone	441251
+7-alpha,12-alpha-dihydroxy-3-oxochol-4-enoate	20848972
+7-dehydroporiferasterol	20843308
+7-deoxyloganetin	10262598
+7-deoxyloganin	440906
+7-epicholate	20849089
+7-hydroxy-4'5'-dimethoxyisoflavone	5748605
+7-hydroxy-8-methoxycoumarin	5316302
+7-hydroxyflavone	5281894
+7-oxoheptanoate	9548029
+7-oxolithocholate	20848976
+7alpha,12alpha-dihydroxy-5beta-cholestan-3-one	5284271
+7alpha,12alpha-dihydroxycholest-4-en-3-one	3081958
+7alpha-hydroxy-5beta-cholestan-3-one	5284270
+7alpha-hydroxycholest-4-en-3-one	123743
+7alpha-hydroxycholesterol	107722
+8'-apo-beta-carotenal	5478003
+8'-apo-beta-carotenol	5280991
+8,8a-deoxyoleandolide	193898
+8-O-methyldihydrosterigmatocystin	14608351
+8-O-methylsterigmatocystin	104940
+8-hydroxy-7-methoxy-flavone	676299
+8-hydroxy-salvigenin	3083783
+8-methyl-6-nonenoate	23111393
+9'-cis-neoxanthin	5282217
+9'-cis-neurosporene	21606092
+9,10-12,13-diepoxyoctadecanoate	20975723
+9,10-epoxy-12-cis-octadecenoate	23511205
+9,10-epoxystearate	19746553
+9,11-alpha-epoxypregn-4-ene-3,20-dione	440316
+9,9'-di-cis-zeta-carotene	6440490
+9-cis,11-trans-octadecadienoate	5460120
+9-cis-beta-carotene	9828626
+9-cis-retinal	5353924
+9-cis-retinol	5354043
+9-cis-violaxanthin	6442428
+9-demethylpremithramycin A3	443798
+9-fluorenol	74318
+9-fluorenone	10241
+9-oxo-nonanoate	21270557
+9alpha-hydroxy-androst-4-en-3,17-dione	10425017
+9alpha-hydroxyandrosta-1,4-diene-3,17-dione	241544
+CO2	280
+D-Apiitol	439523
+D-Glucurono-6,2-lactone	439996
+D-Iditol	90540
+D-allopyranose	439507
+D-altritol	151263
+D-altronate	5459986
+D-altropyranose	441032
+D-apiose	5460157
+D-arabinonate	5459898
+D-arabinono-1,4-lactone	17723
+D-arabinopyranose	6902
+D-arabitol	94154
+D-bornesitol	440078
+D-cellobiose	439178
+D-erythro-isocitrate	6971026
+D-erythrulose	5460177
+D-fenchone	82229
+D-fructuronate	439343
+D-fuconate	6857398
+D-fucose	19466
+D-galactonate	5461127
+D-galactono-1,4-lactone	97165
+D-galactono-1,5-lactone	439781
+D-galactopyranose	6036
+D-glucarate	5288393
+D-gluconate	6419706
+D-glucono-1,5-lactone	7027
+D-glucopyranose	5793
+D-glucopyranuronate	16740916
+D-glucosone	159630
+D-glucurono-6,3-lactone	92283
+D-glyceraldehyde	79014
+D-glycerate	5460358
+D-hamamelose	439601
+D-idopyranose	441034
+D-mannitol	6251
+D-mannonate	5460054
+D-mannopyranose	18950
+D-pinitol	164619
+D-ribofuranose	5779
+D-ribonate	5460050
+D-ribulose	151261
+D-sedoheptulose	5459879
+D-sorbitol	5780
+D-tagaturonate	5460108
+D-talopyranose	441035
+D-tartrate	5460284
+D-threitol	169019
+D-threo-isocitrate	5459771
+D-xylonate	5460056
+D-xylono-1,4-lactone	439799
+D-xylonolactone	439692
+D-xylulose	5289590
+DL-glyceraldehyde	751
+H+	1038
+H2	783
+H2O	962
+L-2-hydroxyphytanate	5460124
+L-arabinofuranose	440921
+L-arabinonate	5459849
+L-arabinono-1,4-lactone	191190
+L-arabitol	439255
+L-ascorbate	54679076
+L-bornesitol	440079
+L-fructose	11769129
+L-fuconate	6857452
+L-fucopyranose	17106
+L-fuculose	6857362
+L-galactono-1,4-lactone	6857365
+L-galactopyranose	12003287
+L-glucono-1,5-lactone	1549082
+L-glucose	2724488
+L-glyceraldehyde	439723
+L-gulonate	6857680
+L-gulono-1,4-lactone	439373
+L-gulopyranose	10130220
+L-idarate	6857451
+L-iditol	5460044
+L-idonate	5459956
+L-lactide	7272
+L-lyxonate	23616890
+L-lyxopyranose	439508
+L-oleandrosyl-oleandolide	443566
+L-olivosyl-oleandolide	443565
+L-quinate	1560034
+L-rhamnofuranose	439724
+L-rhamnonate	5459988
+L-rhamnono-1,4-lactone	5460219
+L-rhamnulofuranose	11829765
+L-ribulose	644111
+L-sorbitol	82170
+L-sorbopyranose	439192
+L-talarate	11988287
+L-tartrate	119400
+L-threonate	21145021
+L-xylo-hex-3-ulono-1,4-lactone	7048614
+L-xylono-1,4-lactone	439873
+L-xylopyranose	439509
+L-xylulose	22253
+OH-	961
+R-(-)-carvone	439570
+S-(+)-carvone	16724
+S-1-(4-hydroxyphenyl)-ethanol	10866400
+a 1,2-epoxypropane	6378
+a 12-hydroxyjasmonate	10878859
+a 3-isopropenyl-6-oxoheptanoate	4488712
+a 6-hydroxy-3-isopropenylheptanoate	4488498
+a 6-hydroxy-5-isopropenyl-2-methylhexanoate	4488714
+a D-xylopyranose	135191
+a dihydrocarveol	12072
+a dihydrocarvone	24473
+a dihydroquercetin	471
+a phenolic steroid	439726
+abieta-7,13-dien-18-ol	443474
+abieta-7,13-diene	443470
+abieta-7,13-diene-18-al	443479
+abieta-7,13-diene-18-oate	25099
+acenaphthenequinone	6724
+acetaldehyde	177
+acetate	175
+acetoacetate	6971017
+acetoin	179
+acetol	8299
+acetone	180
+acetonedicarboxylate	6950210
+acetophenone	7410
+acetylacetone	31261
+acetylene	6326
+acetylenedicarboxylate	4220380
+acetylmaltose	439660
+acetylpyruvate	5459760
+acrolein	7847
+acrylate	25188
+adamantanone	64151
+adipate	200164
+adonirubin	10303691
+adonixanthin	10303746
+aflatoxin B1	186907
+aflatoxin B2	2724360
+afrormosin	5281704
+ajugose	441421
+aklaviketone	443827
+aklavinone	159776
+aldehydo-D-abequose	5460035
+aldehydo-D-allose	102288
+aldehydo-D-altrose	94780
+aldehydo-D-arabinose	66308
+aldehydo-D-galactose	3037556
+aldehydo-D-galacturonate	1593918
+aldehydo-D-glucose	107526
+aldehydo-D-glucuronate	5460126
+aldehydo-D-idose	111123
+aldehydo-D-mannose	161658
+aldehydo-D-paratose	193410
+aldehydo-D-ribose	5311110
+aldehydo-D-talose	99459
+aldehydo-D-tyvelose	3081369
+aldehydo-D-xylose	644160
+aldehydo-L-arabinose	5460291
+aldehydo-L-ascarylose	3081368
+aldehydo-L-colitose	6857442
+aldehydo-L-fucose	3034656
+aldehydo-L-lyxose	644176
+aldehydo-L-rhamnose	19233
+aldehydo-L-xylose	95259
+aldosterone	5839
+alizarin	6293
+all-trans neurosporene	5280789
+all-trans phytofluene	6436722
+all-trans-10'-apo-beta-carotenal	6450190
+all-trans-13,14-dihydroretinol	446798
+all-trans-3,4-didehydrolycopene	16061227
+all-trans-4,4'-diapo-zeta-carotene	11315692
+all-trans-4,4'-diapolycopene	16061259
+all-trans-4,4'-diaponeurosporene	6443791
+all-trans-4,4'-diapophytofluene	16061258
+all-trans-beta-carotene	5280489
+all-trans-geranylfarnesol	6439529
+all-trans-lycopene	446925
+all-trans-phytoene	5280784
+all-trans-retinal	638015
+all-trans-retinoate	6419707
+all-trans-retinol	445354
+all-trans-retinyl palmitate	5280531
+all-trans-zeta-carotene	5280788
+allolactose	6454902
+allopregnanolone	92787
+allyl alcohol	7858
+aloesone	5317700
+alpha,alpha-trehalose	7427
+alpha,beta-trehalose	10871590
+alpha-D,alpha-D-digalacturonate	16738707
+alpha-D-abequopyranose	447147
+alpha-D-allofuranose	21627865
+alpha-D-allopyranose	3034742
+alpha-D-cellobiose	441014
+alpha-D-fructofuranose	11105942
+alpha-D-fructopyranose	440545
+alpha-D-galactofuranose	21627868
+alpha-D-galactose	439357
+alpha-D-galacturonate	11883891
+alpha-D-glucose	79025
+alpha-D-glucuronate	11882235
+alpha-D-lyxopyranose	439678
+alpha-D-mannopyranosyl-(1,3)-alpha-D-mannopyranose	5288768
+alpha-D-mannose	185698
+alpha-D-ribofuranose	445894
+alpha-D-tyvelopyranose	448819
+alpha-D-xylopyranose	6027
+alpha-L-arabinofuranose	445935
+alpha-L-arabinopyranose	439731
+alpha-L-fucopyranose	439554
+alpha-L-rhamnofuranose	11412570
+alpha-L-rhamnopyranose	439710
+alpha-L-sorbofuranose	12306007
+alpha-L-sorbopyranose	441484
+alpha-amyrin	73170
+alpha-carotene	4369188
+alpha-chamigrene	519725
+alpha-cyclodextrin	24796
+alpha-eudesmol	5317269
+alpha-fenchene	28930
+alpha-fenchocamphorone	550030
+alpha-guaiene	5317844
+alpha-himachalene	520909
+alpha-humulene	5281520
+alpha-lactose	84571
+alpha-linolenate	5461005
+alpha-longipinene	520957
+alpha-maltose	439341
+alpha-patchoulene	521710
+alpha-phellandrene	7460
+alpha-pinene oxide	91508
+alpha-santonin	5156
+alpha-selinene	10123
+alpha-terpinene	7462
+alpha-tocopherol	14985
+alpha-tocotrienol	5282347
+alpha-zeacarotene	6441660
+alpha1,6-D mannobiose	439557
+amorpha-4,11-diene	9815635
+amorphigenin	92207
+androst-4-ene-3,17-dione	6128
+androsta-1,4-diene-3,17-dione	13472
+androsterone	5879
+angelicin	10658
+anhydrorhodovibrin	5368308
+anisole	7519
+aphidicolan-16beta-ol	443480
+apiforol	443638
+apigenin 7-O-beta-D-glucoside	5280704
+apigenin-7,4'-dimethyl ether	5281601
+apigenin-7-O-gentiobioside	10841200
+arachidate	5461017
+arachidonate	21872858
+arachidoyl dodecanoate	5214900
+arbutin	440936
+arctigenin	64981
+aristolochene	161533
+artemisinic alcohol	9834416
+artemisinin	9838675
+ascladiol	6440900
+aspirin	3434975
+atromentin	99148
+autoinducer 2	11170991
+baccatin III	65366
+bacterioruberin	6441558
+baicalein	5281605
+baicalein 7-O-beta-D-glucoside	5320313
+bauerenol	111220
+behenate	5460660
+benzaldehyde	240
+benzene	241
+benzene-1,4-diol	785
+benzil	8651
+benzoate	242
+benzoin	8400
+benzyl (2r,3s)-2-methyl-3-hydroxybutanoate	440386
+benzyl acetate	8785
+benzyl alcohol	244
+benzyl alcohol 6-O-beta-D-xylopyranosyl-beta-D-glucopyranoside	131248
+benzyl-2-methyl-3-oxobutanoate	440192
+benzylbenzoate	2345
+bergapten	2355
+bergaptol	5280371
+beta,beta-carotene-4-one	11757672
+beta-D-allofuranose	21627866
+beta-D-allopyranose	448388
+beta-D-cellobiose	10712
+beta-D-fructofuranose	439709
+beta-D-fructopyranose	24310
+beta-D-fucose	439650
+beta-D-galactose	439353
+beta-D-galacturonate	6992022
+beta-D-glucopyranose	64689
+beta-D-glucuronate	11877136
+beta-D-mannose	439680
+beta-D-mannosyl-(1->4)-D-glucose	10450027
+beta-D-ribofuranose	447347
+beta-D-ribopyranose	441481
+beta-D-xylopyranose	125409
+beta-L-arabinofuranose	6857384
+beta-L-arabinopyranose	439764
+beta-L-fucopyranose	444863
+beta-L-lyxopyranose	642638
+beta-L-rhamnopyranose	439730
+beta-L-sorbofuranose	12306011
+beta-L-sorbopyranose	6992107
+beta-acoradiene	5316209
+beta-amyrin	73145
+beta-carotene 15,15' epoxide	6449945
+beta-cedrene	11106485
+beta-citraurin	9845703
+beta-cryptoxanthin	5281235
+beta-cyclodextrin	444041
+beta-elemene	10583
+beta-eudesmol	5317270
+beta-gentiobiose	441422
+beta-gurjunene	6450812
+beta-himachalene	15095
+beta-hydroxypropiovanillone	75142
+beta-ionone	638014
+beta-isomaltose	10357
+beta-ketoisocaproate	22019185
+beta-lactose	6134
+beta-maltose	6255
+beta-mannobiose	448165
+beta-myrcene	31253
+beta-palatinose	10125936
+beta-patchoulene	101731
+beta-primeverose	443248
+beta-selinene	442393
+beta-sesquiphellandrene	519764
+beta-tocopherol	6857447
+beta-tocotrienol	5282348
+beta-zeacarotene	5280790
+betulin	72326
+betulinate	64971
+betulinic aldehyde	99615
+bicyclogermacrene	11820258
+biochanin A-7-O-glucoside	5280781
+biphenyl	7095
+biphenyl-2, 3-diol	254
+bis-D-fructos 2',1:2,1'-dianhydride	440299
+bisdemethoxycurcumin	5324473
+bixin aldehyde	10215446
+bixin dimethyl ester	14413719
+bombykol	445128
+bursehernin	94504
+but-1-en-3-one	6570
+butan-2-one	6569
+butanal	261
+butanoate	104775
+butein	5281222
+butyl acetate	31272
+calcidiol	6506392
+calcitriol	5283740
+caloxanthin	16061255
+calycosin	5280448
+camelliol C	6476390
+campesterol	23424736
+cannabichromene	30219
+cannabidiol	26346
+canthaxanthin	5281227
+capsidiol	161937
+capsorubin	5281229
+carbon monoxide	281
+carbonic acid	767
+casbene	5280437
+catechol	289
+cellobiono-1,5-lactone	99211
+cellotetraose	170125
+cerotate	5461023
+chenodeoxycholate	9548590
+cholate	5460314
+cholest-4-en-3-one	91477
+cholest-5-en-3-one	9908107
+cholest-5-ene-3beta,25-diol	65094
+cholest-5-ene-3beta,7alpha,25-triol	11954197
+cholest-dien-3-one	164675
+cholestane-3-beta-5-alpha,6-beta-triol	91498
+cholesterol	5997
+cholesteryl oleate	5283632
+cholesteryl-beta-D-glucoside	21145063
+chorismate	5460312
+chrysophanol	10208
+ciceritol	10142653
+cichoriin	442101
+cinnamaldehyde	637511
+cinnamyl acetate	5282110
+cinnamyl alcohol	5315892
+cirsilineol	162464
+cirsiliol	160237
+cirsimaritin	188323
+cis naphthalene dihydrodiol	440294
+cis,cis-2-hydroxy-6-oxohepta-2,4-dienoate	54675845
+cis,cis-muconate	7310978
+cis-1,2-dihydro-3-ethylcatechol	441155
+cis-1,2-dihydrobenzene-1,2-diol	176951
+cis-2-methylaconitate	23615274
+cis-3-phenylcyclohexa-3,5-diene-1,2-diol	5459789
+cis-9-eicosenoate	5460989
+cis-abienol	643723
+cis-abscisic alcohol	5282225
+cis-aconitate	5459816
+cis-caffeate	54681167
+cis-dienelactone	9543248
+cis-homoaconitate	21158450
+cis-stilbene oxide	98511
+cis-vaccenate	5461069
+citraconate	5461090
+citrate	31348
+citronellal	7794
+citronellate	10402
+citronellol	8842
+coniferaldehyde	5280536
+coniferin	5280372
+coniferyl acetate	12835430
+coniferyl alcohol	1549095
+coniferyl alcohol 9-methyl ester	5319469
+cortalcerone	162894
+corticosterone	5753
+cortisol	5754
+cortisol 21-acetate	5744
+cortisone	222786
+coumaraldehyde	641301
+coumarin	323
+coumarinate	54714352
+coumaryl acetate	14320459
+crocetin dialdehyde	11109238
+crocin	5281233
+crotonate	6971246
+cubebol	11543111
+curcumin	5281767
+curcumin monoglucoside	11526601
+cyanidin 3-O-[2''-O-(xylosyl) glucoside	6602304
+cyanidin 3-O-[2''-O-(xylosyl)-6''-O-(p-coumaroyl) glucoside] 5-O-glucoside	6602295
+cyanidin 3-O-p-coumaroylglucoside	5282067
+cyclohex-2-enone	13594
+cyclohexane	8078
+cyclohexane-1,2-dione	13006
+cyclohexane-1,3-dione	10434
+cyclohexane-1-carboxylate	168965
+cyclohexanol	7966
+cyclohexanone	7967
+cyclopentanol	7298
+cyclopentanone	8452
+cyclosativene	519960
+daidzein	5281708
+daidzin	107971
+dammarenediol II	10895555
+daphnetin	5280569
+daphnetin-8-glucoside	5316301
+daphnin	439499
+decanal	8175
+decanoate	4678093
+dechlorogriseofulvin	94273
+deguelin	107935
+dehydro-D-arabinono-1,4-lactone	54675775
+dehydroabietadienol	10469262
+dehydroepiandrosterone	5881
+dehydrorabelomycin	443801
+delta-carotene	5281230
+delta-guaiene	5317845
+delta-tocopherol	92094
+delta-tocotrienol	5282350
+delta6-protoilludene	15939655
+delta9tetrahydrocannabinol	5321846
+demethoxycurcumin	5324476
+demethylmenaquinone-8	5376004
+demethylphylloquinone	11954010
+demethylspheroidene	16061251
+demethylsuberosin	5316525
+deoxycholate	9548661
+deoxylimonate	5459886
+deoxyshikonin	98914
+desmosterol	439577
+desoxyhemigossypol	119497
+desoxyhemigossypol-6-methyl ether	373913
+di-homo-gamma-linolenate	21158448
+di-trans,octa-cis-undecaprenol	9547192
+diacetyl	650
+dibenzo-p-dioxin	9216
+dibenzo[1,4]dioxin-2,3-dione	192833
+dibenzofuran	568
+dicoumarol	54676038
+diethyl (2R,3R)-2-methyl-3-hydroxysuccinate	440395
+diethyl-2-methyl-3-oxosuccinate	97750
+digallate	54711004
+dihydrobiochanin-A	4635871
+dihydroconiferyl alcohol	16822
+dihydroconiferyl aldehyde	529899
+dihydrocoumarin	660
+dihydrocurcumin	5372374
+dihydrodemethylsterigmatocystin	20832874
+dihydromonacolin L lactone	11954201
+dihydrophloroglucinol	361
+dihydropinosylvin	442700
+dihydrosterigmatocystin	21596453
+dihydroxyacetone	670
+dihydroxyfumarate	54685637
+dimethylmaleate	5459894
+diphyllin	100492
+docosahexaenoate	22486344
+docosanal	3017068
+docosanedioate	22173968
+dodecanal	8194
+dotriacontanal	185893
+drimenol	298071
+ecdysone	19212
+ecdysone palmitate	439785
+echinenone	5281236
+eicosanal	75458
+eicosane	8222
+elaidate	5461071
+elisabethatriene	9965325
+ellagic acid	5281855
+elloramycin	10009567
+emodin anthrone	122635
+emodin dianthrone	3010921
+enol-oxaloacetate	54684453
+enol-phenylpyruvate	54705603
+enolaldehyde	17803147
+ent-kaurenal	443466
+epiafzelechin	443639
+epigallocatechin	72277
+epsilon-caprolactone	10401
+epsilon-rhodomycinone	99207
+ergosterol	444679
+erucate	5460999
+erythritol	222285
+erythrodiol	101761
+erythronolide B	441113
+esculetin	5281416
+esculin	5281417
+estradiol-17alpha	68570
+estrone	5870
+ethanol	702
+ethyl (R)-3-hydroxyhexanoate	440150
+ethyl (S)-3-hydroxyhexanoate	440151
+ethyl acetate	8857
+ethyl oleate	5363269
+ethyl-(2R)-methyl-(3S)-hydroxybutanoate	642623
+ethyl-2-methylacetoacetate	7017228
+ethyl-3-oxohexanoate	238498
+ethylbenzene	7500
+ethylene	6325
+ethylene glycol	174
+eugenol	3314
+eupatolin	22524218
+eupatolitin 3-glucoside	10368986
+fagopyritol A1	9840967
+fagopyritol B1	9906026
+fecosterol	440371
+ferruginol	442027
+ferulate	54691413
+fluorene	6853
+formaldehyde	712
+formate	283
+formononetin	5280378
+friedelin	91472
+fumarate	5460307
+furan-2,5-dicarbaldehyde	69980
+furan-2,5-dicarboxylate	20325160
+furcatin	442789
+furfural	7362
+furfuryl alcohol	7361
+fusicocca-2,10(14)-diene	10659816
+galactarate	5459845
+galactitol	11850
+gallate	54675821
+gamma-carotene	5280791
+gamma-cyclodextrin	86575
+gamma-himachalene	577062
+gamma-humulene	6365330
+gamma-linolenate	5461003
+gamma-patchoulene	521302
+gamma-terpinene	7461
+gamma-tocopherol	92729
+gamma-tocotrienol	5282349
+gardenin B	96539
+genistin	5281377
+genkwanin	5281617
+gentisaldehyde	70949
+gentisate	54675839
+gentisyl alcohol	188287
+geranate	9549327
+geranial	638011
+geraniol	637566
+geranyl 6-O-beta-D-xylopyranosyl-beta-D-glucopyranoside	6443689
+geranyl acetate	1549026
+geranylgeraniol	5281365
+geranylhydroquinone	5281857
+germanicol	122857
+ginsenoside C-K	9852086
+ginsenoside C-O	21672569
+ginsenoside C-Y	21672570
+ginsenoside F1	9809542
+ginsenoside F2	9918692
+ginsenoside Mc	9896928
+ginsenoside Mx	11331683
+ginsenoside Rb1	9898279
+ginsenoside Rb2	6917976
+ginsenoside Rc	12855889
+ginsenoside Rd	11679800
+ginsenoside Re	441921
+ginsenoside Rf	441922
+ginsenoside Rg1	441923
+ginsenoside Rg2	21599924
+ginsenoside Rh1	12855920
+glutaconate	6932338
+glutarate	4418048
+glutarate semialdehyde	9548601
+glyceollin I	162807
+glyceollin II	181883
+glyceollin III	11954193
+glycerol	753
+glycolaldehyde	756
+glycolate	5460308
+gondoate	5460984
+grasshopper ketone	13922639
+guaia-6,9-diene	6427475
+guaiacol	460
+hemigossypol	115300
+hemigossypol-6-methyl ether	623685
+heptadecanal	71552
+heptadecane	12398
+heptadecanoate	4113470
+heptanal	8130
+heptanoate	93052
+hesperidin	10621
+hexacosanal	3084462
+hexadecanedioate	7058076
+hexan-3-one	11509
+hexanal	6184
+hexanoate	4398339
+hinokinin	442879
+hispidol	6151183
+homogentisate	5460389
+homovanillate	6950168
+hop-22(29)-ene	92155
+hopan-22-ol	164874
+hydrogen carbonate	769
+hydrogen peroxide	784
+hydroxyl radical	157350
+hydroxypyruvate	4186339
+hydroxyspirilloxanthin	5366504
+hyodeoxycholate	11870241
+hyperforin	22969133
+icosan-1-ol	12404
+icosapentaenoate	22486336
+indanone	6735
+ipsdienone	6430826
+isoarborinol	12305182
+isoarctigenin	11164637
+isobutanal	6561
+isobutanoate	165337
+isobutanol	6560
+isocaproate	4275592
+isochorismate	5460580
+isocryptoxanthin	9959307
+isoepoxydon	73055
+isoformononetin	3764
+isoliquiritigenin	638278
+isolychnose	440185
+isomaltose	439193
+isomethyleugenol	637776
+isomultiflorenol	11876210
+isopentenol	11173
+isopimpinellin	68079
+isoprene	6557
+isopropanol	3776
+isorhamnetin 3-O-glucoside	5318645
+isoscopoletin	69894
+isovitexin	162350
+isovitexin 7-O-glucoside	4636593
+isozeaxanthin	11757703
+itaconate	5459996
+juglone	3806
+justicidin B	442882
+juvenile hormone I	11197171
+juvenile hormone III	5367549
+kaempferide triglycoside	10818979
+kaempferol 3-O-(3'',6''-O-di-p-coumaroyl)-glucoside	10032927
+kaempferol 3-O-(3''-O-p-coumaroyl)-glucoside	21672201
+kaempferol 3-O-(3''-O-p-coumaroyl, 6''-O-feruloyl)-glucoside	21672200
+kaempferol 3-O-(6''-O-feruloyl)-glucoside	23265189
+kaempferol 3-O-(6''-O-p-coumaroyl)-glucoside	5320686
+kaempferol-3-gentiobioside	9960512
+keto-D-fructose	5984
+keto-D-psicose	90008
+keto-D-sorbose	107428
+keto-D-tagatose	92092
+keto-L-sorbose	6904
+kievitone hydrate	188458
+kojibiose	11954203
+lactate	91435
+lactose	440995
+ladanein	3084066
+laminaribiose	439637
+lanosterol	246983
+lathosterol	65728
+latia-luciferin	5280505
+laurate	4149208
+leucocyanidin	440833
+leucopelargonidin	3286789
+leukotriene A4	21158437
+leukotriene B4	23615214
+levopimaradiene	443471
+lignocerate	5461021
+limonin	179651
+linalool	6549
+linalyl 6-O-beta-D-xylopyranosyl-beta-D-glucopyranoside	131802
+linoleate	5460332
+lithocholate	5460318
+loganate	5460138
+loganetin	10466307
+loganin	87691
+longiborneol	521200
+longicyclene	564934
+longifolene	289151
+lovastatin lactone	6420024
+lubimin	21594965
+lupan-3beta,20-diol	10003607
+lupeol	259846
+luteoforol	440834
+luteolin 7-O-beta-D-glucoside	5280637
+luteolin-7-O-gentiobioside	14032967
+luteolinidin	441701
+m-toluate	6946312
+m-xylene	7929
+maggiemycin	133657
+maleate	5288227
+maleylpyruvate	6857405
+malonate	9084
+maltohexaose	439606
+maltol	8369
+maltopentaose	2724445
+maltose	439186
+maltotetraose	446495
+maltotriose	439586
+mannosylfructose	7566553
+manool	3034394
+manoyl oxide	10085645
+melibiose	11458
+melilotate	6930705
+melissate	5461027
+menadiol	10209
+menadione	4055
+menaquinol-6	6441040
+menaquinol-7	447918
+menaquinone-10	9988135
+menaquinone-11	6442190
+menaquinone-12	6442143
+menaquinone-6	5283547
+menaquinone-7	5287554
+menaquinone-8	5376507
+menaquinone-9	6289935
+mesaconate	7257940
+meso-tartrate	201434
+methane	297
+methanol	887
+methoxsalen	4114
+methoxyneurosporene	16061265
+methyl (2E,6E)-farnesoate	5275508
+methyl benzoate	7150
+methyl jasmonate	5367719
+methyl nogalonate	443820
+methyl-1,4-benzoquinone	11122
+methyl-2-alpha-L-fucopyranosyl-beta-D-galactoside	440446
+methyl-alpha-D-galactopyranoside	76935
+methyl-beta-D-galactoside	94214
+methylchavicol	8815
+methyleugenol	7127
+methylglyoxal	880
+methylmalonate	5459982
+methylmalonate semialdehyde	21917715
+methylsuccinate	4745115
+mevaldate	21124331
+microthecin	10130020
+miltiradiene	20837867
+mithramycin	163659
+montanate	5461029
+muconolactone	23615314
+mycophenolate	6918995
+myricetin 3-O-beta-D-glucoside	5318606
+myristate	4075158
+n-butanol	263
+n-hexane	8058
+n-octane	356
+n-pentanol	6276
+n-propanol	1031
+naphthalene	931
+naphthalene-1,2-diol	11318
+naphthylisoquinoline alkaloid precursor	443778
+narbonolide	5282035
+neopatulin	155497
+neral	643779
+nerol	643820
+nevadensin	160921
+nigerose	439512
+nonane-4,6-dione	26454
+norlichexanthone	5281657
+nostoxanthin	16061239
+octacosanal	3084376
+octadecanal	12533
+octadecane	11635
+octanal	454
+octanoate	119389
+octyl alpha-D-galactopyranoside	11197106
+octyl alpha-D-glucopyranoside	445318
+octyl alpha-D-mannopyranoside	10957294
+oleandolide	443564
+oleanolate	11865404
+oleanolic aldehyde	10321055
+oleate	5460221
+olivetol	10377
+ononin	442813
+orcinol	10436
+oroxylin A	5320315
+orsellinate	54718175
+oryzalexin A	158755
+oryzalexin B	176496
+oryzalexin C	176495
+oxalate	71081
+oxaloacetate	164550
+oxidized latia luciferin	519382
+oxomalonate	4188677
+oxygen	977
+p-cumate	3417835
+p-cumic alcohol	325
+p-cymene	7463
+p-menthane-3,8-diol	439842
+p-xylene	7809
+palmitaldehyde	984
+palmitate	504166
+palmitoleate	5461012
+panose	5288421
+parthenolide	7251185
+patulin	4696
+pedunculagin	442688
+pelargonate	5461016
+pent-1-en-3-one	15394
+pentacosanoate	23314576
+pentadecanal	17697
+pentadecane	12391
+pentadecanoate	22169126
+pentan-2-one	7895
+pentanal	8063
+pentanoate	114781
+perillyl alcohol	10819
+perillyl aldehyde	16441
+petroselinate	5461010
+phaseollidin-hydrate	440593
+phenanthrene	995
+phenanthrene-3,4-diol	439929
+phenol	996
+phenylacetaldehyde	998
+phenylacetate	4409936
+phenylacetone	7678
+phenylethyl acetate	7654
+phenylethylbenzoate	7194
+phenylglyoxylate	1548898
+phenyllactate	4060207
+phloretate	5460080
+phloretin	4788
+phlorisobutyrophenone	5326317
+phlorisovalerophenone	441269
+phloroglucinol	359
+phloroglucinol carboxylate	54707511
+phthalate	181977
+phthalate 4,5-cis-dihydrodiol	9543081
+phylloquinone	5280483
+phyllostine	168678
+phytanate	11966211
+phytenal	9900764
+phytol	5280435
+picrocrocin	130796
+pimara-8(14),15-diene	440909
+pimelate	5242388
+pinocembrin chalcone	6474295
+pinostrobin	6950539
+pinosylvin	5280457
+pinosylvin monomethylether	5281719
+plastoquinol-9	6440941
+plastoquinone-9	5375177
+plaunotol	5282197
+plectaniaxanthin	5369735
+pluviatolide	168759
+polyvinyl alcohol(n)	11199
+poriferst-7-enol	12315364
+porifersta-5,7-dienol	16058079
+pre-vitamin D3	5281058
+pregn-5-ene-3,20-dione	150901
+pregna-4,9(11)-diene-3,20-dione	440218
+pregnan-21-al	439338
+pregnan-21-ol	439339
+pregnenolone	8955
+premithracinone	443795
+premithramycin A1	443796
+premithramycin A2	443797
+premithramycin A3	443799
+premithramycin B	443800
+prephenate	5460303
+presilphiperfolan-8beta-ol	10775424
+pristanal	14671060
+pristanate	20849056
+progesterone	5994
+prop-2-ynal	12222
+propanal	527
+propane-1,2,3-tricarboxylate	6946681
+propanoate	104745
+propylene	8252
+propynoate	5459765
+prosolanapyrone II	11822857
+prosolanapyrone III	11748655
+prostaglandin F2alpha	20849107
+protoanemonin	66948
+protocatechualdehyde	8768
+protocatechuate	54675866
+protomycinolide IV	9975065
+protopanaxadiol	11213350
+protopanaxatriol	11468733
+prunetin	5281804
+pseudobaptigenin	5281805
+pseudoionone	1757003
+psoralen	6199
+pterostilbene	5281727
+pyrethrin I	5281045
+pyrogallol	1057
+pyruvate	107735
+quercetin 3,4'-O-diglucoside	5320835
+quercetin 3-O-(3',6''-O-di-p-coumaroyl)-glucoside	23265223
+quercetin 3-O-(3'-O-p-coumaroyl)-glucoside	23265182
+quercetin 3-O-(6''-O-feruloyl)-glucoside	11114901
+quercetin 3-O-beta-D-glucosyl-(1->2)-glucosyl-(1->2)-beta-D-glucoside	5282167
+quercetin 3-O-sophoroside	5282166
+quercetin-3-gentiotrioside	5319886
+rabelomycin	443810
+raffinose	439242
+resorcinol	5054
+rhamnetin	5281691
+rhodopin	5365880
+rhodovibrin	5366505
+ribitol	6912
+rotenone	6758
+rutin	5280805
+rutinose	441429
+sabinene	6429260
+sabinene hydrate	11744854
+safranal	61041
+salicin	439503
+salicyl alcohol	5146
+salicylaldehyde	6998
+salicylate	54675850
+salicylate 2-O-beta-D-glucoside	7099939
+salidroside	21123711
+salvigenin	161271
+sclareol	73114
+scoparone	8417
+scopoletin	5280460
+scopolin	439514
+scutellarein	5281697
+scutellarein 7-methyl ether	3084390
+scyllo-inosose	439294
+scytalone	439309
+secologanin	161276
+seli-3,7(11)-diene	522296
+sequoyitol	439990
+seychellene	519743
+shikimate	7057976
+shikonin	5208
+shionone	12315507
+simvastatin lactone	54454
+sinapaldehyde	5280802
+sinapate	54710960
+sinapyl alcohol	5280507
+sitosterol	222284
+solavetivone	442399
+sophoradiol	124061
+sophoraflavanone B	480764
+sophoraflavanone G	9910234
+spheroiden-2-one	5366412
+spheroidene	6368932
+spirilloxanthin	5366506
+stachyose	439531
+stearate	3033836
+sterigmatocystin	5280389
+steviolbioside	9809601
+steviolmonoside	10140674
+stigmasterol	5280794
+styrene	7501
+succinate	160419
+succinate semialdehyde	9543238
+sucrose	5988
+sulcatol	20745
+sulcatone	9862
+sulfuretin	67111
+sulochrin	160505
+superoxide	5359597
+syn-copalol	10469492
+syringaldehyde	8655
+syringate	54694262
+syringin	5316860
+t-2-nonenal	5354833
+t-anethole	637563
+taraxerol	92097
+taxa-4(20),11-dien-5-alpha-yl acetate	443486
+taxa-4(20),11-dien-5alpha,13alpha-diol	443487
+taxa-4(20),11-dien-5alpha-ol	443485
+taxa-4,11-diene	443484
+taxuyunnanin C	5321771
+tellimagrandin II	442679
+terephthalate	154269
+terpinolene	11463
+testololactone	160753
+testosterone	6013
+testosterone acetate	92145
+tetracenomycin A2	134024
+tetracenomycin B2	443790
+tetracenomycin C	73632
+tetracosanal	557529
+tetradecan-1-yl acetate	12531
+tetradecanal	31291
+tetrahydrocurcumin	11895692
+tetrahymanol	168951
+thromboxane A2	20849128
+toluene	1140
+toluquinol	7253
+torulene	10218186
+trans-1,2-dihydrobenzene-1,2-diol	149186
+trans-2,3-epoxysuccinate	7172291
+trans-2-octenal	5283324
+trans-4-hexen-3-one	5365811
+trans-4-hydroxycyclohexanecarboxylate	19034555
+trans-O-hydroxybenzylidenepyruvate	54675857
+trans-aconitate	5289496
+trans-anol	5474441
+trans-caffeate	54691412
+trans-chalcone	637760
+trans-cinnamate	5957728
+trans-cinnamoyl-beta-D-glucoside	5280653
+trans-cyclohexane-1,2-diol	13601
+trans-dienelactone	9543216
+trans-hinokiresinol	5377291
+trans-resveratrol	445154
+trans-vaccenate	5461067
+trehalose	22814150
+triacontanal	3084375
+tributyrin	6050
+tricosanoate	17976333
+tricyclene	79035
+tripalmitin	11147
+tropate	5460086
+tulipalin A	68352
+tylactone	10250053
+ubiquinol-0	11183027
+ubiquinol-1	447920
+ubiquinol-10	9962735
+ubiquinol-2	5280344
+ubiquinol-6	5813154
+ubiquinol-7	448338
+ubiquinone-0	69068
+ubiquinone-1	4462
+ubiquinone-10	5281915
+ubiquinone-2	5280346
+ubiquinone-6	5283544
+ubiquinone-7	5289540
+ubiquinone-8	5283546
+ubiquinone-9	5280473
+umbelliferone	5281426
+ursodeoxycholate	11870240
+ursolate	64945
+uvaol	92802
+valienone	11116543
+vanillate	54675858
+vanillin	1183
+vanillyl alcohol	62348
+vanillyl mandelate	6931438
+veratraldehyde	8419
+veratryl alcohol	7118
+verbascose	441434
+vicianose	439537
+vinylacetate	6971089
+vitamin D3	5283711
+vitamin K 2,3-epoxide	5280845
+vitexin	5280441
+wogonin	5281703
+xanthoaphin	439591
+xanthotoxol	65090
+zeaxanthin	5280899
+zeinoxanthin	10311902
+zerumbone	5470187
+zymosterol	92746
