@@ -11,7 +11,7 @@ License: BSD 3 clause
 from __future__ import print_function, division
 import numpy as np
 import scipy as sp
-#import bottleneck as bn
+import bottleneck as bn
 from sklearn.utils import check_X_y
 
 class BorutaPy(object):
@@ -166,8 +166,9 @@ class BorutaPy(object):
         Journal of Statistical Software, Vol. 36, Issue 11, Sep 2010
     """
 
-    def __init__(self, estimator, n_estimators=1000, perc=100, alpha=0.05, 
-                 two_step=True, max_iter=150, verbose=0, seed=None):
+    def __init__(self, estimator, n_estimators=1000, perc=100, alpha=0.05,
+                 two_step=True, max_iter=100, verbose=0, seed=None):
+        np.seterr(invalid='ignore')
         np.random.seed(seed)
         self.estimator = estimator
         self.n_estimators = n_estimators
@@ -324,9 +325,11 @@ class BorutaPy(object):
         # large importance values should rank higher = lower ranks -> *(-1)
         imp_history_rejected = imp_history[1:, not_selected] * -1
         # calculate ranks in each iteration, then median of ranks across feats
-        iter_ranks = self._nanrankdata(imp_history_rejected, axis=1)
+        iter_ranks = bn.nanrankdata(imp_history_rejected, axis=1)
+        #iter_ranks = self._nanrankdata(imp_history_rejected, axis=1)
         rank_medians = np.nanmedian(iter_ranks, axis=0)
-        ranks = self._nanrankdata(rank_medians, axis=0)
+        ranks = bn.nanrankdata(rank_medians)
+        #ranks = self._nanrankdata(rank_medians, axis=0)
 
         # update rank for not_selected features
         if not_selected.shape[0] > 0:
@@ -492,8 +495,8 @@ class BorutaPy(object):
         """
         Replaces bottleneck's nanrankdata with scipy and numpy alternative.
         """
-        ranks = sp.stats.mstats.rankdata(np.ma.masked_invalid(X), axis=axis)
-        #ranks = bn.nanrankdata(X, axis=axis)
+        #ranks = sp.stats.mstats.rankdata(np.ma.masked_invalid(X), axis=axis)
+        ranks = bn.nanrankdata(X, axis=axis)
         ranks[ranks == 0] = np.nan
         return ranks
 

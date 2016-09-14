@@ -1,5 +1,5 @@
 from __future__ import print_function
-from sklearn import cross_validation as cross_v
+from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.metrics import roc_curve, accuracy_score, precision_score, recall_score, roc_auc_score
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,7 +13,7 @@ def verbose_print(verbose, line):
 def get_true_and_pred_CV(estimator, X, y, n_folds, cv, weights, params):
     '''Get the true positives and predicted values'''
     ys = []
-    for train_idx, valid_idx in cv:
+    for train_idx, valid_idx in cv.split(X, y):
         clf = estimator
         clf.fit(X=X[train_idx], y=y[train_idx],
                 sample_weight=weights[train_idx])
@@ -22,7 +22,7 @@ def get_true_and_pred_CV(estimator, X, y, n_folds, cv, weights, params):
     return ys
 
 
-def fit_and_score_CV(estimator, X, y, cv, weights, n_folds=9, **params):
+def fit_and_score_CV(estimator, X, y, cv, weights, n_folds=2, **params):
     '''Fit accuracy, precision, recall and Receiver Operator
     Characteristic'''
     ys = get_true_and_pred_CV(estimator, X, y, n_folds, cv, weights, params)
@@ -48,10 +48,9 @@ class Analysis(object):
         self.model = model
         self.verbose = verbose
 
-    def cross_validate(self, n_iter=100):
+    def cross_validate(self, n_iter=10):
         '''Actually run the cross validation'''
-        cv = cross_v.StratifiedShuffleSplit(self.y, n_iter=n_iter,
-                                            test_size=0.1, random_state=0)
+        cv = StratifiedShuffleSplit(n_iter=10, test_size=0.5)
         (acc, prec, recall, roc) = fit_and_score_CV(self.clf, self.train,
                                                     self.y, cv, self.weights)
         print_line = "For " + str(n_iter) + " resamples at 50%"

@@ -18,6 +18,7 @@ import numpy as np
 
 from .common import knn_initialize
 
+
 def knn_impute_optimistic(
         X,
         missing_mask,
@@ -49,6 +50,7 @@ def knn_impute_optimistic(
     Modifies X by replacing its missing values with weighted averages of
     similar rows. Returns the modified X.
     """
+    np.seterr(divide='ignore', invalid='ignore')
     start_t = time.time()
     n_rows, n_cols = X.shape
     X_row_major, D = knn_initialize(X, missing_mask, verbose=verbose, distance=distance)

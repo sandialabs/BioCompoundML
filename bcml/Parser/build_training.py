@@ -75,7 +75,8 @@ class Process(object):
             compound = self.compounds[index[0]]
             feature = list(self.feature_names)[index[1]]
             if (feature in compound.keys()) and (compound[feature] is not "")\
-               and (compound[feature] != "NULL") and (compound[feature] != "False"):
+               and (compound[feature] != "NULL")\
+               and (compound[feature] != "False"):
                 self.train[index] = float(compound[feature])
             else:
                 self.train[index] = np.nan
