@@ -263,6 +263,7 @@ def add_pubchem_features(compounds, args, user=False, proxy=False,
                          chemofeatures=False, id_name='PubChem', chunks=False):
     '''This function loads the pubchem features and downloads the data'''
     predictors = False
+    weights = args.weight
     if compounds.predictors:
         predictors = compounds.predictors
     if compounds.weights:
