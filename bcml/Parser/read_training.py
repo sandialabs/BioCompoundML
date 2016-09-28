@@ -41,14 +41,14 @@ class Read(object):
                 for count, item in enumerate(larray):
                     if header[count] == self.predictor:
                         predictor = item
-                    elif self.weights is True and header[count] == 'Weight':
+                    elif self.weight is True and header[count] == 'Weight':
                         weight = float(item.rstrip())
                     elif self.user is True:
                         compound['userhash'][header[count]] = item.rstrip()
                     compound[header[count]] = item
                 compounds.append(compound)
                 predictors.append(predictor)
-                if self.weights:
+                if self.weight:
                     weights.append(weight)
                 else:
                     weights.append(1.0)
@@ -60,5 +60,5 @@ class Read(object):
         self.predictor = predictor
         self.user = user
         self.id_name = id_name
-        self.weights = weights
+        self.weight = weights
         (self.compounds, self.predictors, self.weights) = self._read_file()

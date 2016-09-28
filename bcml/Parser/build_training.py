@@ -21,6 +21,8 @@ from sklearn.ensemble import RandomForestClassifier
 from KNNImpute.knnimpute import (
     knn_impute_optimistic,
 )
+from scipy import stats
+from math import sqrt
 try:
     from collections import OrderedDict
 except ImportError:
@@ -55,14 +57,19 @@ def _convert_predictor(predictors, split_value):
 def _get_feature_names(compounds):
     """This function handles collecting the feature names"""
     feature_names = {}
+    experimental_features = []
     for compound in compounds:
         for feature in sorted(_possible_features):
+            if feature == 'experimentalhash':
+                keys = sorted(compound[feature].keys())
+                for feat in keys:
+                    experimental_features.append(feat)
             if feature in compound.keys():
                 keys = sorted(compound[feature].keys())
                 for feat in keys:
                     feature_names[feat] = 1
                     compound[feat] = compound[feature][feat]
-    return (compounds, sorted(feature_names.keys()))
+    return (compounds, sorted(feature_names.keys()), experimental_features)
 
 
 class Process(object):
@@ -80,6 +87,36 @@ class Process(object):
                 self.train[index] = float(compound[feature])
             else:
                 self.train[index] = np.nan
+
+    def check_errors(self, distance, verbose):
+        """This function identifies values that may be in error in
+        the training set"""
+        feature_mask = []
+        distance[distance == np.inf] = 0
+        for i, feature in enumerate(self.feature_names):
+            if feature in self.experimental_features:
+                feature_mask.append(i)
+        mask = np.ones_like(self.train)
+        mask[:, feature_mask] = 0
+        masked_training = np.ma.masked_array(self.train, mask)
+        column_means = np.ma.mean(masked_training, axis=0)
+        column_std = np.ma.std(masked_training, axis=0)
+        column_sqrt = sqrt(masked_training.shape[1])
+        critical = stats.t.isf([0.0001], masked_training.shape[1])[0]
+        n = masked_training.shape[1]
+        tau = (critical * (n - 1)) / (sqrt(n)*sqrt(n - 2. + (critical**2)))
+        print(tau)
+        weighted_sum = np.sum(distance, axis=0)
+        for i in feature_mask:
+            x_vector = masked_training[:,i]
+            weighted_vector = distance.dot(x_vector)
+            weighted_average = weighted_vector / weighted_sum
+            gamma = abs(x_vector - weighted_average)
+            weighted_sd = (distance[:,i] * ((x_vector - weighted_average)**2)) / (weighted_sum - ((distance[:,i]**2)/weighted_sum)) 
+            d = tau * column_std[i]
+            error_values = np.where(gamma > (tau * column_std[i]))
+            print(self.feature_names[i], error_values)
+
 
     def feature_selection(self, verbose, seed=False):
         """This function runs Boruta feature selection to remove
@@ -146,7 +183,7 @@ class Process(object):
             self.predictors = _convert_predictor(predictor_values,
                                                  np.median(predictor_values))
         self.rows = len(self.predictors)
-        self.compounds, self.feature_names = _get_feature_names(compounds)
+        self.compounds, self.feature_names, self.experimental_features = _get_feature_names(compounds)
         self.columns = len(self.feature_names)
         '''Initialize the training array'''
         self.train = np.zeros((self.rows, self.columns,), dtype=np.float64)

@@ -46,10 +46,11 @@ def _format(string):
     '''
     string = string.replace(u'\xb0', ' deg ')
     string = string.replace('Deg ', 'deg ')
+    string = string.replace('DEG ', 'deg ')
     string = string.replace(',', '')
     '''Convert F to C'''
-    if string.find('def F'):
-        F_string = re.compile("(-?\d+) deg F")
+    if string.find('deg F'):
+        F_string = re.compile("(-?\d+\.?\d*)\s*deg\s*F")
         match = F_string.match(string)
         if match:
             string = (float(match.group(1))-32.0)/1.8

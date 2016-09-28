@@ -23,6 +23,7 @@ from PubChemUtils import pubchempy_utils as pcp
 from copy import deepcopy
 import sys
 import warnings
+from collections import OrderedDict
 
 _chunks = 10
 _id = 'PubChem'
@@ -173,6 +174,12 @@ def parse_arguments():
     parser.add_argument('--private',
                         help="To use private, add private SDFs to the Chemoinfomatics\/data\/training and Chemoinformatics/data/testing folders",
                         action="store_true")
+    parser.add_argument('--txt',
+                        help="This outputs data into numpy arrays",
+                        action="store_true")
+    parser.add_argument('--errorcorrect',
+                        help="This detects potentially erroneous values in training set\
+                        and warns the user", action="store_true")
     return parser.parse_args()
 
 
@@ -260,14 +267,16 @@ def check_features(args):
 
 def add_pubchem_features(compounds, args, user=False, proxy=False,
                          fingerprint=False, experimental=False,
-                         chemofeatures=False, id_name='PubChem', chunks=False):
+                         chemofeatures=False, id_name='PubChem', training=False,
+                         chunks=False):
     '''This function loads the pubchem features and downloads the data'''
     predictors = False
-    weights = args.weight
     if compounds.predictors:
         predictors = compounds.predictors
-    if compounds.weights:
+    if training:
         weights = compounds.weights
+    else:
+        weights = False
     collected_data = pcp.Collect(compounds.compounds, fingerprint=fingerprint,
                                  xml=experimental, sdf=chemofeatures,
                                  proxy=args.proxy, user=user, id_name=id_name,
@@ -376,12 +385,14 @@ def train_model(args, seed, proxy, pred):
             difference between remove_static=True and False is whether or not
             to get rid of fully redundant features. Since the distance matrix
             is the same, regardless, it is run using original data'''
+
             training_data = add_pubchem_features(training, args, user=user,
                                                  proxy=proxy,
                                                  fingerprint=fingerprint,
                                                  experimental=experimental,
                                                  chemofeatures=chemofeatures,
-                                                 id_name=_id, chunks=_chunks)
+                                                 id_name=_id, training=True,
+                                                 chunks=_chunks)
             if (args.cluster is True) or (args.distance is True) or (args.impute is True):
                 verbose_print(args.verbose, "Creating distance matrix")
                 '''Collect distance matrix using the original dataset'''
@@ -398,11 +409,21 @@ def train_model(args, seed, proxy, pred):
             is to break the value at the median
             '''
             if training_data.compound:
+                ids = [id for id, compound in dictitems(OrderedDict(sorted(training_data.compound.items(), key=lambda t: t[0])))]
                 train = bt.Process(training_data, split_value=args.split_value,
                                    verbose=args.verbose)
                 if args.impute is True:
                     train.impute_values(distance=distance,
                                         verbose=args.verbose)
+                if args.errorcorrect is True:
+                    train.check_errors(distance=distance,
+                                      verbose=args.verbose)
+                if args.txt is True:
+                    columns = "\t".join(train.feature_names)
+                    id_array = np.asarray(ids)
+                    np.savetxt('training_data.txt', train.train, 
+                               header=columns, delimiter='\t', fmt='%1.4f')
+                    np.savetxt('id_data.txt', id_array, header='ID', fmt="%s")
                 if args.selection is True:
                     train.feature_selection(verbose=args.verbose,
                                             seed=args.random)
@@ -471,6 +492,7 @@ def test_model(trained_model, args, seed=False, proxy=False, pred=False):
                                                 experimental=experimental,
                                                 chemofeatures=chemofeatures,
                                                 id_name=_id,
+                                                training=False,
                                                 chunks=_chunks)
             distance = collect_distance_matrix(testing_data)
             verbose_print(args.verbose, "Extracting features")
@@ -482,7 +504,14 @@ def test_model(trained_model, args, seed=False, proxy=False, pred=False):
             test = btest.Process(testing_data, trained_model.model.features,
                                  trained_model.model.train)
             test.impute_values(distance)
-    if trained_model.cluster or args.cluster:
+            if args.txt:
+                columns = "\t".join(test.features)
+                id_array = np.asarray(test.test_names)
+                np.savetxt('testing_data.txt', test.test, 
+                           header=columns, delimiter='\t', fmt='%1.4f')
+                np.savetxt('id_test_data.txt', id_array, header='ID', fmt="%s")
+
+    if args.cluster and hasattr(trained_model, 'cluster'):
         verbose_print(args.verbose,
                       "Rejecting based on clustering of training")
         cluster = trained_model.cluster

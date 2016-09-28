@@ -18,6 +18,11 @@ from KNNImpute.knnimpute import (
 )
 from sklearn.preprocessing import Imputer
 import sys
+try:
+    from collections import OrderedDict
+except ImportError:
+    from ordereddict import OrderedDict
+
 
 
 #_possible_features = ("binhash", "padelhash", "experimentalhash")
@@ -25,10 +30,10 @@ _possible_features = ('experimentalhash', 'binhash', 'padelhash', 'userhash')
 
 
 def dictitems(dict):
-    if sys.version_info[0]>=3:
+    if sys.version_info[0] >= 3:
         return dict.items()
     else:
-        return dictitems(dict)
+        return dict.iteritems()
 
 
 def verbose_print(verbose, line):
@@ -105,6 +110,7 @@ class Process(object):
         self.test = np.zeros((self.rows, self.columns,), dtype=np.float64)
         compounds = []
         self.test_names = []
+        self.input.compound = OrderedDict(sorted(self.input.compound.items(), key=lambda t: t[0]))
         for id, compound in dictitems(self.input.compound):
             compounds.append(compound)
             self.test_names.append(id)
