@@ -28,6 +28,11 @@ BioCompoundML is currently only tested to work under Python 2.6 and 2.7 - Python
 * beautiful-soup==4.4.1
 * matplotlib==1.4.0
 
+## Publication (please cite)
+
+Whitmore, Leanne S., et al. "BioCompoundML: a general biofuel property screening tool for biological molecules using Random Forest Classifiers." Energy & Fuels 30.10 (2016): 8410-8418.
+
+http://pubs.acs.org/doi/abs/10.1021/acs.energyfuels.6b01952
 
 ## License
 
