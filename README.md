@@ -6,7 +6,7 @@ Rapidly screen a large number of compounds for fuel and chemical properties usin
 
 ## Documentation
 
-See documentation at http://sandialabs.github.io/BioCompoundML/
+See documentation at https://sandialabs.github.io/BioCompoundML/
 
 ## Build
 
