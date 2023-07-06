@@ -11,5 +11,5 @@ setup(name='Boruta',
       zip_safe=False,
       install_requires=['numpy==1.10.4',
                         'scikit-learn==0.17.1',
-                        'scipy==0.17.0'
+                        'scipy==1.10.0'
                         ])
